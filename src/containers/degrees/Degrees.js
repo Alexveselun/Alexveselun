@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import { degrees } from "../../portfolio";
-import DegreeCard from "../../components/degreeCard/DegreeCard.js";
+// import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import "./Degrees.css";
 
 const Degrees = (props) => {
