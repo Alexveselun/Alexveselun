@@ -27,11 +27,11 @@
 
 ### Light Mode
 
-![Portfolio](public/icons/light-mode.png)
+<!-- ![Portfolio](public/icons/light-mode.png) -->
 
 ### Dark Mode
 
-![Portfolio](public/icons/dark-mode.png)
+<!-- ![Portfolio](public/icons/dark-mode.png) -->
 
 ## [~] Description :
 
