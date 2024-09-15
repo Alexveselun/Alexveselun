@@ -9,6 +9,11 @@ on:
 jobs:
   one_run:
     runs-on: ubuntu-latest
+    permissions:
+        contents: read
+        packages: write
+        attestations: write
+        id-token: write
     steps:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.11.0
@@ -17,6 +22,11 @@ jobs:
 
   install:
     runs-on: ubuntu-latest
+    permissions:
+        contents: read
+        packages: write
+        attestations: write
+        id-token: write
     needs: one_run
     steps:
       - uses: actions/checkout@v3
@@ -32,6 +42,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    permissions:
+        contents: read
+        packages: write
+        attestations: write
+        id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
