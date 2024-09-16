@@ -5,8 +5,8 @@ import fs from "fs";
 // Change this values if you don't use environment variables
 // If you are using environment variables keep this unchanged
 
-var githubConvertedToken = "Your Github Token Here";
-var githubUserName = "Your Github Username Here";
+var githubConvertedToken = process.env.ACTIONS_DEPLOY_ACCESS_TOKEN;
+var githubUserName = process.env.USERNAME_GIT;
 var mediumUserName = "Your Medium Username Here";
 
 if (githubUserName === "Your Github Username Here") {
@@ -14,7 +14,7 @@ if (githubUserName === "Your Github Username Here") {
 }
 
 if (githubConvertedToken === "Your Github Token Here") {
-  githubConvertedToken = process.env.TOKEN_GIT;
+  githubConvertedToken = process.env.ACTIONS_DEPLOY_ACCESS_TOKEN;
 }
 
 if (mediumUserName === "Your Medium Username Here") {
