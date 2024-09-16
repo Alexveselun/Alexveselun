@@ -12,6 +12,7 @@ jobs:
     permissions:
         contents: read
         packages: write
+        pages: write
         attestations: write
         id-token: write
     steps:
@@ -25,6 +26,7 @@ jobs:
     permissions:
         contents: read
         packages: write
+        pages: write
         attestations: write
         id-token: write
     needs: one_run
@@ -45,6 +47,7 @@ jobs:
     permissions:
         contents: read
         packages: write
+        pages: write
         attestations: write
         id-token: write
     steps:
