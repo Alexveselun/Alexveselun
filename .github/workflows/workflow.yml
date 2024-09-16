@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-22.04
     name: Build and test
     steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+          access_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Node
@@ -57,4 +61,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+      - name: Checkout
+        uses: actions/checkout@v4
       - run: npm run start
