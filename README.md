@@ -162,11 +162,11 @@ You can get a github token as described [here](https://docs.github.com/en/github
 
 Now, you've 2 options.
 
-- If you are using [vercel](https://vercel.com) or [netlify](https://netlify.com) or similar site for your site's build, you can use environment variables. That environment variables are `GITHUB_TOKEN` and `GITHUB_USERNAME` and `MEDIUM_USERNAME`. You can also use environment variables locally. You need to create a .env file or use our template by `cp env.example .env`. Then apply your username and token in that.
+- If you are using [vercel](https://vercel.com) or [netlify](https://netlify.com) or similar site for your site's build, you can use environment variables. That environment variables are `TOKEN_GIT` and `USERNAME_GIT` and `MEDIUM_USERNAME`. You can also use environment variables locally. You need to create a .env file or use our template by `cp env.example .env`. Then apply your username and token in that.
 
 ```env
-GITHUB_TOKEN = "YOUR GITHUB TOKEN HERE"
-GITHUB_USERNAME = "YOUR GITHUB USERNAME HERE"
+TOKEN_GIT = "YOUR GITHUB TOKEN HERE"
+USERNAME_GIT = "YOUR GITHUB USERNAME HERE"
 MEDIUM_USERNAME = "YOUR MEDIUM USERNAME HERE"
 ```
 
