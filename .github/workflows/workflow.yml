@@ -1,70 +1,50 @@
-name: on-pull-request-or-push
+name: React Build
 
 on:
-    push:
-      branches: [ main ]
-    pull_request:
-      branches: [ main ]  
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  # Build job
   build:
-    runs-on: ubuntu-22.04
-    name: Build and test
-    steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
-        with:
-          access_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          # Action runs: using: node20 as defined in
-          # https://github.com/cypress-io/github-action/blob/master/action.yml
-          # Node.js minor version is aligned to
-          # https://github.com/actions/runner/blob/main/src/Misc/externals.sh
-          node-version: 20.13.1
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-            path: '.'
-      - run: npm install --force
-      - run: npm run build --force
-          
-    # <Not provided for brevity>
-    # At a minimum this job should upload artifacts using actions/upload-pages-artifact
 
-  # Deploy job
-  deploy:
-    # Add a dependency to the build job
-    needs: build
-
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-
-    # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    # Specify runner + deployment step
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 20.x ]
+
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          # Action runs: using: node20 as defined in
-          # https://github.com/cypress-io/github-action/blob/master/action.yml
-          # Node.js minor version is aligned to
-          # https://github.com/actions/runner/blob/main/src/Misc/externals.sh
-          node-version: 20.13.1
-      - run: npm run start
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Cache dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          **/node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - name: Install dependencies
+      run: npm install --force
+
+    - name: Build
+      run: npm run build
+
+    - name: Deploy
+      run: |
+        git config --global user.name $user_name
+        git config --global user.email $user_email
+        git remote set-url origin https://${github_token}@github.com/${repository}
+        npm run deploy
+      env:
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        repository: ${{ github.repository }}
