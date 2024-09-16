@@ -6,10 +6,10 @@
 
 <div align="center">
 
-<!-- ![Stars]https://img.shields.io/github/stars/Mr.Yanyk/Portfolio?style=for-the-badge&color=orange">
-  <img src="https://img.shields.io/github/forks/Mr.Yanyk/Portfolio?color=cyan&style=for-the-badge&color=purple">
-  <img src="https://img.shields.io/github/issues/Mr.Yanyk/Portfolio?color=red&style=for-the-badge">
-  <img src="https://img.shields.io/github/license/Mr.Yanyk/Portfolio?style=for-the-badge&color=blue">
+<!-- ![Stars]https://img.shields.io/github/stars/alexveselun/Portfolio?style=for-the-badge&color=orange">
+  <img src="https://img.shields.io/github/forks/alexveselun/Portfolio?color=cyan&style=for-the-badge&color=purple">
+  <img src="https://img.shields.io/github/issues/alexveselun/Portfolio?color=red&style=for-the-badge">
+  <img src="https://img.shields.io/github/license/alexveselun/Portfolio?style=for-the-badge&color=blue">
 <br>
 <br>
 -->
@@ -17,11 +17,11 @@
 [![NodeJS](https://img.shields.io/badge/node-17.6.0-important?style=flat-square/)](https://nodejs.org/en/blog/release/v17.6.0/)
 [![NPM](https://img.shields.io/badge/npm-8.5.1-blueviolet?style=flat-square)](https://www.npmjs.com/package/npm/v/8.5.1)
 [![Made With React](https://img.shields.io/badge/Made%20With-React-61DAFB?style=flat-square)](https://reactjs.org/)
-[![Author](https://img.shields.io/badge/Author-Mr.Yanyk-purple?style=flat-square)](https://github.com/Mr.Yanyk)
+[![Author](https://img.shields.io/badge/Author-alexveselun-purple?style=flat-square)](https://github.com/alexveselun)
 [![Opensource](https://img.shields.io/badge/Open%20Source-Yes-cyan?style=flat-square)](./LICENSE)
 [![JS](https://img.shields.io/badge/Written%20In-JavaScript-blue?style=flat-square)](https://www.javascript.com)
-[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg?style=flat-square)](https://github.com/Mr.Yanyk/Portfolio/commits/main)
-[![Website](https://img.shields.io/badge/Website-Up-yellow?style=flat-square)](https://Mr.Yanyk.github.io)
+[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg?style=flat-square)](https://github.com/alexveselun/Portfolio/commits/main)
+[![Website](https://img.shields.io/badge/Website-Up-yellow?style=flat-square)](https://alexveselun.github.io)
 
 </div>
 
@@ -52,7 +52,7 @@
 
 #### Clone this repository
 
-- `git clone https://github.com/alexveselun/Mr.Yanyk`
+- `git clone https://github.com/alexveselun/alexveselun`
 
 #### Enter the directory
 
@@ -108,7 +108,7 @@ Now preview your site in [http://localhost:3000](http://localhost:3000)
 ✔️ Education\
 ✔️ Contact me
 
-To view a live example, **[click here](https://Mr.Yanyk.github.io/)**
+To view a live example, **[click here](https://alexveselun.github.io/)**
 
 #### Clone And Use 📋
 
@@ -116,7 +116,7 @@ To view a live example, **[click here](https://Mr.Yanyk.github.io/)**
 - While installing `nodejs`, `npm` should be installed automatically. Try to install versions which are equal or greater than the versions mentioned in badges above.
 - After the successful installation of `nodejs` clone the repository into your local system using below command:
   - ```bash
-     git clone https://github.com/Mr.Yanyk/Portfolio.git
+     git clone https://github.com/alexveselun/Portfolio.git
     ```
   - This will clone the whole repository in your system.
 - To download required dependencies to your system, navigate to the directory where the cloned repository resides and execute following command:
@@ -132,7 +132,7 @@ In this project, there are basically 4 things that you need to change to customi
 
 #### package.json
 
-Open this file, which is in the main cloned directory. Choose any "name". If you are publishing website in github you need to change the value of `homepage` from `https://Mr.Yanyk.github.io/` to `https://<your-github-username>.github.io/`. Do not forget the `https://` or the last `/`, otherwise fonts will not load. If you are using any other hosting service, use that url in `homepage`.
+Open this file, which is in the main cloned directory. Choose any "name". If you are publishing website in github you need to change the value of `homepage` from `https://alexveselun.github.io/` to `https://<your-github-username>.github.io/`. Do not forget the `https://` or the last `/`, otherwise fonts will not load. If you are using any other hosting service, use that url in `homepage`.
 
 ### Personal Information
 
@@ -199,7 +199,7 @@ If the above solution still doesn't work, visit the [wiki page](https://github.c
 
 ### Splash Logo
 
-Note here that if you click [my portfolio](https://Mr.Yanyk.github.io), you can see animated loading at the beginning. That is collected from developerFolio. This loading screen is universal and you can use it. But if you want to change it, you have below two alternatives:
+Note here that if you click [my portfolio](https://alexveselun.github.io), you can see animated loading at the beginning. That is collected from developerFolio. This loading screen is universal and you can use it. But if you want to change it, you have below two alternatives:
 
 - If you want to design your own logo, then you can design it using `Figma` or `Adobe XD` or `Adobe Illustrator` or `Inkscape`. If you want to animate it, you can refer to `./src/components/Loader` directory which contains `js` and `css` files which animates the logo. You should set `useLottie` to false in case you do so. Also if you want some prebuilt animations you can download that from [lotti](https://lottiefiles.com/featured) and place them in `src/assets/lottie` folder. Then set the filename in `portfolio.js` and enable `useLottie`. That's it!
 
@@ -266,19 +266,19 @@ Now, your website is successfully deployed and you can visit it at `<your-github
 
 You could also host directly with Netlify by linking your own repository.
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Mr.Yanyk/Portfolio)
+[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/alexveselun/Portfolio)
 
 For more information, read [hosting on Netlify](https://create-react-app.dev/docs/deployment/#netlify).
 
 #### Deploying to Vercel
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/Mr.Yanyk/Portfolio)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/alexveselun/Portfolio)
 
 For more information, read [hosting on vercel](https://create-react-app.dev/docs/deployment/#vercel).
 
 #### Deploying to Heroku
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy/?template=https://github.com/Mr.Yanyk/Portfolio)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy/?template=https://github.com/alexveselun/Portfolio)
 
 For more information, read [hosting on heroku](https://create-react-app.dev/docs/deployment/#heroku).
 
@@ -307,7 +307,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 
 ### Contributing 💡
 
-If you can help us with these, please don't hesitate to open an [pull request](https://github.com/Mr.Yanyk/Portfolio/pulls) or [issue](https://github.com/Mr.Yanyk/Portfolio/issues).
+If you can help us with these, please don't hesitate to open an [pull request](https://github.com/alexveselun/Portfolio/pulls) or [issue](https://github.com/alexveselun/Portfolio/issues).
 
 #### This repository is open source to help others. So if you wish to copy, consider giving credit!
 
@@ -317,12 +317,12 @@ This project is based on [masterPortfolio](https://github.com/ashutosh1919/maste
 
 ## [~] Find Me on :
 
-- [![Github](https://img.shields.io/badge/Github-Mr.Yanyk-green?style=for-the-badge&logo=github)](https://github.com/Mr.Yanyk)
+- [![Github](https://img.shields.io/badge/Github-alexveselun-green?style=for-the-badge&logo=github)](https://github.com/alexveselun)
 
-- [![Gmail](https://img.shields.io/badge/Gmail-Mr.Yanyk-green?style=for-the-badge&logo=gmail)](mailto:Mr.Yanykkrd@gmail.com)
+- [![Gmail](https://img.shields.io/badge/Gmail-alexveselun-green?style=for-the-badge&logo=gmail)](mailto:alexveselunkrd@gmail.com)
 
-- [![Facebook](https://img.shields.io/badge/Facebook-Mr.Yanyk-green?style=for-the-badge&logo=messenger)](https://facebook.com/Mr.Yanyk)
+- [![Facebook](https://img.shields.io/badge/Facebook-alexveselun-green?style=for-the-badge&logo=messenger)](https://facebook.com/alexveselun)
 
-- [![Messenger](https://img.shields.io/badge/Messenger-Mr.Yanyk-green?style=for-the-badge&logo=messenger)](https://m.me/Mr.Yanyk)
+- [![Messenger](https://img.shields.io/badge/Messenger-alexveselun-green?style=for-the-badge&logo=messenger)](https://m.me/alexveselun)
 
 [![]()]()

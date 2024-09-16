@@ -72,7 +72,7 @@ const seo = {
   og: {
     title: "Mr.Yanyk Portfolio",
     type: "website",
-    url: "https://Mr.Yanyk.github.io/",
+    url: "https://alexveselun.github.io/",
   },
 };
 
@@ -131,7 +131,7 @@ const socialMediaLinks = [
   //  },
   // {
   //   name: "Facebook",
-  //   link: "https://www.facebook.com/Mr.Yanyk/",
+  //   link: "https://www.facebook.com/alexveselun/",
   //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
   //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   // },
