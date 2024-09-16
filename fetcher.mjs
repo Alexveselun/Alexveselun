@@ -10,11 +10,11 @@ var githubUserName = "Your Github Username Here";
 var mediumUserName = "Your Medium Username Here";
 
 if (githubUserName === "Your Github Username Here") {
-  githubUserName = process.env.GITHUB_USERNAME;
+  githubUserName = process.env.USERNAME_GIT;
 }
 
 if (githubConvertedToken === "Your Github Token Here") {
-  githubConvertedToken = process.env.GITHUB_TOKEN;
+  githubConvertedToken = process.env.ACTIONS_DEPLOY_ACCESS_TOKEN;
 }
 
 if (mediumUserName === "Your Medium Username Here") {
