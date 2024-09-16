@@ -1,0 +1,60 @@
+name: on-pull-request-or-push
+
+on:
+    push:
+      branches: [ main ]
+    pull_request:
+      branches: [ main ]  
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-22.04
+    name: Build and test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          # Action runs: using: node20 as defined in
+          # https://github.com/cypress-io/github-action/blob/master/action.yml
+          # Node.js minor version is aligned to
+          # https://github.com/actions/runner/blob/main/src/Misc/externals.sh
+          node-version: 20.13.1
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+            path: '.'
+      - run: npm install --force
+      - run: npm run build --force
+          
+    # <Not provided for brevity>
+    # At a minimum this job should upload artifacts using actions/upload-pages-artifact
+
+  # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+      - run: npm run start
