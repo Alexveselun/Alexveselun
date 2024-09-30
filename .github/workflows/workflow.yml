@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '16.15.1'
       - run: npm i --force
-      - run: serve -s build
+      - run: npm run deploy
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:

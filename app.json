@@ -1,8 +1,8 @@
 {
-  "name": "Portfolio",
-  "description": "Responsive 100% customizable portfolio template for developers",
+  "name": "Personal Page",
+  "description": "Personal Page",
   "repository": "https://github.com/alexveselun/Alexveselun/",
   "logo": "https://raw.githubusercontent.com/alexveselun/alexveselun/main/banner.png",
-  "keywords": ["github", "portfolio", "responsive", "website", "template"],
+  "keywords": ["github", "personal", "responsive", "website", "template"],
   "addons": []
 }
