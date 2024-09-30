@@ -1,34 +1,26 @@
 name: React Build
-
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
+     branches:
+        - main
+
+env:
+  CACHE_NODE_MODULES_PATH: |
+    node_modules
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build the React website
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+          node-version: '16.15.1'
+      - run: npm i --force
+      - run: npm run build --force
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-          publish_dir: ./build
-          run: npm run deploy
+          branch: gh-pages
+          folder: ./dist
+
