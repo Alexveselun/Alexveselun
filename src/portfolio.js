@@ -67,10 +67,10 @@ const splashScreen = {
 
 //SEO Related settings
 const seo = {
-  title: "Mr.Yanyk's Portfolio",
-  description: "Portfolio Website of Mr.Yanyk",
+  title: "Mr.Yanyk's Websiteo",
+  description: "Website of Mr.Yanyk",
   og: {
-    title: "Mr.Yanyk Portfolio",
+    title: "Mr.Yanyk's Website",
     type: "website",
     url: "https://alexveselun.github.io/",
   },
