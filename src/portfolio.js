@@ -149,7 +149,7 @@ const skills = {
   display: true, // Set it true to display your skills
   data: [
     {
-      title: "Terminal Based Tools",
+      title: "All my skills",
       imageName:
         "TerminalImg" /* Available imageNames: 
       
@@ -161,9 +161,14 @@ const skills = {
       DataScienceImg.
       */,
       skills: [
-        "⚡ Writting simple scripts for termianal like Encrypter, Youtube Downloader, Music Player!",
-        "⚡ I have also created phishing tools for educative purpose.",
-        "⚡ I wish to write some frameworks for terminal in future!",
+        "⚡ Entrepreneurship & Business Development: Proven track record in launching and growing successful ventures, with a strong focus on innovative concepts and long-term strategy.",
+        "⚡ Project Management: Expertise in managing large-scale projects, from concept development to execution, ensuring seamless coordination of teams, timelines, and resources.",
+        "⚡ Marketing Strategy & Execution: Deep understanding of marketing trends, digital advertising, and brand development, with the ability to create effective marketing campaigns that resonate with target audiences.",
+        "⚡ IT & Technology: Strong technical background, with hands-on experience in IT, particularly in software development, automation, and technology integration.",
+        "⚡ Creative Arts: Former artist with experience in creative expression, contributing to a unique approach to business and project management, particularly in artistic and cultural initiatives.",
+        "⚡ Philanthropy: Dedication to making a positive social impact through charitable projects and initiatives, with a focus on community-building and social responsibility.",
+        "⚡ Problem-Solving & Innovation: Excellent analytical and creative problem-solving skills, consistently applying innovative solutions to complex challenges.",
+        "⚡ Leadership & Team Building: Proven ability to lead diverse teams, fostering collaboration and guiding them towards common goals, with a strong emphasis on mentorship and professional development.",
       ],
       softwareSkills: [
         {
