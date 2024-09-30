@@ -52,9 +52,18 @@
   font-family: "Google Sans Medium";
 }
 
-.greeting-image-div > * {
-  max-width: 100%;
-  height: auto;
+.greeting-image-div {
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image */
+  /* Add any additional styles you need for the div */
+}
+
+.greeting-image {
+  width: 100%;
+  max-width: 500px; /* or a specific width like 400px */
+  height: auto; /* Maintain aspect ratio */
+  /* You can add additional styling here, like border-radius */
 }
 
 /* Media Query */

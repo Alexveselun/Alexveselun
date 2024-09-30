@@ -47,7 +47,7 @@ const routerValue =
 const splashScreen = {
   useLottie: true, // setting it false will show animation of src/components/loader
   animationFile:
-    "starLoading" /* Supported Values
+    "nightDay" /* Supported Values
     					             1. splashAnimation
     					             2. email
     					             3. build
@@ -60,7 +60,7 @@ const splashScreen = {
     					             10. littleRobot
     					             11. poolChartLoading
     					             */,
-  duration: 3500, // Set animation duration(milliseconds) as per your animation
+  duration: 2000, // Set animation duration(milliseconds) as per your animation
 };
 
 /**************               Home Page                    ****************/
@@ -149,50 +149,139 @@ const skills = {
   display: true, // Set it true to display your skills
   data: [
     {
-      title: "All my skills",
+      title: "Entrepreneurship & Business Development",
       imageName:
-        "TerminalImg" /* Available imageNames: 
+        "BusinessDevelopmentImg" /* Available imageNames: 
       
       FullStackImg, 
       TerminalImg,  
       DesignImg, 
       AppDevelopImg, 
       CloudInfraImg,
-      DataScienceImg.
+      DataScienceImg,
+      BusinessDevelopmentImg
       */,
       skills: [
-        "⚡ Entrepreneurship & Business Development: Proven track record in launching and growing successful ventures, with a strong focus on innovative concepts and long-term strategy.",
-        "⚡ Project Management: Expertise in managing large-scale projects, from concept development to execution, ensuring seamless coordination of teams, timelines, and resources.",
-        "⚡ Marketing Strategy & Execution: Deep understanding of marketing trends, digital advertising, and brand development, with the ability to create effective marketing campaigns that resonate with target audiences.",
-        "⚡ IT & Technology: Strong technical background, with hands-on experience in IT, particularly in software development, automation, and technology integration.",
-        "⚡ Creative Arts: Former artist with experience in creative expression, contributing to a unique approach to business and project management, particularly in artistic and cultural initiatives.",
-        "⚡ Philanthropy: Dedication to making a positive social impact through charitable projects and initiatives, with a focus on community-building and social responsibility.",
-        "⚡ Problem-Solving & Innovation: Excellent analytical and creative problem-solving skills, consistently applying innovative solutions to complex challenges.",
-        "⚡ Leadership & Team Building: Proven ability to lead diverse teams, fostering collaboration and guiding them towards common goals, with a strong emphasis on mentorship and professional development.",
+        "⚡ Proven track record in launching and growing successful ventures.",
+        "⚡ Focus on innovative concepts and long-term strategy.",
+        "⚡ Strong emphasis on business scaling and sustainable growth.",
       ],
       softwareSkills: [
         {
-          skillName: "Shell",
-          fontAwesomeClassname: "simple-icons:shell",
+          skillName: "Business Strategy",
+          fontAwesomeClassname: "simple-icons:business",
           style: {
-            color: "#F24E1E",
+            color: "#4285F4",
+          },
+        },
+      ],
+    },
+    {
+      title: "Creative Arts",
+      imageName: "CreativeArtsImg",
+      skills: [
+        "⚡ Former artist with experience in creative expression.",
+        "⚡ Unique approach to business and project management.",
+        "⚡ Contributions to artistic and cultural initiatives.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Adobe Photoshop",
+          fontAwesomeClassname: "simple-icons:adobephotoshop",
+          style: {
+            color: "#31A8FF",
+          },
+        },
+      ],
+    },
+    {
+      title: "Problem-Solving & Innovation",
+      imageName: "InnovationImg",
+      skills: [
+        "⚡ Excellent analytical and creative problem-solving skills.",
+        "⚡ Applying innovative solutions to complex challenges.",
+      ],
+      softwareSkills: [],
+    },
+    {
+      title: "Leadership & Team Building",
+      imageName: "LeadershipImg",
+      skills: [
+        "⚡ Proven ability to lead diverse teams.",
+        "⚡ Fostering collaboration and guiding teams towards common goals.",
+        "⚡ Strong emphasis on mentorship and professional development.",
+      ],
+      softwareSkills: [],
+    },
+ 
+    {
+      title: "Philanthropy",
+      imageName: "PhilanthropyImg",
+      skills: [
+        "⚡ Dedication to making a positive social impact through charitable projects.",
+        "⚡ Focus on community-building and social responsibility.",
+      ],
+      softwareSkills: [],
+    },
+    {
+      title: "Project Management",
+      imageName: "ProjectManagementImg",
+      skills: [
+        "⚡ Expertise in managing large-scale projects, from concept to execution.",
+        "⚡ Seamless coordination of teams, timelines, and resources.",
+        "⚡ Skilled in Agile and Waterfall methodologies.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Jira",
+          fontAwesomeClassname: "simple-icons:jira",
+          style: {
+            color: "#0052CC",
           },
         },
         {
-          skillName: "Ruby",
-          fontAwesomeClassname: "logos-ruby",
+          skillName: "Trello",
+          fontAwesomeClassname: "simple-icons:trello",
           style: {
-            backgroundColor: "transparent",
-            color: "#D00000",
+            color: "#0079BF",
+          },
+        },
+      ],
+    },
+    {
+      title: "Marketing Strategy & Execution",
+      imageName: "MarketingImg",
+      skills: [
+        "⚡ Deep understanding of marketing trends and digital advertising.",
+        "⚡ Expertise in brand development and content creation.",
+        "⚡ Creating effective campaigns that resonate with target audiences.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Google Analytics",
+          fontAwesomeClassname: "simple-icons:googleanalytics",
+          style: {
+            color: "#EA4335",
           },
         },
         {
-          skillName: "Java",
-          fontAwesomeClassname: "logos-java",
+          skillName: "HubSpot",
+          fontAwesomeClassname: "simple-icons:hubspot",
           style: {
-            backgroundColor: "transparent",
+            color: "#FF7A59",
           },
         },
+      ],
+    },
+    {
+      title: "IT & Technology",
+      imageName: "ITTechImg",
+      skills: [
+        "⚡ Strong technical background with hands-on experience in IT.",
+        "⚡ Proficient in software development and automation.",
+        "⚡ Expertise in technology integration for businesses.",
+      ],
+      softwareSkills: [
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
@@ -201,160 +290,28 @@ const skills = {
             color: "#3776AB",
           },
         },
-      ],
-    },
-    {
-      title: "Full Stack Development",
-      imageName: "FullStackImg",
-      skills: [
-        "⚡ Building simple website using HTML, CSS, JavaScript.",
-        "⚡ Loves to create web application using VueJS, ReactJS!",
-        "⚡ Creating simple APIs by NodeJS and ExpressJS with MongoDB as database.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "PHP",
-          fontAwesomeClassname: "logos-php",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "ExpressJS",
-          fontAwesomeClassname: "simple-icons:express",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Mongoose",
-          fontAwesomeClassname: "logos-mongodb",
-          style: {
-            color: "#E34F26",
-          },
-        },
-      ],
-    },
-    {
-      title: "Android App Development",
-      imageName:
-        "AppDevelopImg" /* Available imageNames: 
-      
-      FullStackImg, 
-      TerminalImg,  
-      DesignImg, 
-      AppDevelopImg, 
-      CloudInfraImg,
-      DataScienceImg.
-      */,
-      skills: [
-        "⚡ Stil beginner in this field.",
-        "⚡ Created a simple calculator!",
-        "⚡ Deploying a light version of messenger to share files easily.",
-        "⚡ Wish to create complex apps soon!",
-      ],
-      softwareSkills: [
         {
           skillName: "Java",
           fontAwesomeClassname: "simple-icons:java",
           style: {
-            color: "#4285F4",
+            color: "#F89820",
           },
         },
         {
-          skillName: "Dart",
-          fontAwesomeClassname: "simple-icons:dart",
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
           style: {
-            color: "#FF9900",
-          },
-        },
-        {
-          skillName: "Kotlin",
-          fontAwesomeClassname: "simple-icons:kotlin",
-          style: {
-            color: "#0089D6",
+            color: "#F05032",
           },
         },
       ],
     },
-    {
-      title: "Reverse Engineering",
-      imageName: "DesignImg",
-      skills: [
-        "⚡ Though I mostly code from scratch, I also like to modify other's codes.",
-        "⚡ Basically I take a cool project and recreate it enhancing new features!",
-        "⚡ My recreated codes also have a fresh new UI.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:python",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Shell",
-          fontAwesomeClassname: "simple-icons:shell",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Ruby",
-          fontAwesomeClassname: "logos-ruby",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "transparent",
-            color: "#0089D6",
-          },
-        },
-      ],
-    },
+ 
+
+
   ],
 };
+
 
 const techStack = {
   // Skill Part

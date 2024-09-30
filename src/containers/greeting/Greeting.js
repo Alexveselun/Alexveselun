@@ -2,7 +2,6 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { greeting } from "../../portfolio";
 import Button from "../../components/button/Button";
-import FeelingProud from "./FeelingProud";
 import "./Greeting.css";
 
 const Greeting = (props) => {
@@ -42,12 +41,13 @@ const Greeting = (props) => {
             </div> */}
             </div>
           </div>
-          <div className="greeting-image-div">
-            {/* <img
-							alt="saad sitting on table"
-							src={require("../../assests/images/feelingProud.svg")}
-						></img> */}
-            <FeelingProud theme={theme} />
+          <div className="greeting-image-div" >
+            <img
+							alt="main-photo"
+							src={require("../../assets/images/main-photo-home.png")}
+              className="greeting-image" // Class added here
+						></img>
+            {/* <FeelingProud theme={theme} /> */}
           </div>
         </div>
       </div>
