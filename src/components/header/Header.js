@@ -76,7 +76,7 @@ const Header = (props) => {
             {viewExperience && <MyLink name="Experience" link="/experience" />}
             {viewEducation && <MyLink name="Education" link="/education" />}
             {viewProjects && <MyLink name="Projects" link="/projects" />}
-            {viewopenSource && <MyLink name="Open Source" link="/opensource" />}
+            {viewopenSource && <MyLink name="IT" link="/opensource" />}
             {viewHobbbies && <MyLink name="Hobbies" link="/hobbies" />}
             <MyLink name="Contact" link="/contact" />
             <li className="li">

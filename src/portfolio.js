@@ -47,7 +47,7 @@ const routerValue =
 const splashScreen = {
   useLottie: true, // setting it false will show animation of src/components/loader
   animationFile:
-    "nightDay" /* Supported Values
+    "build" /* Supported Values
     					             1. splashAnimation
     					             2. email
     					             3. build
@@ -60,7 +60,7 @@ const splashScreen = {
     					             10. littleRobot
     					             11. poolChartLoading
     					             */,
-  duration: 2000, // Set animation duration(milliseconds) as per your animation
+  duration: 3500, // Set animation duration(milliseconds) as per your animation
 };
 
 /**************               Home Page                    ****************/
@@ -97,32 +97,47 @@ const socialMediaLinks = [
   // gitlab: "https://gitlab.com/ashutoshhathidara98",
   // facebook: "https://www.facebook.com/",
   // twitter: "https://twitter.com",
-  // instagram: "https://www.instagram.com/layman_brother/"
+  // instagram: "https://www.instagram.com/alexyankevych/"
+  // telegram: "https://t.me/kolobok_2023"
 
   {
-    name: "Github",
-    link: "https://github.com/alexveselun",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    name: "Instagram",
+    link: "https://www.instagram.com/alexyankevych/",
+    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
+    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
   },
-   {
-     name: "LinkedIn",
-     link: "https://www.linkedin.com/in/alexandr-y-9409a220a/",
-     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
-   },
-  //  {
-  //    name: "YouTube",
-  //    link: "https://www.youtube.com/channel/UC_amoXmmxSY9KusoDczDTXQ",
-  //    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-  //    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
-  //  },
+  {
+    name: "Telegram",
+    link: "https://t.me/kolobok_2023",
+    fontAwesomeIcon: "fa-telegram-plane", // Reference https://fontawesome.com/icons/telegram-plane?style=brands
+    backgroundColor: "#0088CC", // Reference https://simpleicons.org/?q=telegram
+  },
   {
     name: "Gmail",
     link: "mailto:alexveselun@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
+  {
+    name: "Github",
+    link: "https://github.com/alexveselun",
+    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
+    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/alexandr-y-9409a220a/",
+    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
+    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+  },
+  
+  //  {
+  //    name: "YouTube",
+  //    link: "https://www.youtube.com/channel/UC_amoXmmxSY9KusoDczDTXQ",
+  //    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
+  //    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+  //  },
+
   //  {
   //    name: "Twitter",
   //    link: "https://twitter.com/ashutosh_1919",
@@ -135,12 +150,6 @@ const socialMediaLinks = [
   //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
   //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   // },
-   {
-     name: "Instagram",
-     link: "https://www.instagram.com/alexyankevych/",
-     fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-     backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-   },
 ];
 
 // Skill Information
@@ -328,39 +337,11 @@ const techStack = {
     },
     {
       Stack: "JavaScript/TypeScript",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "PHP",
-      progressPercentage: "60%",
-    },
-    {
-      Stack: "Python",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "Shell",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "Ruby",
       progressPercentage: "70%",
     },
     {
-      Stack: "C",
-      progressPercentage: "60%",
-    },
-    {
-      Stack: "Java",
-      progressPercentage: "60%",
-    },
-    {
-      Stack: "GO",
-      progressPercentage: "60%",
-    },
-    {
-      Stack: "CPP",
-      progressPercentage: "50%",
+      Stack: "Python",
+      progressPercentage: "65%",
     },
   ],
 };
@@ -780,24 +761,24 @@ const hobbies = {
   subTitle: "I spend my leisure with my hobbies!",
   hobbies: [
     {
-      title: "Reading Books",
-      description: "I love to read sci-fi and detective books!",
+      title: "Reading",
+      description: "Enjoying books primarily on psychology and philosophy, with a favorite author being Carl Gustav Jung",
       image_path: "Reading.png",
     },
     {
-      title: "Writing",
-      description: "I write poems and stories when I get free times!",
+      title: "Creative Arts",
+      description: "Engaging in various forms of artistic expression!",
       image_path: "Writing.png",
     },
     {
-      title: "Memeing",
+      title: "History",
       description:
-        "I have a collection of meme templates and I use them to generate memes!",
+        "A passion for learning about historical events and contexts",
       image_path: "Memeing.png",
     },
     {
-      title: "Listening Music",
-      description: "I am a fan of Alan Walker and Linkin Park!",
+      title: "Music",
+      description: "Listening to a wide range of music, from classical to the latest rock compositions",
       image_path: "Music.png",
     },
   ],
@@ -821,7 +802,7 @@ const openSource = {
 
 // Projects (Github) Section of Projects Page
 const projects = {
-  display: true, // Set it false to hide your pinned projects in github, defaults to true
+  display: false, // Set it false to hide your pinned projects in github, defaults to true
   title: "Projects",
   description:
     "My projects are mostly open source. I like to contribute in other's project. I always try my best to enhance every project to the peak!",
@@ -888,7 +869,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "Mr.Yanyk.jpeg",
     description:
-      "I am available in email and messenger. You can message me (except hi/hello), I will reply within 24 hours. I can help you with Python, shell, web application, android app development.",
+      "I’m reachable via email and messenger. Feel free to message me. Looking forward to collaborating on creative projects!",
   },
   blogSection: {
     title: "Blogs",
