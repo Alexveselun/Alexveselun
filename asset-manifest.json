@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Alexveselun/static/css/main.6bacda98.css",
-    "main.js": "/Alexveselun/static/js/main.236eda01.js",
+    "main.css": "/Alexveselun/static/css/main.181acab8.css",
+    "main.js": "/Alexveselun/static/js/main.2fe2c94d.js",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/dsc_logo.png": "/Alexveselun/static/media/dsc_logo.fdf993910e3f48d0cf30.png",
+    "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.d58d758a79617b0b04d6.png",
     "static/media/fa-brands-400.ttf": "/Alexveselun/static/media/fa-brands-400.0a1b701f5563c2288281.ttf",
     "static/media/Music.png": "/Alexveselun/static/media/Music.fa31de01cba91222dfa4.png",
     "static/media/fa-solid-900.woff2": "/Alexveselun/static/media/fa-solid-900.4896d4b04430cc3dfb06.woff2",
@@ -28,7 +29,6 @@
     "static/media/ui_ux_design.svg": "/Alexveselun/static/media/ui_ux_design.42a2cdaf132097cc499e.svg",
     "static/media/fa-regular-400.ttf": "/Alexveselun/static/media/fa-regular-400.15d98c18221c8bcb2334.ttf",
     "static/media/app-development.svg": "/Alexveselun/static/media/app-development.dcc06a4938edba1d5a3e.svg",
-    "static/media/sjhsc.png": "/Alexveselun/static/media/sjhsc.4552fb647e84bce7dfdb.png",
     "static/media/manOnTable.svg": "/Alexveselun/static/media/manOnTable.f861b03b5a2d1a28c198.svg",
     "static/media/muffito_logo.png": "/Alexveselun/static/media/muffito_logo.a40e290031eaf389bde1.png",
     "static/media/Memeing.png": "/Alexveselun/static/media/Memeing.5380f0e9da8a26ebb882.png",
@@ -44,7 +44,6 @@
     "static/media/programmer.svg": "/Alexveselun/static/media/programmer.d3060f7bf0527835d72e.svg",
     "static/media/jsFramework.svg": "/Alexveselun/static/media/jsFramework.911c595a22a28c7b6f78.svg",
     "static/media/address_image.svg": "/Alexveselun/static/media/address_image.3385d92e5e426e57a5b1.svg",
-    "static/media/pwa.png": "/Alexveselun/static/media/pwa.5107022416df1293dd12.png",
     "static/media/experience.svg": "/Alexveselun/static/media/experience.c50c576af78a4172f78d.svg",
     "static/media/Mr.Yanyk.jpeg": "/Alexveselun/static/media/Mr.Yanyk.77f56958ec18f7c0fe76.jpeg",
     "static/media/feelingProud.svg": "/Alexveselun/static/media/feelingProud.288e616ff8dc11bd4713.svg",
@@ -60,11 +59,11 @@
     "static/media/googleAssistant.svg": "/Alexveselun/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.6bacda98.css.map": "/Alexveselun/static/css/main.6bacda98.css.map",
-    "main.236eda01.js.map": "/Alexveselun/static/js/main.236eda01.js.map"
+    "main.181acab8.css.map": "/Alexveselun/static/css/main.181acab8.css.map",
+    "main.2fe2c94d.js.map": "/Alexveselun/static/js/main.2fe2c94d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bacda98.css",
-    "static/js/main.236eda01.js"
+    "static/css/main.181acab8.css",
+    "static/js/main.2fe2c94d.js"
   ]
 }
