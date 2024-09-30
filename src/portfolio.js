@@ -67,7 +67,7 @@ const splashScreen = {
 
 //SEO Related settings
 const seo = {
-  title: "Mr.Yanyk's Websiteo",
+  title: "Mr.Yanyk's Website",
   description: "Website of Mr.Yanyk",
   og: {
     title: "Mr.Yanyk's Website",
@@ -758,7 +758,7 @@ const experience = {
 
 const hobbies = {
   title: "Hobbies",
-  subTitle: "I spend my leisure with my hobbies!",
+  subTitle: "Being happy is my favorite hobby",
   hobbies: [
     {
       title: "Reading",
