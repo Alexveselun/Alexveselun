@@ -3,7 +3,7 @@
   "name": "portfolio",
   "author": "alexveselun",
   "issues": "https://github.com/alexveselun/introducing/issues/",
-  "homepage": "https://alexveselun.github.io/",
+  "homepage": "https://alexveselun.github.io/Alexveselun/",
   "version": "1.0.0",
   "scripts": {
     "build": "node fetcher.mjs && react-scripts build",
