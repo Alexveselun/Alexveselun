@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "portfolio",
+  "name": "website",
   "author": "alexveselun",
   "issues": "https://github.com/alexveselun/introducing/issues/",
   "homepage": "https://alexveselun.github.io/Alexveselun/",
@@ -12,7 +12,6 @@
     "eject": "react-scripts eject",
     "start": "node fetcher.mjs && react-scripts start",
     "android": "node node_modules/react-scripts/bin/react-scripts.js start",
-    "test": "react-scripts test",
     "format": "prettier --write .",
     "heroku-prebuild": "npm i -f",
     "heroku-postbuild": "npm run build"
@@ -68,7 +67,7 @@
     "extends": "react-app"
   },
   "keywords": [
-    "Portfolio"
+    "website"
   ],
   "license": "MIT",
   "lint-staged": {

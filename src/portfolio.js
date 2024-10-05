@@ -884,10 +884,10 @@ const contactPageData = {
     location_map_link:
       "https://www.google.com/maps/@50.4489098,30.52621,17.85z?gl=bd",
   },
-  phoneSection: {
-    title: "Phone Number",
-    subtitle: "+380996627078",
-  },
+  // phoneSection: {
+  //   title: "Phone Number",
+  //   subtitle: "",
+  // },
 };
 
 // Send a message in emailjs account

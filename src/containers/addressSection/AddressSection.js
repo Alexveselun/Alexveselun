@@ -8,7 +8,7 @@ import "./AddressSection.css";
 const AddressSection = (props) => {
   const theme = props.theme;
   const addressSection = contactPageData.addressSection;
-  const phoneSection = contactPageData.phoneSection;
+  // const phoneSection = contactPageData.phoneSection;
   return (
     <div className="basic-contact">
       <Fade bottom duration={1000} distance="40px">
@@ -31,13 +31,13 @@ const AddressSection = (props) => {
               {addressSection["subtitle"]}
             </p>
             <h1 className="address-heading-text" style={{ color: theme.text }}>
-              {phoneSection["title"]}
+              {/* {phoneSection["title"]} */}
             </h1>
             <p
               className="contact-header-detail-text subTitle"
-              style={{ color: theme.secondaryText }}
+              // style={{ color: theme.secondaryText }}
             >
-              {phoneSection["subtitle"]}
+              {/* {phoneSection["subtitle"]} */}
             </p>
             <div className="address-btn-div">
               <Button
