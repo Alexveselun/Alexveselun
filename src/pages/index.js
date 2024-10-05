@@ -8,6 +8,7 @@ import Opensource from "./opensource/Opensource";
 import Contact from "./contact/Contact";
 import Projects from "./projects/Projects";
 import Splash from "./splash/Splash";
+import Blogs from "./blog/Blog";
 import { routerValue, pageEnabled } from "../portfolio.js";
 import Error404 from "./errors/Error";
 import StyleContext from "../contexts/StyleContext";
@@ -20,9 +21,9 @@ const Main = (props) => {
   const viewopenSource = pageEnabled.opensource;
   const viewHobbbies = pageEnabled.hobbies;
   const viewSplash = pageEnabled.splash;
+  const viewBlog = pageEnabled.blog;
 
   const { isDark } = useContext(StyleContext);
-
   const theme = isDark ? darkTheme : props.theme;
   const Router = routerValue === "BrowserRouter" ? BrowserRouter : HashRouter;
   if (viewSplash) {
@@ -50,6 +51,9 @@ const Main = (props) => {
                 element={<Opensource theme={theme} />}
               />
             )}
+            {viewBlog && (
+              <Route path="/blog" element={<Blogs theme={theme} />} /> 
+            )}
             <Route path="/contact" element={<Contact theme={theme} />} />
             <Route path="/splash" element={<Splash theme={theme} />} />
             {viewProjects && (
@@ -62,7 +66,7 @@ const Main = (props) => {
     );
   } else {
     return (
-      <div style={{ backgorundColor: theme.body }}>
+      <div style={{ backgroundColor: theme.body }}>
         <Router basename="/">
           <Routes>
             <Route path="/" element={<Home theme={theme} />} />
@@ -85,16 +89,10 @@ const Main = (props) => {
                 element={<Opensource theme={theme} />}
               />
             )}
+            {viewBlog && (
+              <Route path="/blog" element={<Blogs theme={theme} />} />
+            )}
             <Route path="/contact" element={<Contact theme={theme} />} />
-            {/* <Route
-							path="/splash"
-							render={(props) => (
-								<Splash
-									{...props}
-									theme={theme}
-								/>
-							)}
-						/> */}
             {viewProjects && (
               <Route path="/projects" element={<Projects theme={theme} />} />
             )}
@@ -105,4 +103,5 @@ const Main = (props) => {
     );
   }
 };
+
 export default Main;

@@ -6,6 +6,10 @@ import "./ExperienceSection.css";
 
 const ExperienceSection = (props) => {
   const theme = props.theme;
+  const viewDegree = experience.display;
+  if (!viewDegree) {
+    return null;
+  }
   return (
     <div className="basic-experience">
       <Fade bottom duration={2000} distance="40px">

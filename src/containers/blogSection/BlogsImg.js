@@ -1,7 +1,7 @@
 import React from "react";
 
 const BlogsImg = (props) => {
-  const theme = props.theme;
+  const { theme } = props;
   return (
     <svg
       id="b4ce20e6-8fe7-43d5-87f7-68602c562594"

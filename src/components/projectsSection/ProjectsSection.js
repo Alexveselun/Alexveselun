@@ -9,7 +9,7 @@ import "./ProjectsSection.css";
 const ProjectsSection = (props) => {
   const theme = props.theme;
 
-  if (ProjectsData.data.length === 0 || !projects.display) {
+  if (!projects.display  || ProjectsData.data.length === 0) {
     return null;
   }
 

@@ -5,21 +5,24 @@ import "./BlogCard.css";
 
 const BlogCard = ({ blog, theme }) => {
   const [show, setShow] = useState(false);
-  function openUrlInNewTab(url, name) {
+
+  function openUrlInNewTab(url) {
     if (!url) {
       setShow(true);
       setTimeout(() => {
         setShow(false);
       }, 4000);
     } else {
-      var win = window.open(url, "_blank");
+      const win = window.open(url, "_blank");
       win.focus();
     }
   }
+
   if (!blog) return null;
+
   return (
     <Fade bottom duration={2000}>
-      <div onClick={() => openUrlInNewTab(blog.url, blog.title)}>
+      <div onClick={() => openUrlInNewTab(blog.url)}>
         <div
           className="blog-container"
           style={{ backgroundColor: theme.jacketColor }}
@@ -32,14 +35,22 @@ const BlogCard = ({ blog, theme }) => {
             <p className="small" style={{ color: theme.secondaryText }}>
               {blog.description}
             </p>
+            {blog.image && (
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="blog-image" 
+              />
+            )}
             <div className="go-corner">
               <div className="go-arrow">→</div>
             </div>
+            
           </a>
         </div>
       </div>
-      <Alert show={show} variant="error">
-        <Alert.Heading>404| Not Found!</Alert.Heading>
+      <Alert show={show} variant="danger">
+        <Alert.Heading>404 | Not Found!</Alert.Heading>
       </Alert>
     </Fade>
   );

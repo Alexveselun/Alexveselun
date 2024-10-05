@@ -8,7 +8,6 @@ const PublicationCard = (props) => {
     var win = window.open(url, "_blank");
     win.focus();
   }
-
   return (
     <Fade bottom duration={2000} distance="40px">
       <div

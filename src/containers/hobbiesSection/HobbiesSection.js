@@ -1,10 +1,13 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import { hobbies } from "../../portfolio";
+import { hobbies, pageEnabled } from "../../portfolio";
 import "./HobbiesSection.css";
 
 const HobbiesSection = (props) => {
   const theme = props.theme;
+  if (!pageEnabled.hobbies) {
+    return null;
+  }
   return (
     <div className="basic-hobbies">
       <Fade bottom duration={2000} distance="40px">

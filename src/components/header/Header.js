@@ -20,20 +20,22 @@ const onMouseOut = (event) => {
 const Header = (props) => {
   const theme = props.theme;
   const styles = `
-		.navic{
-			background: ${theme.text}
-		 }
-		.navic:before,
-		.navic:after {
-			background: ${theme.text}
-		}
-	`;
+    .navic {
+      background: ${theme.text};
+    }
+    .navic:before,
+    .navic:after {
+      background: ${theme.text};
+    }
+  `;
+
   const viewExperience = pageEnabled.experience;
   const viewEducation = pageEnabled.education;
   const viewProjects = pageEnabled.projects;
   const viewopenSource = pageEnabled.opensource;
   const viewHobbbies = pageEnabled.hobbies;
   const viewSplash = pageEnabled.splash;
+  const viewBlog = pageEnabled.blog;
   const link = viewSplash ? "/splash" : "/home";
 
   const MyLink = ({ name, link }) => {
@@ -54,6 +56,7 @@ const Header = (props) => {
       </li>
     );
   };
+
   return (
     <Fade top duration={1000} distance="20px">
       <SeoHeader />
@@ -74,6 +77,7 @@ const Header = (props) => {
           <ul className="menu">
             <MyLink name="Home" link="/home" />
             {viewExperience && <MyLink name="Experience" link="/experience" />}
+            {viewBlog && <MyLink name="Blog" link="/blog" />}
             {viewEducation && <MyLink name="Education" link="/education" />}
             {viewProjects && <MyLink name="Projects" link="/projects" />}
             {viewopenSource && <MyLink name="IT" link="/opensource" />}
@@ -88,4 +92,5 @@ const Header = (props) => {
     </Fade>
   );
 };
+
 export default Header;

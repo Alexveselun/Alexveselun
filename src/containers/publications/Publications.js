@@ -5,11 +5,12 @@ import PublicationCard from "../../components/publicationCard/PublicationCard";
 import "./Publications.css";
 
 const Publications = (props) => {
-  //	const pubs= publications.data;
-  const theme = props.theme;
+  const { theme } = props;
+
   if (!publications.display) {
     return null;
   }
+
   return (
     <div>
       <div className="basic-projects">
@@ -26,7 +27,7 @@ const Publications = (props) => {
                 className="projects-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                {publications["description"]}
+                {publications.description}
               </p>
             </div>
           </div>
@@ -34,6 +35,10 @@ const Publications = (props) => {
       </div>
       <div className="repo-cards-div-main">
         {publications.publications.data.map((pubs) => {
+          if (!pubs.name || pubs.name.length === 0) {
+            return null;
+          }
+
           return (
             <PublicationCard
               publication={pubs}

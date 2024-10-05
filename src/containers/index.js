@@ -1,7 +1,6 @@
 export { default as AboutMe } from "./aboutMe/AboutMe";
 export { default as Achievement } from "./achievement/Achievement";
 export { default as AddressSection } from "./addressSection/AddressSection";
-export { default as Blogs } from "./blogs/Blogs";
 export { default as BlogSection } from "./blogSection/BlogSection";
 export { default as Certifications } from "./certifications/Certifications";
 export { default as CompetitiveSites } from "./competitiveSites/CompetitiveSites";

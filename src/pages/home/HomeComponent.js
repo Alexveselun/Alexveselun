@@ -7,7 +7,6 @@ import {
   Podcast,
   Talks,
   Twitter,
-  Blogs,
   AboutMe,
 } from "../../containers";
 
@@ -18,7 +17,6 @@ const Home = (props) => {
       <Header theme={theme} />
       <Greeting theme={theme} />
       <Skills theme={theme} />
-      <Blogs theme={theme} />
       <StartupProjects theme={theme} />
       <Twitter />
       <Talks theme={theme} />
