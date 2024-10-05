@@ -7,6 +7,13 @@ import "./IssueChart.css";
 
 const IssueChart = (props) => {
   const theme = props.theme;
+
+  // Check if the issue chart should be displayed
+  if (!openSource.issue_chart) {
+    return null; // Return null if the chart is disabled or there are no issues
+  }
+
+  // Prepare chart data
   const data = {
     labels: ["Open", "Closed"],
     datasets: [
@@ -18,29 +25,16 @@ const IssueChart = (props) => {
     ],
   };
 
-  if (!openSource.issue_chart) {
-    return null;
-  }
-
-  if (IssueData.data.length === 0) {
-    return null;
-  }
-
   return (
     <div className="issue-chart">
       <Fade bottom duration={2000} distance="20px">
-        <h2
-          className="issue-chart-header"
-          style={{ color: theme.secondaryText }}
-        >
+        <h2 className="issue-chart-header" style={{ color: theme.secondaryText }}>
           Issue Distribution
         </h2>
       </Fade>
       <Doughnut
         data={data}
         options={{
-          margin: "0",
-          padding: "0",
           responsive: true,
           maintainAspectRatio: true,
           animation: {

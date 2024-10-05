@@ -1,23 +1,14 @@
 {
-  "user": {
-    "repositoriesContributedTo": {
-      "totalCount": 2,
-      "nodes": [
-        {
-          "owner": {
-            "login": "valor-software",
-            "avatarUrl": "https://avatars.githubusercontent.com/u/6849042?v=4",
-            "__typename": "Organization"
-          }
-        },
-        {
-          "owner": {
-            "login": "valor-labs",
-            "avatarUrl": "https://avatars.githubusercontent.com/u/19818002?v=4",
-            "__typename": "Organization"
-          }
-        }
-      ]
+  "data": [
+    {
+      "login": "valor-software",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6849042?v=4",
+      "__typename": "Organization"
+    },
+    {
+      "login": "valor-labs",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/19818002?v=4",
+      "__typename": "Organization"
     }
-  }
+  ]
 }

@@ -7,9 +7,12 @@ import "./Organizations.css";
 
 const Organizations = (props) => {
   const theme = props.theme;
-  if (OrganizationsData.data.length === 0 || !openSource.organizations) {
-    return null;
+
+  // Check if the data is valid and organizations exist
+  if (!OrganizationsData.data || !openSource.organizations) {
+    return null; // Return null if no data
   }
+
   return (
     <div id="organizations">
       <div className="organizations-header-div">

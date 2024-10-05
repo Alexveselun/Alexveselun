@@ -7,9 +7,12 @@ import "./PullRequests.css";
 
 const PullRequests = (props) => {
   const theme = props.theme;
-  if (!PullRequestsData.data.length === 0 || !openSource.pull_requests) {
-    return null;
+
+  // Check if pull requests data exists and is not empty
+  if (!PullRequestsData.data || !openSource.pull_requests) {
+    return null; // Return null if no data
   }
+
   return (
     <div>
       <div className="pull-requests-header-div">
@@ -22,9 +25,9 @@ const PullRequests = (props) => {
       <div className="pull-request-body-div">
         {PullRequestsData["data"].map((pullRequest) => {
           return (
-            <PullRequestCard pullRequest={pullRequest} key={pullRequest.id} />
+          <PullRequestCard pullRequest={pullRequest} key={pullRequest.id} />
           );
-        })}
+          })}
       </div>
     </div>
   );

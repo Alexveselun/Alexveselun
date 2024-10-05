@@ -7,6 +7,13 @@ import "./PullRequestChart.css";
 
 const PullRequestChart = (props) => {
   const theme = props.theme;
+
+  // Check if pull request chart should be displayed
+  if (!openSource.pr_chart) {
+    return null; // Return null if no data or chart is not enabled
+  }
+
+  // Prepare chart data
   const data = {
     labels: ["Open", "Merged", "Closed"],
     datasets: [
@@ -22,14 +29,6 @@ const PullRequestChart = (props) => {
     ],
   };
 
-  if (!openSource.pr_chart) {
-    return null;
-  }
-
-  if (PullRequestsData.data.length === 0) {
-    return null;
-  }
-
   return (
     <div className="pr-chart">
       <Fade bottom duration={2000} distance="20px">
@@ -40,8 +39,6 @@ const PullRequestChart = (props) => {
       <Doughnut
         data={data}
         options={{
-          padding: "0",
-          margin: "0",
           responsive: true,
           maintainAspectRatio: true,
           animation: {

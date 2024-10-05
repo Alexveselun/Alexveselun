@@ -17,11 +17,11 @@ Credits: masterPortfolio(https://github.com/ashutosh1919/masterPortfolio)
 
 const pageEnabled = {
   splash: true, // Change this to false if you don't want Splash screen
-  projects: true, // Change this to false if you don't want projects (from github data) and publications page
+  blog: true, // Change this to false if you don't want
   opensource: true, // Change this to false if you don't want opensource contribution (from github data) page
   hobbies: true, // Change this to false if you don't want hobbies page
   contact: true, // Change this to false if you don't want contact page
-  blog: true, // Change this to false if you don't want
+  projects: false, // Change this to false if you don't want projects (from github data) and publications page
   education: false, // Change this to false if you don't want education (degrees, certifications, competitiveSites) page
   experience: false, // Change this to false if you don't want experience page
 };

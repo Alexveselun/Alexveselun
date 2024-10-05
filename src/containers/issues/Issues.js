@@ -8,7 +8,7 @@ import "./Issues.css";
 const Issues = (props) => {
   const theme = props.theme;
 
-  if (IssuesData.data.length === 0 || !openSource.issues) {
+  if (!IssuesData.data || !openSource.issues) {
     return null;
   }
 
