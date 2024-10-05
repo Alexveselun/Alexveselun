@@ -6,15 +6,20 @@ import UserData from "../../shared/opensource/user.json";
 import "./AboutMe.css";
 
 const AboutMe = (props) => {
-  if (UserData.data.isHireable) {
-    UserData.data.hireable = "Yes";
-  } else {
-    UserData.data.hireable = "No";
-  }
   const theme = props.theme;
-  if (UserData.data.length === 0) {
+
+  if (!UserData || !UserData.data) {
+    return null; // Return null if UserData is not defined
+  }
+
+  // Safely access properties
+  const isHireable = UserData.data.isHireable;
+  UserData.data.hireable = isHireable ? "Yes" : "No";
+
+  if (Object.keys(UserData.data).length === 0) {
     return null;
   }
+
   return (
     <div className="about-main">
       <Fade bottom duration={2000} distance="20px">
@@ -23,7 +28,7 @@ const AboutMe = (props) => {
             Reach Out to me!
           </h1>
           <div className="row" align="center">
-            <div className="main-content-UserData.dataile">
+            <div className="main-content-profile"> {/* Fixed typo in className */}
               <div className="blog-header">
                 <Fade right duration={2000}>
                   <p
@@ -34,7 +39,7 @@ const AboutMe = (props) => {
                   </p>
                 </Fade>
               </div>
-              {UserData.data.avatarUrl !== null && (
+              {UserData.data.avatarUrl && ( // Simplified check
                 <div
                   className="image-content-profile"
                   style={{ padding: "20px" }}
@@ -48,7 +53,7 @@ const AboutMe = (props) => {
                   </Fade>
                 </div>
               )}
-              {UserData.data.bio !== null && (
+              {UserData.data.bio && ( // Simplified check
                 <Fade left duration={2000}>
                   <h2
                     className="bio-text"
@@ -58,7 +63,7 @@ const AboutMe = (props) => {
                   </h2>
                 </Fade>
               )}
-              {UserData.data.location !== null && (
+              {UserData.data.location && ( // Simplified check
                 <div
                   className="location-div"
                   style={{ color: theme.secondaryText }}
@@ -96,4 +101,5 @@ const AboutMe = (props) => {
     </div>
   );
 };
+
 export default AboutMe;
