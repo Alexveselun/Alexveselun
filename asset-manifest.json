@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/Alexveselun/static/css/main.6daad177.css",
-    "main.js": "/Alexveselun/static/js/main.23117e1b.js",
+    "main.css": "/Alexveselun/static/css/main.a98850d2.css",
+    "main.js": "/Alexveselun/static/js/main.5acd13b5.js",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/dsc_logo.png": "/Alexveselun/static/media/dsc_logo.fdf993910e3f48d0cf30.png",
     "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.d58d758a79617b0b04d6.png",
     "static/media/fa-brands-400.ttf": "/Alexveselun/static/media/fa-brands-400.0a1b701f5563c2288281.ttf",
     "static/media/Music.png": "/Alexveselun/static/media/Music.fa31de01cba91222dfa4.png",
@@ -21,21 +20,15 @@
     "static/media/Agustina.woff": "/Alexveselun/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/ibm_logo.png": "/Alexveselun/static/media/ibm_logo.8204bba7daa4eedf644b.png",
     "static/media/codeInLogo.png": "/Alexveselun/static/media/codeInLogo.be1b6b9bacd5f2fb1c7e.png",
-    "static/media/stanford_logo.png": "/Alexveselun/static/media/stanford_logo.de5f29dece094f7bec60.png",
     "static/media/animated_logo.svg": "/Alexveselun/static/media/animated_logo.abd0b20ec83cb1f60d42.svg",
     "static/media/Writing.png": "/Alexveselun/static/media/Writing.1d4fc63c18182b390ac3.png",
     "static/media/iiitk_logo.png": "/Alexveselun/static/media/iiitk_logo.170d558551a09a7d1620.png",
-    "static/media/intel_logo.jpg": "/Alexveselun/static/media/intel_logo.d7577f35a3dac4e5636d.jpg",
     "static/media/ui_ux_design.svg": "/Alexveselun/static/media/ui_ux_design.42a2cdaf132097cc499e.svg",
     "static/media/fa-regular-400.ttf": "/Alexveselun/static/media/fa-regular-400.15d98c18221c8bcb2334.ttf",
     "static/media/app-development.svg": "/Alexveselun/static/media/app-development.dcc06a4938edba1d5a3e.svg",
     "static/media/manOnTable.svg": "/Alexveselun/static/media/manOnTable.f861b03b5a2d1a28c198.svg",
-    "static/media/muffito_logo.png": "/Alexveselun/static/media/muffito_logo.a40e290031eaf389bde1.png",
     "static/media/Memeing.png": "/Alexveselun/static/media/Memeing.5380f0e9da8a26ebb882.png",
-    "static/media/deeplearning_ai_logo.png": "/Alexveselun/static/media/deeplearning_ai_logo.f5e1bd288e7a2b30a390.png",
-    "static/media/nptel_logo.png": "/Alexveselun/static/media/nptel_logo.14bc947aebe4b57dd2bc.png",
     "static/media/gcp_logo.png": "/Alexveselun/static/media/gcp_logo.63bb0649c9716d110b14.png",
-    "static/media/legato_logo.png": "/Alexveselun/static/media/legato_logo.227e72c7979187840ba3.png",
     "static/media/developerActivity.svg": "/Alexveselun/static/media/developerActivity.967f31dad3158d5be07b.svg",
     "static/media/github_logo.png": "/Alexveselun/static/media/github_logo.15e591a7397b9ef45656.png",
     "static/media/fa-regular-400.woff2": "/Alexveselun/static/media/fa-regular-400.d79c2ec96ab9ff1161a2.woff2",
@@ -60,11 +53,11 @@
     "static/media/googleAssistant.svg": "/Alexveselun/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.6daad177.css.map": "/Alexveselun/static/css/main.6daad177.css.map",
-    "main.23117e1b.js.map": "/Alexveselun/static/js/main.23117e1b.js.map"
+    "main.a98850d2.css.map": "/Alexveselun/static/css/main.a98850d2.css.map",
+    "main.5acd13b5.js.map": "/Alexveselun/static/js/main.5acd13b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.6daad177.css",
-    "static/js/main.23117e1b.js"
+    "static/css/main.a98850d2.css",
+    "static/js/main.5acd13b5.js"
   ]
 }
