@@ -1,6 +1,31 @@
 {
   "data": [
     {
+      "id": "PR_kwDOMdBscs598dg-",
+      "title": "fix(links): fixed the internal redirects",
+      "url": "https://github.com/valor-labs/vs-website-3/pull/151",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82472610?u=ebb325f8a1935ae30c79f4e9a03070823a464298&v=4",
+        "url": "https://github.com/Alexveselun",
+        "login": "Alexveselun"
+      },
+      "createdAt": "2024-10-08T12:35:52Z",
+      "number": 151,
+      "changedFiles": 9,
+      "additions": 9,
+      "deletions": 10,
+      "baseRepository": {
+        "name": "vs-website-3",
+        "url": "https://github.com/valor-labs/vs-website-3",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/19818002?v=4",
+          "login": "valor-labs",
+          "url": "https://github.com/valor-labs"
+        }
+      }
+    },
+    {
       "id": "PR_kwDOMdBscs59oS2Y",
       "title": "feat(performance): compressed images",
       "url": "https://github.com/valor-labs/vs-website-3/pull/144",
@@ -1924,7 +1949,7 @@
     }
   ],
   "open": 0,
-  "closed": 7,
-  "merged": 71,
-  "totalCount": 78
+  "closed": 0,
+  "merged": 0,
+  "totalCount": 79
 }
