@@ -2,7 +2,6 @@ import fetch from "node-fetch";
 import "dotenv/config";
 import fs from "fs";
 
-// Retrieve configuration values from environment variables or assign default values
 const githubConvertedToken = process.env.ACTIONS_DEPLOY_ACCESS_TOKEN || "Your Github Token Here";
 const githubUserName = process.env.USERNAME_GIT || "Your Github Username Here";
 const mediumUserName = process.env.MEDIUM_USERNAME || "Your Medium Username Here";
@@ -16,7 +15,7 @@ if (!githubUserName || !githubConvertedToken) {
     Authorization: `bearer ${githubConvertedToken}`,
   };
 
-  // Define GraphQL queries
+  //Define GraphQL queries
   const queries = {
     user: `query {
       user(login: "${githubUserName}") {
@@ -132,7 +131,6 @@ if (!githubUserName || !githubConvertedToken) {
     }`,
   };
 
-  // Function to fetch and save data
   const fetchData = async (query, filename, processData) => {
     try {
       const response = await fetch(baseUrl, {
@@ -156,14 +154,14 @@ if (!githubUserName || !githubConvertedToken) {
     }
   };
 
-  // Data processing functions
+  //GitHub Data processing functions
   const processUserData = (data) => ({ data: data.user });
   
   const processPullRequests = (data) => {
     const pullRequests = data.user.pullRequests.nodes;
     const open = pullRequests.filter(pr => pr.state === "OPEN").length;
     const closed = pullRequests.filter(pr => pr.state === "CLOSED").length;
-    const merged = pullRequests.filter(pr => pr.state === "MERGED").length;
+    const merged = pullRequests.filter(pr => pr.state === "MERGED").length;ø
 
     return {
       data: pullRequests,
@@ -198,17 +196,12 @@ if (!githubUserName || !githubConvertedToken) {
   const processPinnedProjects = (data) => {
     const languagesIcons = {
       Python: "logos-python",
-      "Jupyter Notebook": "logos-jupyter",
       HTML: "logos-html-5",
       CSS: "logos-css-3",
       JavaScript: "logos-javascript",
-      "C#": "logos-c-sharp",
       Java: "logos-java",
       Shell: "simple-icons:shell",
-      Ruby: "logos:ruby",
-      PHP: "logos-php",
       Dockerfile: "simple-icons:docker",
-      Rust: "logos-rust",
     };
 
     return {
@@ -222,7 +215,6 @@ if (!githubUserName || !githubConvertedToken) {
     };
   };
 
-  // Fetch all data
   (async () => {
     await fetchData(queries.user, "user.json", processUserData);
     await fetchData(queries.pullRequests, "pull_requests.json", processPullRequests);
@@ -232,7 +224,7 @@ if (!githubUserName || !githubConvertedToken) {
   })();
 }
 
-// Fetch Medium blogs
+//Fetch Medium blogs
 const mediumUrl = `http://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUserName}`;
 
 const fetchMediumBlogs = async () => {

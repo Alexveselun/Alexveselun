@@ -1,8 +1,7 @@
 {
-  "name": "Personal Page",
-  "description": "Personal Page",
+  "name": "Personal Website",
+  "description": "Personal Website",
   "repository": "https://github.com/alexveselun/Alexveselun/",
-  "logo": "https://raw.githubusercontent.com/alexveselun/alexveselun/main/banner.png",
   "keywords": ["github", "personal", "responsive", "website", "template"],
   "addons": []
 }
