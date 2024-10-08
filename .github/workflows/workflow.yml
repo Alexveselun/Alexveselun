@@ -19,14 +19,9 @@ jobs:
         with:
           node-version: '16.15.1'
       - run: npm i --force
-      - run: npm run deploy
-      - name: Configure Git
-        run: |
-          git config --global user.email "alexveselun@gmail.com"
-          git config --global user.name "Alexveselun"
+      - run: npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
           folder: ./build
-          token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}

@@ -228,7 +228,7 @@ if (!githubUserName || !githubConvertedToken) {
 const mediumUrl = `http://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUserName}`;
 
 const fetchMediumBlogs = async () => {
-  if (!mediumUserName) {
+  if (!mediumUserName || mediumUserName === undefined) {
     console.log("Skipping Medium Data!\n");
     return;
   }
