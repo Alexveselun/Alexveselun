@@ -159,9 +159,9 @@ if (!githubUserName || !githubConvertedToken) {
   
   const processPullRequests = (data) => {
     const pullRequests = data.user.pullRequests.nodes;
-    const open = pullRequests.filter(pullRequests => pullRequests.open).length;
-    const closed = pullRequests.filter(pullRequests => pullRequests.closed).length;
-    const merged = pullRequests.filter(pullRequests => pullRequests.merged).length;
+    const open = pullRequests.filter(pr => pr.state === "OPEN").length;
+    const closed = pullRequests.filter(pr => pr.state === "CLOSED").length;
+    const merged = pullRequests.filter(pr => pr.state === "MERGED").length;ø
 
     return {
       data: pullRequests,
@@ -174,7 +174,7 @@ if (!githubUserName || !githubConvertedToken) {
 
   const processIssues = (data) => {
     const issues = data.user.issues.nodes;
-    const open = issues.filter(issue => issue.open).length;
+    const open = issues.filter(issue => !issue.closed).length;
     const closed = issues.filter(issue => issue.closed).length;
 
     return {
