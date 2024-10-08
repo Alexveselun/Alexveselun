@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alexveselun/static/css/main.a98850d2.css",
-    "main.js": "/Alexveselun/static/js/main.a6251816.js",
+    "main.js": "/Alexveselun/static/js/main.5212e049.js",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.d58d758a79617b0b04d6.png",
@@ -54,10 +54,10 @@
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.a98850d2.css.map": "/Alexveselun/static/css/main.a98850d2.css.map",
-    "main.a6251816.js.map": "/Alexveselun/static/js/main.a6251816.js.map"
+    "main.5212e049.js.map": "/Alexveselun/static/js/main.5212e049.js.map"
   },
   "entrypoints": [
     "static/css/main.a98850d2.css",
-    "static/js/main.a6251816.js"
+    "static/js/main.5212e049.js"
   ]
 }
