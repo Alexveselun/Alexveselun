@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '16.15.1'
       - run: npm i --force
-      - run: npm run build
+      - run: npm run deploy
       - name: Configure Git
         run: |
           git config --global user.email "alexveselun@gmail.com"

@@ -161,7 +161,7 @@ if (!githubUserName || !githubConvertedToken) {
     const pullRequests = data.user.pullRequests.nodes;
     const open = pullRequests.filter(pr => pr.state === "OPEN").length;
     const closed = pullRequests.filter(pr => pr.state === "CLOSED").length;
-    const merged = pullRequests.filter(pr => pr.state === "MERGED").length;ø
+    const merged = pullRequests.filter(pr => pr.state === "MERGED").length;
 
     return {
       data: pullRequests,
