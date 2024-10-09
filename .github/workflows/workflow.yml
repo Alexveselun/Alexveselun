@@ -6,10 +6,6 @@ on:
 permissions:
   contents: write
 
-env:
-  CACHE_NODE_MODULES_PATH: |
-    node_modules
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -22,7 +18,7 @@ jobs:
       - run: echo ${ACTIONS_DEPLOY_ACCESS_TOKEN}
       - run: echo ${USERNAME_GIT}
       - run: echo ${MEDIUM_USERNAME}
-      - run: npm run build
+      - run: npm run deploy
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
