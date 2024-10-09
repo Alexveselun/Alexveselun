@@ -16,7 +16,7 @@ Credits: masterPortfolio(https://github.com/ashutosh1919/masterPortfolio)
 // Which pages will be enabled
 
 const pageEnabled = {
-  splash: true, // Change this to false if you don't want Splash screen
+  splash: false, // Change this to false if you don't want Splash screen
   blog: true, // Change this to false if you don't want
   opensource: true, // Change this to false if you don't want opensource contribution (from github data) page
   hobbies: true, // Change this to false if you don't want hobbies page
@@ -339,13 +339,14 @@ const bigProjects = {
 const blogSection = {
   title: "My Blog ( Under construction )",
   subtitle: "Check out my blogs on various topics. Let's go!",
-  display: "medium", 
+  display: "myBlog", 
   blogs: [
     {
-      url: "https://example.com",
-      image: "path_to_image",
+      chatId: "123456",
+      fileName: "fileName",
       title: "Blog Title 1",
       description: "Short description of Blog 1",
+      pictureName: "path_to_image",
     },
   ],
 };

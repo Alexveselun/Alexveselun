@@ -225,22 +225,22 @@ if (!githubUserName || !githubConvertedToken) {
 }
 
 //Fetch Medium blogs
-const mediumUrl = `http://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUserName}`;
+// const mediumUrl = `http://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUserName}`;
 
-const fetchMediumBlogs = async () => {
-  if (!mediumUserName || mediumUserName === undefined) {
-    console.log("Skipping Medium Data!\n");
-    return;
-  }
+// const fetchMediumBlogs = async () => {
+//   if (!mediumUserName || mediumUserName === undefined) {
+//     console.log("Skipping Medium Data!\n");
+//     return;
+//   }
 
-  try {
-    console.log("Fetching Medium Blogs.\n");
-    const response = await fetch(mediumUrl);
-    const data = await response.json();
-    fs.writeFileSync("./src/shared/blogs.json", JSON.stringify(data, null, 2));
-  } catch (error) {
-    console.error("Error fetching Medium Blogs:", error);
-  }
-};
+//   try {
+//     console.log("Fetching Medium Blogs.\n");
+//     const response = await fetch(mediumUrl);
+//     const data = await response.json();
+//     fs.writeFileSync("./src/shared/blogs.json", JSON.stringify(data, null, 2));
+//   } catch (error) {
+//     console.error("Error fetching Medium Blogs:", error);
+//   }
+// };
 
-fetchMediumBlogs();
+// fetchMediumBlogs();

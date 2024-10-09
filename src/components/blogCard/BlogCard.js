@@ -3,6 +3,8 @@ import { Alert } from "react-bootstrap";
 import { Fade } from "react-reveal";
 import "./BlogCard.css";
 
+const IMAGE_PATH = '/Alexveselun/src/shared/cms/';
+
 const BlogCard = ({ blog, theme }) => {
   const [show, setShow] = useState(false);
 
@@ -20,6 +22,7 @@ const BlogCard = ({ blog, theme }) => {
 
   if (!blog) return null;
 
+  const imageSource = `${IMAGE_PATH}${blog.image}`;
   return (
     <Fade bottom duration={2000}>
       <div onClick={() => openUrlInNewTab(blog.url)}>
@@ -28,7 +31,7 @@ const BlogCard = ({ blog, theme }) => {
           style={{ backgroundColor: theme.jacketColor }}
           align="center"
         >
-          <a className="blog-card blog-card-shadow" href={blog.url}>
+          <a className="blog-card blog-card-shadow">
             <h3 className="blog-title" style={{ color: theme.text }}>
               {blog.title}
             </h3>
@@ -37,7 +40,7 @@ const BlogCard = ({ blog, theme }) => {
             </p>
             {blog.image && (
               <img
-                src={blog.image}
+                src={imageSource}
                 alt={blog.title}
                 className="blog-image" 
               />
@@ -45,7 +48,6 @@ const BlogCard = ({ blog, theme }) => {
             <div className="go-corner">
               <div className="go-arrow">→</div>
             </div>
-            
           </a>
         </div>
       </div>
