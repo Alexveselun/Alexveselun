@@ -31,7 +31,18 @@ const BlogCard = ({ blog, theme }) => {
           style={{ backgroundColor: theme.jacketColor }}
           align="center"
         >
-          <a className="blog-card blog-card-shadow">
+          <a
+            className="blog-card blog-card-shadow"
+            href={blog.url || '#'} // Use blog.url or fallback to '#'
+            onClick={(e) => {
+              if (!blog.url) {
+                e.preventDefault(); // Prevent default only if url is not valid
+              } else {
+                openUrlInNewTab(blog.url); // Open the URL in a new tab
+                e.preventDefault(); // Prevent the default behavior
+              }
+            }}
+          >
             <h3 className="blog-title" style={{ color: theme.text }}>
               {blog.title}
             </h3>
