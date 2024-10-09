@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alexveselun/static/css/main.a98850d2.css",
-    "main.js": "/Alexveselun/static/js/main.d51502b1.js",
+    "main.js": "/Alexveselun/static/js/main.6e8520af.js",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.d58d758a79617b0b04d6.png",
@@ -26,6 +26,7 @@
     "static/media/ui_ux_design.svg": "/Alexveselun/static/media/ui_ux_design.42a2cdaf132097cc499e.svg",
     "static/media/fa-regular-400.ttf": "/Alexveselun/static/media/fa-regular-400.15d98c18221c8bcb2334.ttf",
     "static/media/app-development.svg": "/Alexveselun/static/media/app-development.dcc06a4938edba1d5a3e.svg",
+    "static/media/image-FLrDZpKcIK.jpg": "/Alexveselun/static/media/image-FLrDZpKcIK.330649bf8904d41f21e2.jpg",
     "static/media/manOnTable.svg": "/Alexveselun/static/media/manOnTable.f861b03b5a2d1a28c198.svg",
     "static/media/Memeing.png": "/Alexveselun/static/media/Memeing.5380f0e9da8a26ebb882.png",
     "static/media/gcp_logo.png": "/Alexveselun/static/media/gcp_logo.63bb0649c9716d110b14.png",
@@ -55,10 +56,10 @@
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.a98850d2.css.map": "/Alexveselun/static/css/main.a98850d2.css.map",
-    "main.d51502b1.js.map": "/Alexveselun/static/js/main.d51502b1.js.map"
+    "main.6e8520af.js.map": "/Alexveselun/static/js/main.6e8520af.js.map"
   },
   "entrypoints": [
     "static/css/main.a98850d2.css",
-    "static/js/main.d51502b1.js"
+    "static/js/main.6e8520af.js"
   ]
 }
