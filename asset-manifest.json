@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alexveselun/static/css/main.a98850d2.css",
-    "main.js": "/Alexveselun/static/js/main.6e8520af.js",
+    "main.js": "/Alexveselun/static/js/main.c7f708dd.js",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.d58d758a79617b0b04d6.png",
@@ -40,6 +40,8 @@
     "static/media/address_image.svg": "/Alexveselun/static/media/address_image.3385d92e5e426e57a5b1.svg",
     "static/media/experience.svg": "/Alexveselun/static/media/experience.c50c576af78a4172f78d.svg",
     "static/media/Mr.Yanyk.jpeg": "/Alexveselun/static/media/Mr.Yanyk.77f56958ec18f7c0fe76.jpeg",
+    "static/media/image-GhzsXg0jB8.jpg": "/Alexveselun/static/media/image-GhzsXg0jB8.f52b5bb6c4f63f95f8bd.jpg",
+    "static/media/image-HubbMrkTkO.jpg": "/Alexveselun/static/media/image-HubbMrkTkO.f52b5bb6c4f63f95f8bd.jpg",
     "static/media/image-ZkKdjAcIYy.jpg": "/Alexveselun/static/media/image-ZkKdjAcIYy.f52b5bb6c4f63f95f8bd.jpg",
     "static/media/Dhestora.ttf": "/Alexveselun/static/media/Dhestora.7ce535059c02ab66c16d.ttf",
     "static/media/feelingProud.svg": "/Alexveselun/static/media/feelingProud.288e616ff8dc11bd4713.svg",
@@ -56,10 +58,10 @@
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.a98850d2.css.map": "/Alexveselun/static/css/main.a98850d2.css.map",
-    "main.6e8520af.js.map": "/Alexveselun/static/js/main.6e8520af.js.map"
+    "main.c7f708dd.js.map": "/Alexveselun/static/js/main.c7f708dd.js.map"
   },
   "entrypoints": [
     "static/css/main.a98850d2.css",
-    "static/js/main.6e8520af.js"
+    "static/js/main.c7f708dd.js"
   ]
 }
