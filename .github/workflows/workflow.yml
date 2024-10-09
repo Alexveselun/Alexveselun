@@ -6,6 +6,10 @@ on:
 permissions:
   contents: write
 
+env:
+  ACTIONS_DEPLOY_ACCESS_TOKEN: secrets.ACTIONS_DEPLOY_ACCESS_TOKEN
+  USERNAME_GIT: secrets.USERNAME_GIT
+  MEDIUM_USERNAME: secrets.MEDIUM_USERNAME
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -15,9 +19,10 @@ jobs:
         with:
           node-version: '16.15.1'
       - run: npm i --force
-      - run: echo ${ACTIONS_DEPLOY_ACCESS_TOKEN}
-      - run: echo ${USERNAME_GIT}
-      - run: echo ${MEDIUM_USERNAME}
+      - run: |
+          echo "ACTIONS_DEPLOY_ACCESS_TOKEN: $ACTIONS_DEPLOY_ACCESS_TOKEN"
+          echo "USERNAME_GIT: $USERNAME_GIT"
+          echo "MEDIUM_USERNAME: $MEDIUM_USERNAME"
       - run: npm run deploy
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
