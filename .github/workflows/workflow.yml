@@ -1,17 +1,19 @@
 name: React Build
 on:
   push:
-     branches:
-        - main
+    branches:
+      - main
 permissions:
   contents: write
 
 env:
-  ACTIONS_DEPLOY_ACCESS_TOKEN: secrets.ACTIONS_DEPLOY_ACCESS_TOKEN
-  USERNAME_GIT: secrets.USERNAME_GIT
-  MEDIUM_USERNAME: secrets.MEDIUM_USERNAME
+  ACTIONS_DEPLOY_ACCESS_TOKEN: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+  USERNAME_GIT: ${{ secrets.USERNAME_GIT }}
+  MEDIUM_USERNAME: ${{ secrets.MEDIUM_USERNAME }}
+
 jobs:
   build-and-deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
