@@ -7,7 +7,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node fetcher.mjs && react-scripts build",
-    "predeploy": "node fetcher.mjs && npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
     "start": "node fetcher.mjs && react-scripts start",
