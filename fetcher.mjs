@@ -2,9 +2,9 @@ import fetch from "node-fetch";
 import "dotenv/config";
 import fs from "fs";
 
-const githubConvertedToken = process.env.ACTIONS_DEPLOY_ACCESS_TOKEN || "Your Github Token Here";
-const githubUserName = process.env.USERNAME_GIT || "Your Github Username Here";
-const mediumUserName = process.env.MEDIUM_USERNAME || "Your Medium Username Here";
+const githubConvertedToken = process.env.ACTIONS_DEPLOY_ACCESS_TOKEN ;
+const githubUserName = process.env.USERNAME_GIT;
+const mediumUserName = process.env.MEDIUM_USERNAME;
 
 if (!githubUserName || !githubConvertedToken) {
   console.log("Skipping GitHub Data!\n");

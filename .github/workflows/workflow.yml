@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: '16.15.1'
       - run: npm i --force
+      - run: echo ${ACTIONS_DEPLOY_ACCESS_TOKEN}
+      - run: echo ${USERNAME_GIT}
+      - run: echo ${MEDIUM_USERNAME}
       - run: npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
