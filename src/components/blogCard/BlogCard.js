@@ -3,7 +3,7 @@ import { Alert } from "react-bootstrap";
 import { Fade } from "react-reveal";
 import "./BlogCard.css";
 
-const IMAGE_PATH = '/Alexveselun/src/shared/cms/';
+const IMAGE_PATH = '/Alexveselun/static/media/';
 
 const BlogCard = ({ blog, theme }) => {
   const [show, setShow] = useState(false);
