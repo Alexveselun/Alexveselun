@@ -1,6 +1,56 @@
 {
   "data": [
     {
+      "id": "PR_kwDOMdBscs5-D9o4",
+      "title": "fix(support-maintenance): fixed the folder name",
+      "url": "https://github.com/valor-labs/vs-website-3/pull/156",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82472610?u=ebb325f8a1935ae30c79f4e9a03070823a464298&v=4",
+        "url": "https://github.com/Alexveselun",
+        "login": "Alexveselun"
+      },
+      "createdAt": "2024-10-09T10:48:02Z",
+      "number": 156,
+      "changedFiles": 7,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "vs-website-3",
+        "url": "https://github.com/valor-labs/vs-website-3",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/19818002?v=4",
+          "login": "valor-labs",
+          "url": "https://github.com/valor-labs"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMdBscs5-DkPg",
+      "title": "Fix support maintenance page(changed the route)",
+      "url": "https://github.com/valor-labs/vs-website-3/pull/155",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82472610?u=ebb325f8a1935ae30c79f4e9a03070823a464298&v=4",
+        "url": "https://github.com/Alexveselun",
+        "login": "Alexveselun"
+      },
+      "createdAt": "2024-10-09T09:54:55Z",
+      "number": 155,
+      "changedFiles": 6,
+      "additions": 7,
+      "deletions": 7,
+      "baseRepository": {
+        "name": "vs-website-3",
+        "url": "https://github.com/valor-labs/vs-website-3",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/19818002?v=4",
+          "login": "valor-labs",
+          "url": "https://github.com/valor-labs"
+        }
+      }
+    },
+    {
       "id": "PR_kwDOMdBscs598dg-",
       "title": "fix(links): fixed the internal redirects",
       "url": "https://github.com/valor-labs/vs-website-3/pull/151",
@@ -1950,6 +2000,6 @@
   ],
   "open": 0,
   "closed": 7,
-  "merged": 72,
-  "totalCount": 79
+  "merged": 74,
+  "totalCount": 81
 }

@@ -16,7 +16,7 @@ Credits: masterPortfolio(https://github.com/ashutosh1919/masterPortfolio)
 // Which pages will be enabled
 
 const pageEnabled = {
-  splash: true, // Change this to false if you don't want Splash screen
+  splash: false, // Change this to false if you don't want Splash screen
   blog: true, // Change this to false if you don't want
   opensource: true, // Change this to false if you don't want opensource contribution (from github data) page
   hobbies: true, // Change this to false if you don't want hobbies page
