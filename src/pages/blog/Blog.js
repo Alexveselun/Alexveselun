@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Header, TopButton, Footer } from "../../components";
 import { BlogSection } from "../../containers";
 import { blogSection } from "../../portfolio";
-import MyBlog from "../../shared/cms/869945985_images.json"; // Correct import
+import MyBlog from "../../../static/media"; // Correct import
 import BlogCard from "../../components/blogCard/BlogCard";
 import Fade from "react-reveal/Fade";
 import "./Blog.css";
