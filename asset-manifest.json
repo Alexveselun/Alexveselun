@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/Alexveselun/static/css/main.a98850d2.css",
-    "main.js": "/Alexveselun/static/js/main.a80ba427.js",
+    "main.js": "/Alexveselun/static/js/main.119cd61d.js",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/image-WZ0zJAzSMM.jpg": "/Alexveselun/static/media/image-WZ0zJAzSMM.e745e7d0f7c075de9aa4.jpg",
     "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.d58d758a79617b0b04d6.png",
+    "static/media/Image_1728501604168.jpg": "/Alexveselun/static/media/Image_1728501604168.dee907c833fe40de2ea1.jpg",
     "static/media/fa-brands-400.ttf": "/Alexveselun/static/media/fa-brands-400.0a1b701f5563c2288281.ttf",
     "static/media/Music.png": "/Alexveselun/static/media/Music.fa31de01cba91222dfa4.png",
     "static/media/fa-solid-900.woff2": "/Alexveselun/static/media/fa-solid-900.4896d4b04430cc3dfb06.woff2",
@@ -65,10 +66,10 @@
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.a98850d2.css.map": "/Alexveselun/static/css/main.a98850d2.css.map",
-    "main.a80ba427.js.map": "/Alexveselun/static/js/main.a80ba427.js.map"
+    "main.119cd61d.js.map": "/Alexveselun/static/js/main.119cd61d.js.map"
   },
   "entrypoints": [
     "static/css/main.a98850d2.css",
-    "static/js/main.a80ba427.js"
+    "static/js/main.119cd61d.js"
   ]
 }
