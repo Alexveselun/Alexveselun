@@ -1,0 +1,9 @@
+[
+  {
+    "chatId": "test",
+    "fileName": "test file",
+    "title": "Title",
+    "description": "test description",
+    "pictureName": "testImage.jpg"
+  }
+]

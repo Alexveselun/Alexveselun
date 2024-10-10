@@ -337,16 +337,16 @@ const bigProjects = {
 };
 
 const blogSection = {
-  title: "My Blog ( Under construction )",
-  subtitle: "Check out my blogs on various topics. Let's go!",
+  title: "The Gallery",
+  subtitle: "Check the data loaded data from telegram",
   display: "myBlog", 
   blogs: [
     {
       chatId: "123456",
-      fileName: "fileName",
-      title: "Blog Title 1",
-      description: "Short description of Blog 1",
-      pictureName: "path_to_image",
+      fileName: "test",
+      title: "Title",
+      description: "Description",
+      pictureName: "img1",
     },
   ],
 };
