@@ -1,51 +1,9 @@
 [
   {
-    "chatId": 869945985,
-    "fileName": "Title_1728505805377",
+    "chatId": "test",
+    "fileName": "test file",
     "title": "Title",
-    "description": "First try",
-    "pictureName": "Image_1728505805377.jpg"
-  },
-  {
-    "chatId": 869945985,
-    "fileName": "Title_1728508651079",
-    "title": "Title",
-    "description": "Second try. Check build without picture",
-    "pictureName": "Image_1728508651079.jpg"
-  },
-  {
-    "chatId": 869945985,
-    "fileName": "Title_1728509683798",
-    "title": "Title",
-    "description": "Try add the valid pictures",
-    "pictureName": "Image_1728509683798.jpg"
-  },
-  {
-    "chatId": 869945985,
-    "fileName": "Title_1728510950635",
-    "title": "Title",
-    "description": "Last try for today",
-    "pictureName": "Image_1728510950635.jpg"
-  },
-  {
-    "chatId": 869945985,
-    "fileName": "Title_1728563982916",
-    "title": "Title",
-    "description": "Получилось?",
-    "pictureName": "Image_1728563982916.jpg"
-  },
-  {
-    "chatId": 869945985,
-    "fileName": "Title_1728564050562",
-    "title": "Title",
-    "description": "Не получилось спочатку",
-    "pictureName": "Image_1728564050562.jpg"
-  },
-  {
-    "chatId": 869945985,
-    "fileName": "Title_1728566050713",
-    "title": "Title",
-    "description": "Треба буде доробити, щоб оновлювався JSON",
-    "pictureName": "Image_1728566050713.jpg"
+    "description": "test description",
+    "pictureName": "testImage.jpg"
   }
 ]
