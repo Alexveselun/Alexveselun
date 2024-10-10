@@ -40,5 +40,12 @@
     "title": "Title",
     "description": "Не получилось спочатку",
     "pictureName": "Image_1728564050562.jpg"
+  },
+  {
+    "chatId": 869945985,
+    "fileName": "Title_1728566050713",
+    "title": "Title",
+    "description": "Треба буде доробити, щоб оновлювався JSON",
+    "pictureName": "Image_1728566050713.jpg"
   }
 ]
