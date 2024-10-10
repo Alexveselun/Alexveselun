@@ -1,44 +1,9 @@
 [
   {
-    "chatId": "test",
-    "fileName": "test file",
+    "chatId": "testChatId",
+    "fileName": "Test File",
     "title": "Title",
-    "description": "test description",
-    "pictureName": "testImage.jpg"
-  },
-  {
-    "chatId": "test2",
-    "fileName": "test file2",
-    "title": "Title2",
-    "description": "test description",
-    "pictureName": "testImage.jpg"
-  },
-    {
-      "chatId": "test",
-      "fileName": "test file",
-      "title": "Title",
-      "description": "test description",
-      "pictureName": "testImage.jpg"
-    },
-    {
-      "chatId": "test2",
-      "fileName": "test file2",
-      "title": "Title2",
-      "description": "test description",
-      "pictureName": "testImage.jpg"
-    },
-      {
-        "chatId": "test",
-        "fileName": "test file",
-        "title": "Title",
-        "description": "test description",
-        "pictureName": "testImage.jpg"
-      },
-      {
-        "chatId": "test2",
-        "fileName": "test file2",
-        "title": "Title2",
-        "description": "test description",
-        "pictureName": "testImage.jpg"
-      }
+    "description": "Test Empty Description",
+    "pictureName": "image.jpg"
+  }
 ]
