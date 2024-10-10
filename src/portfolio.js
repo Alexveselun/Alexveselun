@@ -338,7 +338,7 @@ const bigProjects = {
 
 const blogSection = {
   title: "The Gallery",
-  subtitle: "Check the data loaded data from telegram",
+  subtitle: "Check the data loaded from telegram",
   display: "myBlog", 
   blogs: [
     {
