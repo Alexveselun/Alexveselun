@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Header, TopButton, Footer } from "../../components";
 import { BlogSection } from "../../containers";
 import { blogSection } from "../../portfolio";
-import  blogData from "../../assets/blogData/869945985_images.json" ;
 import BlogCard from "../../components/blogCard/BlogCard";
 import Fade from "react-reveal/Fade";
 import "./Blog.css";
@@ -10,6 +9,18 @@ import "./Blog.css";
 const Blog = (props) => {
   const { theme } = props;
   const blogRef = useRef(null);
+  const [blogData, setBlogData] = useState(null);
+  const [dataUnavailable, setDataUnavailable] = useState(false); 
+
+  useEffect(() => {
+    try {
+      const data = require("../../assets/blogData/869945985_images.json");
+      setBlogData(data);
+    } catch (error) {
+      console.error("Error loading blog data:", error);
+      setDataUnavailable(true); 
+    }
+  }, []);
 
   const cleanEmptyNodes = () => {
     if (blogRef.current) {
@@ -51,7 +62,11 @@ const Blog = (props) => {
           <BlogSection theme={theme} />
           <div className="blog-main-div">
             <div className="blog-text-div" ref={blogRef}>
-              {renderBlogCards()}
+              {dataUnavailable ? (
+                <div>Даних про блог, поки не має</div> // Message when data is unavailable
+              ) : (
+                blogData && renderBlogCards() // Render blog cards if data is available
+              )}
             </div>
           </div>
         </div>
