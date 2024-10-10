@@ -5,8 +5,7 @@ import "./BlogCard.css";
 
 
 const BlogCard = ({ blog, theme }) => {
-const imageSource = `${process.env.PUBLIC_URL}/assets/blogData/${blog.image}`;
-
+  const imageSource = `${process.env.PUBLIC_URL}/assets/blogData/${blog.image}`;
   const [show, setShow] = useState(false);
 
   function openUrlInNewTab(url) {
@@ -28,7 +27,7 @@ const imageSource = `${process.env.PUBLIC_URL}/assets/blogData/${blog.image}`;
       <div onClick={() => openUrlInNewTab(blog.url)}>
         <div
           className="blog-container"
-          style={{ backgroundColor: theme.jacketColor }}
+          style={{ backgroundColor: theme.jacketColor || '#ffffff' }} // Fallback color
           align="center"
         >
           <a
