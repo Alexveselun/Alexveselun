@@ -3,9 +3,10 @@ import { Alert } from "react-bootstrap";
 import { Fade } from "react-reveal";
 import "./BlogCard.css";
 
-const IMAGE_PATH = '/Alexveselun/static/media/';
 
 const BlogCard = ({ blog, theme }) => {
+const imageSource = `${process.env.PUBLIC_URL}/assets/blogData/${blog.image}`;
+
   const [show, setShow] = useState(false);
 
   function openUrlInNewTab(url) {
@@ -22,7 +23,6 @@ const BlogCard = ({ blog, theme }) => {
 
   if (!blog) return null;
 
-  const imageSource = `${IMAGE_PATH}${blog.image}`;
   return (
     <Fade bottom duration={2000}>
       <div onClick={() => openUrlInNewTab(blog.url)}>

@@ -6,9 +6,10 @@
   "homepage": "https://alexveselun.github.io/Alexveselun/",
   "version": "1.0.0",
   "scripts": {
-    "build": "node fetcher.mjs && react-scripts build",
-    "predeploy": "npm run build",
+    "build": "node prepareAssets.js && node fetcher.mjs && react-scripts build",
+    "predeploy": "npm run prepareAssets && npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
+    "prepareAssets": "node prepareAssets.js",
     "eject": "react-scripts eject",
     "start": "node fetcher.mjs && react-scripts start",
     "android": "node node_modules/react-scripts/bin/react-scripts.js start",

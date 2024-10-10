@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Header, TopButton, Footer } from "../../components";
 import { BlogSection } from "../../containers";
 import { blogSection } from "../../portfolio";
-import MyBlog from "../../shared/869945985_images.json"; // Correct import
+import  blogData from "../../assets/blogData/869945985_images.json" ;
 import BlogCard from "../../components/blogCard/BlogCard";
 import Fade from "react-reveal/Fade";
 import "./Blog.css";
@@ -29,7 +29,7 @@ const Blog = (props) => {
   }
 
   const renderBlogCards = () => {
-    return MyBlog.map((blog) => (
+    return blogData.map((blog) => (
       <BlogCard
         key={blog.chatId}
         theme={theme}
