@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import { competitiveSites } from "../../portfolio";
 import EducationImg from "./EducationImg";
 import CompetitiveSites from "../../containers/competitiveSites/CompetitiveSites";
@@ -9,7 +9,7 @@ const EducationSection = (props) => {
   const theme = props.theme;
   return (
     <div className="basic-education">
-      <Fade bottom duration={2000} distance="40px">
+      <MotionWrapper>
         <div className="heading-div">
           <div className="heading-img-div">
             {/* <img
@@ -25,7 +25,7 @@ const EducationSection = (props) => {
             {competitiveSites.display && <CompetitiveSites theme={theme} />}
           </div>
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

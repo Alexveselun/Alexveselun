@@ -1,5 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
+
 import { Link } from "react-router-dom";
 import "./Error404.css";
 
@@ -8,7 +9,7 @@ const Error404 = (props) => {
   return (
     <div className="error-main">
       <div className="error-class">
-        <Fade bottom duration={2000} distance="40px">
+        <MotionWrapper>
           <h1 style={{ color: theme.text }}>Woops</h1>
           <h1 className="error-404" style={{ color: theme.secondaryText }}>
             404
@@ -28,7 +29,7 @@ const Error404 = (props) => {
           >
             Go Home
           </Link>
-        </Fade>
+        </MotionWrapper>
       </div>
     </div>
   );

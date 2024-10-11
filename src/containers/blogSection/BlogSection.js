@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import { blogSection } from "../../portfolio";
 import "./BlogSection.css";
 
@@ -8,7 +8,7 @@ const BlogSection = (props) => {
 
   return (
     <div className="blog-section">
-      <Fade bottom duration={1000} distance="40px">
+      <MotionWrapper>
         <div className="blog-heading-div">
           <div className="blog-heading-text-div">
             <h1 className="blog-heading-text" style={{ color: theme.text }}>
@@ -22,7 +22,7 @@ const BlogSection = (props) => {
             </p>
           </div>
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

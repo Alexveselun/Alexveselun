@@ -1,6 +1,6 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import PullRequestsData from "../../shared/opensource/pull_requests.json";
 import { openSource } from "../../portfolio";
 import "./PullRequestChart.css";
@@ -31,11 +31,11 @@ const PullRequestChart = (props) => {
 
   return (
     <div className="pr-chart">
-      <Fade bottom duration={2000} distance="20px">
+      <MotionWrapper>
         <h2 className="pr-chart-header" style={{ color: theme.secondaryText }}>
           Pull Request Distribution
         </h2>
-      </Fade>
+      </MotionWrapper>
       <Doughnut
         data={data}
         options={{

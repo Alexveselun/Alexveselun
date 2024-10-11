@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import { degrees } from "../../portfolio";
 // import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import "./Degrees.css";
@@ -13,11 +13,11 @@ const Degrees = (props) => {
   return (
     <div className="main" id="educations">
       <div className="educations-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <MotionWrapper>
           <h1 className="educations-header" style={{ color: theme.text }}>
             Degrees Received
           </h1>
-        </Fade>
+        </MotionWrapper>
       </div>
       {/* <div className="educations-body-div">
         {degrees.degrees.map((degree) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
 import "./GithubRepoCard.css";
 
@@ -12,7 +12,7 @@ const GithubRepoCard = (props) => {
 
   return (
     <div>
-      <Fade bottom duration={2000} distance="40px">
+      <MotionWrapper>
         <div
           className="repo-card-div"
           onClick={() => openRepoinNewTab(repo.url)}
@@ -118,7 +118,7 @@ const GithubRepoCard = (props) => {
           </div>
         </div> */}
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

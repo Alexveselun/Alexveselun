@@ -1,5 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
+
 import { podcastSection } from "../../portfolio";
 import "./Podcast.css";
 
@@ -11,19 +12,19 @@ const Podcast = (props) => {
   return (
     <div className="podcast-main">
       <div className="podcast-header" align="center">
-        <Fade bottom duration={1000} distance="20px">
+        <MotionWrapper>
           <h1 className="podcast-header-title" style={{ color: theme.text }}>
             {podcastSection.title}
           </h1>
-        </Fade>
-        <Fade left duration={2000}>
+        </MotionWrapper>
+        <MotionWrapper>
           <p
             className="subTitle podcast-header-subtitle"
             style={{ color: theme.secondaryText }}
           >
             {podcastSection.subtitle}
           </p>
-        </Fade>
+        </MotionWrapper>
       </div>
       <div className="podcast-main-div">
         {podcastSection.podcast.map((podcastLink, i) => {
@@ -32,7 +33,7 @@ const Podcast = (props) => {
           }
           return (
             <div key={i} align="center">
-              <Fade bottom duration={2000} distance="40px">
+              <MotionWrapper>
                 <iframe
                   className="podcast"
                   src={podcastLink}
@@ -40,7 +41,7 @@ const Podcast = (props) => {
                   scrolling="no"
                   title="Podcast"
                 ></iframe>
-              </Fade>
+              </MotionWrapper>
             </div>
           );
         })}

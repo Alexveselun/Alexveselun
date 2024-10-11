@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import { skills } from "../../portfolio";
 import FullStackImg from "./FullStackImg";
 import TerminalImg from "./TerminalImg";
@@ -32,7 +32,7 @@ class SkillSection extends Component {
         {skills.data.map((skill) => {
           return (
             <div className="skills-main-div" key={skill.title}>
-              <Fade left duration={2000}>
+              <MotionWrapper>
                 <div className="skills-image-div">
                   {/* <img
                     alt="Ashutosh is Analysing Data"
@@ -40,18 +40,18 @@ class SkillSection extends Component {
                   ></img> */}
                   <GetSkillSvg imageName={skill.imageName} theme={theme} />
                 </div>
-              </Fade>
+              </MotionWrapper>
 
               <div className="skills-text-div">
-                <Fade right duration={1000}>
+                <MotionWrapper>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
                     {skill.title}
                   </h1>
-                </Fade>
-                <Fade right duration={1500}>
+                </MotionWrapper>
+                <MotionWrapper>
                   <SoftwareSkills logos={skill.softwareSkills} />
-                </Fade>
-                <Fade right duration={2000}>
+                </MotionWrapper>
+                <MotionWrapper>
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
@@ -65,7 +65,7 @@ class SkillSection extends Component {
                       );
                     })}
                   </div>
-                </Fade>
+                </MotionWrapper>
               </div>
             </div>
           );

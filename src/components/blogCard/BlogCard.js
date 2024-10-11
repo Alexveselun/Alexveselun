@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import "./BlogCard.css";
-
 
 const BlogCard = ({ blog, theme }) => {
   const imageSource = `${process.env.PUBLIC_URL}/assets/blogData/${blog.image}`;
   const [show, setShow] = useState(false);
 
-  function openUrlInNewTab(url) {
+  const openUrlInNewTab = (url) => {
     if (!url) {
       setShow(true);
       setTimeout(() => {
@@ -18,17 +17,16 @@ const BlogCard = ({ blog, theme }) => {
       const win = window.open(url, "_blank");
       win.focus();
     }
-  }
+  };
 
   if (!blog) return null;
 
   return (
-    <Fade bottom duration={2000}>
+    <MotionWrapper>
       <div onClick={() => openUrlInNewTab(blog.url)}>
         <div
           className="blog-container"
           style={{ backgroundColor: theme.jacketColor || '#ffffff' }} // Fallback color
-          align="center"
         >
           <a
             className="blog-card blog-card-shadow"
@@ -36,9 +34,7 @@ const BlogCard = ({ blog, theme }) => {
             onClick={(e) => {
               if (!blog.url) {
                 e.preventDefault(); // Prevent default only if url is not valid
-              } else {
-                openUrlInNewTab(blog.url); // Open the URL in a new tab
-                e.preventDefault(); // Prevent the default behavior
+                openUrlInNewTab(); // Show alert instead
               }
             }}
           >
@@ -64,7 +60,7 @@ const BlogCard = ({ blog, theme }) => {
       <Alert show={show} variant="danger">
         <Alert.Heading>404 | Not Found!</Alert.Heading>
       </Alert>
-    </Fade>
+    </MotionWrapper>
   );
 };
 

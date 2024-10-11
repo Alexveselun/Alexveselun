@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper.js";
 import ExperienceImg from "./ExperienceImg";
 import { experience } from "../../portfolio.js";
 import "./ExperienceSection.css";
@@ -12,7 +12,7 @@ const ExperienceSection = (props) => {
   }
   return (
     <div className="basic-experience">
-      <Fade bottom duration={2000} distance="40px">
+      <MotionWrapper>
         <div className="experience-heading-div">
           <div className="experience-heading-img-div">
             {/* <img
@@ -42,7 +42,7 @@ const ExperienceSection = (props) => {
             </p>
           </div>
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

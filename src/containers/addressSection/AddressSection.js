@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper.js";
 import Button from "../../components/button/Button";
 import AddressImg from "./AddressImg";
 import { contactPageData } from "../../portfolio.js";
@@ -11,7 +11,7 @@ const AddressSection = (props) => {
   // const phoneSection = contactPageData.phoneSection;
   return (
     <div className="basic-contact">
-      <Fade bottom duration={1000} distance="40px">
+      <MotionWrapper>
         <div className="address-heading-div">
           <div className="contact-heading-img-div">
             {/* <img
@@ -49,7 +49,7 @@ const AddressSection = (props) => {
             </div>
           </div>
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

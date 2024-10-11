@@ -1,5 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
+
 import { openSource } from "../../portfolio";
 import IssueCard from "../../components/issueCard/IssueCard";
 import IssuesData from "../../shared/opensource/issues.json";
@@ -15,11 +16,11 @@ const Issues = (props) => {
   return (
     <div>
       <div className="issues-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <MotionWrapper>
           <h1 className="issues-header" style={{ color: theme.text }}>
             Issues
           </h1>
-        </Fade>
+        </MotionWrapper>
       </div>
       <div className="issues-body-div">
         {IssuesData["data"].map((issue) => {

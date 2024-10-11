@@ -1,7 +1,7 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
-import { Fade } from "react-reveal";
 import IssueData from "../../shared/opensource/issues.json";
+import MotionWrapper from "../animations/MotionWrapper";
 import { openSource } from "../../portfolio";
 import "./IssueChart.css";
 
@@ -27,11 +27,11 @@ const IssueChart = (props) => {
 
   return (
     <div className="issue-chart">
-      <Fade bottom duration={2000} distance="20px">
+      <MotionWrapper>
         <h2 className="issue-chart-header" style={{ color: theme.secondaryText }}>
           Issue Distribution
         </h2>
-      </Fade>
+      </MotionWrapper>
       <Doughnut
         data={data}
         options={{

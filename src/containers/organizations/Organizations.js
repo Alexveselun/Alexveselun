@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import { openSource } from "../../portfolio";
 import OrganizationList from "../../components/organizationList/OrganizationList";
 import OrganizationsData from "../../shared/opensource/organizations.json";
@@ -16,11 +16,11 @@ const Organizations = (props) => {
   return (
     <div id="organizations">
       <div className="organizations-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <MotionWrapper>
           <h1 className="organizations-header" style={{ color: theme.text }}>
             Contributed Organizations
           </h1>
-        </Fade>
+        </MotionWrapper>
       </div>
       <OrganizationList logos={OrganizationsData["data"]} />
     </div>

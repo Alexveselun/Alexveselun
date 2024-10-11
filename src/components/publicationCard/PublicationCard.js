@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import "./PublicationCard.css";
 
 const PublicationCard = (props) => {
@@ -9,7 +9,7 @@ const PublicationCard = (props) => {
     win.focus();
   }
   return (
-    <Fade bottom duration={2000} distance="40px">
+    <MotionWrapper>
       <div
         className="publication-card-div"
         key={publication.id}
@@ -33,7 +33,7 @@ const PublicationCard = (props) => {
           </p>
         </div>
       </div>
-    </Fade>
+    </MotionWrapper>
   );
 };
 

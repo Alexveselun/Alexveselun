@@ -1,5 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
+
 import { openSource } from "../../portfolio";
 import PullRequestCard from "../../components/pullRequestCard/PullRequestCard";
 import PullRequestsData from "../../shared/opensource/pull_requests.json";
@@ -16,11 +17,11 @@ const PullRequests = (props) => {
   return (
     <div>
       <div className="pull-requests-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <MotionWrapper>
           <h1 className="pull-requests-header" style={{ color: theme.text }}>
             Pull Requests
           </h1>
-        </Fade>
+        </MotionWrapper>
       </div>
       <div className="pull-request-body-div">
         {PullRequestsData["data"].map((pullRequest) => {

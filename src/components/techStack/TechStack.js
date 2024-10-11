@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import { techStack } from "../../portfolio";
 import "./TechStack.css";
 
@@ -8,7 +8,7 @@ const TechStack = (props) => {
   if (techStack.display) {
     return (
       <div className="techMain">
-        <Fade bottom duration={1000} distance="20px">
+        <MotionWrapper>
           <div className="skills-container">
             <div className="skills-bar">
               <h1 className="techstack-heading" style={{ color: theme.text }}>
@@ -20,20 +20,20 @@ const TechStack = (props) => {
                 };
                 return (
                   <div key={i} className="skill">
-                    <Fade right duration={1500}>
+                    <MotionWrapper>
                       <p style={{ color: theme.secondaryText }}>{exp.Stack}</p>
-                    </Fade>
-                    <Fade left duration={1500}>
+                    </MotionWrapper>
+                    <MotionWrapper>
                       <div className="meter">
                         <span style={progressStyle}></span>
                       </div>
-                    </Fade>
+                    </MotionWrapper>
                   </div>
                 );
               })}
             </div>
           </div>
-        </Fade>
+        </MotionWrapper>
       </div>
     );
   }

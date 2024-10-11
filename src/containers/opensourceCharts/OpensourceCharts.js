@@ -1,6 +1,6 @@
 import React from "react";
 import "chart.js/auto";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper.js";
 import PullRequestChart from "../../components/pullRequestChart/PullRequestChart.js";
 import IssueChart from "../../components/issueChart/IssueChart.js";
 import "./OpensourceCharts.css";
@@ -10,11 +10,11 @@ const OpensourceCharts = (props) => {
   return (
     <div>
       <div className="os-charts-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <MotionWrapper>
           <h1 className="os-charts-header" style={{ color: theme.text }}>
             Contributions
           </h1>
-        </Fade>
+        </MotionWrapper>
       </div>
       <div className="os-charts-body-div">
         <PullRequestChart theme={theme} />

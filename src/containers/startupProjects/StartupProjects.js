@@ -1,5 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
+
 import { bigProjects } from "../../portfolio";
 import "./StartupProjects.css";
 
@@ -17,22 +18,22 @@ export default function StartupProjects(props) {
   const theme = props.theme;
   return (
     <div className="startup-main main" id="projects">
-      <Fade bottom duration={1000} distance="20px">
+      <MotionWrapper>
         <h1
           className="skills-heading projects-title"
           style={{ color: theme.text }}
         >
           {bigProjects.title}
         </h1>
-      </Fade>
-      <Fade right duration={2000}>
+      </MotionWrapper>
+      <MotionWrapper>
         <p
           className="subTitle project-subtitle"
           style={{ color: theme.secondaryText }}
         >
           {bigProjects.subtitle}
         </p>
-      </Fade>
+      </MotionWrapper>
       <div className="projects-container">
         {bigProjects.projects.map((project, i) => {
           return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import "./OrganizationList.css";
 
 const OrganizationList = (props) => {
@@ -21,13 +21,13 @@ const OrganizationList = (props) => {
               }
             >
               <li className="organizations-inline" name={logo["login"]}>
-                <Fade bottom duration={2000} distance="40px">
+                <MotionWrapper>
                   <img
                     className="organizations-img"
                     src={logo["avatarUrl"]}
                     alt={logo["login"]}
                   />
-                </Fade>
+                </MotionWrapper>
               </li>
             </OverlayTrigger>
           );

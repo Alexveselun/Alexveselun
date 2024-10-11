@@ -1,11 +1,11 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import "./CertificationCard.css";
 
 const CertificationCard = (props) => {
   const { theme, certificate } = props;
   return (
-    <Fade bottom duration={2000} distance="20px">
+    <MotionWrapper>
       <div className="cert-card">
         <div className="content">
           <a
@@ -43,7 +43,7 @@ const CertificationCard = (props) => {
           </h3>
         </div>
       </div>
-    </Fade>
+    </MotionWrapper>
   );
 };
 

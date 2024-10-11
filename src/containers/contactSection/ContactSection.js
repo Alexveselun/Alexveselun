@@ -1,5 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
+
 import { greeting, contactPageData } from "../../portfolio.js";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -10,7 +11,7 @@ const ContactSection = (props) => {
   const contactSection = contactPageData.contactSection;
   return (
     <div className="basic-contact">
-      <Fade bottom duration={1000} distance="40px">
+      <MotionWrapper>
         <div className="contact-heading-div">
           <div className="contact-heading-img-div">
             <img
@@ -39,7 +40,7 @@ const ContactSection = (props) => {
             </div>
           </div>
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

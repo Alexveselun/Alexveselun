@@ -1,12 +1,12 @@
 import React from "react";
-import { Fade, Flip } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import "./DegreeCard.css";
 
 const DegreeCard = (props) => {
   const { degree, theme } = props;
   return (
     <div className="degree-card">
-      <Flip left duration={2000}>
+      <MotionWrapper>
         <div className="degree-card-img">
           <img
             style={{
@@ -18,8 +18,8 @@ const DegreeCard = (props) => {
             alt={degree.alt_name}
           />
         </div>
-      </Flip>
-      <Fade right duration={2000} distance="40px">
+      </MotionWrapper>
+      <MotionWrapper>
         <div className="card-body">
           <div
             className="body-header"
@@ -67,7 +67,7 @@ const DegreeCard = (props) => {
             </a>
           </div>
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

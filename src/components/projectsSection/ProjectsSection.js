@@ -1,6 +1,6 @@
 import React from "react";
 import GithubRepoCard from "../githubRepoCard/GithubRepoCard";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import { projects } from "../../portfolio";
 import ProjectsData from "../../shared/opensource/projects.json";
 import ProjectsImg from "./ProjectsImg";
@@ -16,7 +16,7 @@ const ProjectsSection = (props) => {
   return (
     <div>
       <div className="basic-projects">
-        <Fade bottom duration={2000} distance="40px">
+        <MotionWrapper>
           <div className="projects-heading-div">
             <div className="projects-heading-img-div">
               {/* <img
@@ -40,7 +40,7 @@ const ProjectsSection = (props) => {
               </p>
             </div>
           </div>
-        </Fade>
+        </MotionWrapper>
       </div>
       <div className="repo-cards-div-main">
         {ProjectsData.data.map((repo) => {

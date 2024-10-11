@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import { greeting, splashScreen } from "../../portfolio";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import "./LottieSplash.css";
@@ -9,7 +9,7 @@ const LottieSplash = (props) => {
   const animData = require(`../../assets/lottie/${splashScreen.animationFile}.json`);
   if (!splashScreen.useLottie) return null;
   return (
-    <Fade big>
+    <MotionWrapper big>
       <div
         className="splash-container main-page"
         style={{ backgroundColor: theme.dark }}
@@ -30,7 +30,7 @@ const LottieSplash = (props) => {
           </span>
         </div>
       </div>
-    </Fade>
+    </MotionWrapper>
   );
 };
 

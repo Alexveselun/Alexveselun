@@ -1,6 +1,6 @@
 import React from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import "./PullRequestCard.css";
 
 const PullRequestCard = (props) => {
@@ -64,7 +64,7 @@ const PullRequestCard = (props) => {
   }
 
   return (
-    <Fade bottom duration={2000} distance="40px">
+    <MotionWrapper>
       <div
         className="pull-request-card"
         style={{
@@ -140,7 +140,7 @@ const PullRequestCard = (props) => {
           </div>
         </div>
       </div>
-    </Fade>
+    </MotionWrapper>
   );
 };
 

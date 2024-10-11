@@ -1,7 +1,7 @@
 import React from "react";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { contactPageData } from "../../portfolio";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import UserData from "../../shared/opensource/user.json";
 import "./AboutMe.css";
 
@@ -22,7 +22,7 @@ const AboutMe = (props) => {
 
   return (
     <div className="about-main">
-      <Fade bottom duration={2000} distance="20px">
+      <MotionWrapper>
         <div className="main" id="contact" align="center">
           <h1 className="prof-title" style={{ color: theme.text }}>
             Reach Out to me!
@@ -30,38 +30,38 @@ const AboutMe = (props) => {
           <div className="row" align="center">
             <div className="main-content-profile"> {/* Fixed typo in className */}
               <div className="blog-header">
-                <Fade right duration={2000}>
+                <MotionWrapper>
                   <p
                     className="subTitle blog-sub"
                     style={{ color: theme.secondaryText }}
                   >
                     {contactPageData.contactSection.description}
                   </p>
-                </Fade>
+                </MotionWrapper>
               </div>
               {UserData.data.avatarUrl && ( // Simplified check
                 <div
                   className="image-content-profile"
                   style={{ padding: "20px" }}
                 >
-                  <Fade left duration={2000}>
+                  <MotionWrapper>
                     <img
                       src={UserData.data.avatarUrl}
                       alt={UserData.data.name}
                       className="profile-image"
                     />
-                  </Fade>
+                  </MotionWrapper>
                 </div>
               )}
               {UserData.data.bio && ( // Simplified check
-                <Fade left duration={2000}>
+                <MotionWrapper>
                   <h2
                     className="bio-text"
                     style={{ color: theme.imageHighlight }}
                   >
                     "{UserData.data.bio}"
                   </h2>
-                </Fade>
+                </MotionWrapper>
               )}
               {UserData.data.location && ( // Simplified check
                 <div
@@ -86,18 +86,18 @@ const AboutMe = (props) => {
                 </div>
               )}
               <div className="opp-div">
-                <Fade left duration={2000}>
+                <MotionWrapper>
                   <span className="desc-prof" style={{ color: theme.text }}>
                     Open for opportunities: Always! 
                     {/* {UserData.data.hireable} */}
                   </span>
-                </Fade>
+                </MotionWrapper>
               </div>
               <SocialMedia theme={theme} />
             </div>
           </div>
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

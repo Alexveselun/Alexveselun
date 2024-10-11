@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper.js";
 import { publications } from "../../portfolio.js";
 import PublicationCard from "../../components/publicationCard/PublicationCard";
 import "./Publications.css";
@@ -14,7 +14,7 @@ const Publications = (props) => {
   return (
     <div>
       <div className="basic-projects">
-        <Fade bottom duration={2000} distance="40px">
+        <MotionWrapper>
           <div className="publications-heading-div">
             <div className="publications-heading-text-div">
               <h1
@@ -31,7 +31,7 @@ const Publications = (props) => {
               </p>
             </div>
           </div>
-        </Fade>
+        </MotionWrapper>
       </div>
       <div className="repo-cards-div-main">
         {publications.publications.data.map((pubs) => {

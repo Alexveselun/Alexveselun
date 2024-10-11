@@ -1,6 +1,6 @@
 import React from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../animations/MotionWrapper";
 import "./IssueCard.css";
 
 const IssueCard = (props) => {
@@ -55,7 +55,7 @@ const IssueCard = (props) => {
   }
 
   return (
-    <Fade bottom duration={2000} distance="40px">
+    <MotionWrapper>
       <div
         className="issue-card"
         style={{
@@ -131,7 +131,7 @@ const IssueCard = (props) => {
           </div>
         </div>
       </div>
-    </Fade>
+    </MotionWrapper>
   );
 };
 

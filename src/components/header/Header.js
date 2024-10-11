@@ -1,6 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
-import { NavLink, Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 import { greeting, pageEnabled } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
 import ToggleSwitch from "../toggleSwitch/ToggleSwitch";
@@ -38,32 +38,29 @@ const Header = (props) => {
   const viewBlog = pageEnabled.blog;
   const link = viewSplash ? "/splash" : "/home";
 
-  const MyLink = ({ name, link }) => {
-    return (
-      <li className="li">
-        <NavLink
-          to={link}
-          tag={Link}
-          style={({ isActive }) => ({
-            fontWeight: isActive ? "bold" : "normal",
-            color: theme.text,
-          })}
-          onMouseEnter={(event) => onMouseEnter(event, theme.jacketColor)}
-          onMouseOut={(event) => onMouseOut(event)}
-        >
-          {name}
-        </NavLink>
-      </li>
-    );
-  };
+  const MyLink = ({ name, link }) => (
+    <li className="li">
+      <NavLink
+        to={link}
+        style={({ isActive }) => ({
+          fontWeight: isActive ? "bold" : "normal",
+          color: theme.text,
+        })}
+        onMouseEnter={(event) => onMouseEnter(event, theme.jacketColor)}
+        onMouseOut={onMouseOut}
+      >
+        {name}
+      </NavLink>
+    </li>
+  );
 
   return (
-    <Fade top duration={1000} distance="20px">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
       <SeoHeader />
       <div>
         <style>{styles}</style>
         <header className="header">
-          <NavLink to={link} tag={Link} className="logo">
+          <NavLink to={link} className="logo">
             <span style={{ color: theme.text }}> &lt;</span>
             <span className="logo-name" style={{ color: theme.text }}>
               {greeting.logo_name}
@@ -89,7 +86,7 @@ const Header = (props) => {
           </ul>
         </header>
       </div>
-    </Fade>
+    </motion.div>
   );
 };
 

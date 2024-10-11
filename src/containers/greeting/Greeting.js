@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import { greeting } from "../../portfolio";
 import Button from "../../components/button/Button";
 import "./Greeting.css";
@@ -7,7 +7,7 @@ import "./Greeting.css";
 const Greeting = (props) => {
   const theme = props.theme;
   return (
-    <Fade bottom duration={2000} distance="40px">
+    <MotionWrapper>
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -51,7 +51,7 @@ const Greeting = (props) => {
           </div>
         </div>
       </div>
-    </Fade>
+    </MotionWrapper>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import { talkSection } from "../../portfolio";
 import TalkCard from "../../components/talkCard/TalkCard";
 import "./Talks.css";
@@ -13,22 +13,22 @@ export default function Talks(props) {
     <div className="talks-main">
       <div className="main" id="talks">
         <div className="talk-header">
-          <Fade bottom duration={2000} distance="20px">
+          <MotionWrapper>
             <h1 className="talk-header-title" style={{ color: theme.text }}>
               {talkSection.title}
             </h1>
-          </Fade>
-          <Fade right duration={2000}>
+          </MotionWrapper>
+          <MotionWrapper>
             <p
               className="subTitle talk-header-subtitle"
               style={{ color: theme.secondaryText }}
             >
               {talkSection.subtitle}
             </p>
-          </Fade>
+          </MotionWrapper>
           {talkSection.talks.map((talk, i) => {
             return (
-              <Fade bottom duration={2000} distance="40px" key={talk.title}>
+              <MotionWrapper bottom duration={2000} distance="40px" key={talk.title}>
                 <TalkCard
                   talkDetails={{
                     title: talk.title,
@@ -39,7 +39,7 @@ export default function Talks(props) {
                   }}
                   theme={theme}
                 />
-              </Fade>
+              </MotionWrapper>
             );
           })}
         </div>

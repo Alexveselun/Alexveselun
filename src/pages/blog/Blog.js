@@ -3,7 +3,7 @@ import { Header, TopButton, Footer } from "../../components";
 import { BlogSection } from "../../containers";
 import { blogSection } from "../../portfolio";
 import BlogCard from "../../components/blogCard/BlogCard";
-import Fade from "react-reveal/Fade";
+import MotionWrapper from "../../components/animations/MotionWrapper";
 import "./Blog.css";
 
 const Blog = (props) => {
@@ -57,7 +57,7 @@ const Blog = (props) => {
   return (
     <div className="main-page">
       <Header theme={theme} />
-      <Fade bottom duration={1000} distance="20px">
+      <MotionWrapper>
         <div className="main" id="blogs">
           <BlogSection theme={theme} />
           <div className="blog-main-div">
@@ -70,7 +70,7 @@ const Blog = (props) => {
             </div>
           </div>
         </div>
-      </Fade>
+      </MotionWrapper>
       <TopButton theme={theme} />
       <Footer theme={theme} onToggle={props.onToggle} />
     </div>

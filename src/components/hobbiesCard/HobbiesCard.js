@@ -1,19 +1,19 @@
 import React from "react";
-import { Fade } from "react-reveal";
 import { hobbies } from "../../portfolio";
+import MotionWrapper from "../animations/MotionWrapper";
 import "./HobbiesCard.css";
 
 const HobbiesCard = (props) => {
   const theme = props.theme;
   return (
     <div className="hobbies-card">
-      <Fade bottom duration={2000} distance="40px">
+      <MotionWrapper>
         <div className="hobbies-card-body-div">
           {hobbies.hobbies.map((hobbiesdata) => {
             return (
               <div className="hobbies-data" key={hobbiesdata.title}>
                 <div className="hobbies-heading">
-                  <Fade left duration={2000}>
+                  <MotionWrapper>
                     <div
                       className="hobbies-card-title"
                       style={{ color: theme.text }}
@@ -26,9 +26,9 @@ const HobbiesCard = (props) => {
                     >
                       {hobbiesdata.description}
                     </div>
-                  </Fade>
+                  </MotionWrapper>
                 </div>
-                <Fade right duration={2000}>
+                <MotionWrapper>
                   <div className="hobbies-card-img">
                     <img
                       className="hobbies-image"
@@ -36,12 +36,12 @@ const HobbiesCard = (props) => {
                       alt={hobbiesdata.title}
                     />
                   </div>
-                </Fade>
+                </MotionWrapper>
               </div>
             );
           })}
         </div>
-      </Fade>
+      </MotionWrapper>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import MotionWrapper from "../../components/animations/MotionWrapper";
+
 import { certifications } from "../../portfolio";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 import "./Certifications.css";
@@ -14,11 +15,11 @@ const Certifications = (props) => {
   return (
     <div className="main" id="certs">
       <div className="certs-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <MotionWrapper>
           <h1 className="certs-header" style={{ color: theme.text }}>
             Certifications
           </h1>
-        </Fade>
+        </MotionWrapper>
       </div>
       <div className="certs-body-div">
         {certifications.certifications.map((cert) => {
