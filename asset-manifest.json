@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alexveselun/static/css/main.46bbd3e4.css",
-    "main.js": "/Alexveselun/static/js/main.f26fdb45.js",
+    "main.js": "/Alexveselun/static/js/main.c84b3f55.js",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/fa-brands-400.ttf": "/Alexveselun/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
@@ -50,10 +50,10 @@
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.46bbd3e4.css.map": "/Alexveselun/static/css/main.46bbd3e4.css.map",
-    "main.f26fdb45.js.map": "/Alexveselun/static/js/main.f26fdb45.js.map"
+    "main.c84b3f55.js.map": "/Alexveselun/static/js/main.c84b3f55.js.map"
   },
   "entrypoints": [
     "static/css/main.46bbd3e4.css",
-    "static/js/main.f26fdb45.js"
+    "static/js/main.c84b3f55.js"
   ]
 }
