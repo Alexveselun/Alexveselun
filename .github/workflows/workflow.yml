@@ -27,7 +27,7 @@ jobs:
           node-version: '16.15.1'
           
       - name: Install dependencies 🤖
-        run: npm install --force
+        run: npm install --legacy-peer-deps
     
       - name: Build the project 👷
         run: npm run build
