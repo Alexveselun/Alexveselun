@@ -3,11 +3,10 @@ import MotionWrapper from "../../components/animations/MotionWrapper";
 import { hobbies, pageEnabled } from "../../portfolio";
 import "./HobbiesSection.css";
 
-const HobbiesSection = (props) => {
-  const theme = props.theme;
-  if (!pageEnabled.hobbies) {
-    return null;
-  }
+const HobbiesSection = ({ theme }) => { // Destructure theme directly from props
+  // Return null if the hobbies page is disabled
+  if (!pageEnabled.hobbies) return null;
+
   return (
     <div className="basic-hobbies">
       <MotionWrapper>
@@ -16,10 +15,7 @@ const HobbiesSection = (props) => {
             <h1 className="hobbies-heading-text" style={{ color: theme.text }}>
               {hobbies.title}
             </h1>
-            <h2
-              className="hobbies-subTitle"
-              style={{ color: theme.secondaryText }}
-            >
+            <h2 className="hobbies-subTitle" style={{ color: theme.secondaryText }}>
               {hobbies.subTitle}
             </h2>
           </div>

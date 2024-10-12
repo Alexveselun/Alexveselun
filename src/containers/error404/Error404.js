@@ -1,11 +1,11 @@
 import React from "react";
 import MotionWrapper from "../../components/animations/MotionWrapper";
-
 import { Link } from "react-router-dom";
 import "./Error404.css";
 
 const Error404 = (props) => {
   const theme = props.theme;
+
   return (
     <div className="error-main">
       <div className="error-class">
@@ -15,7 +15,7 @@ const Error404 = (props) => {
             404
           </h1>
           <p style={{ color: theme.text }}>
-            The requested page is unavailable at the moment!
+            Please check the URL or return to the homepage.
           </p>
           <Link
             className="main-button"
@@ -25,7 +25,11 @@ const Error404 = (props) => {
               backgroundColor: theme.text,
               border: `solid 1px ${theme.text}`,
               display: "inline-flex",
+              padding: "10px 20px", // Add some padding for better appearance
+              borderRadius: "5px", // Add rounded corners for better button aesthetics
+              textDecoration: "none", // Remove underline for a cleaner look
             }}
+            tabIndex={0} // Make the link focusable
           >
             Go Home
           </Link>
@@ -34,4 +38,5 @@ const Error404 = (props) => {
     </div>
   );
 };
+
 export default Error404;

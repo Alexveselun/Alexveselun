@@ -3,43 +3,34 @@ import { hobbies } from "../../portfolio";
 import MotionWrapper from "../animations/MotionWrapper";
 import "./HobbiesCard.css";
 
-const HobbiesCard = (props) => {
-  const theme = props.theme;
+const HobbiesCard = ({ theme }) => { // Destructure theme directly from props
   return (
     <div className="hobbies-card">
       <MotionWrapper>
         <div className="hobbies-card-body-div">
-          {hobbies.hobbies.map((hobbiesdata) => {
-            return (
-              <div className="hobbies-data" key={hobbiesdata.title}>
-                <div className="hobbies-heading">
-                  <MotionWrapper>
-                    <div
-                      className="hobbies-card-title"
-                      style={{ color: theme.text }}
-                    >
-                      {hobbiesdata.title}
-                    </div>
-                    <div
-                      className="hobbies-card-subtitle"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {hobbiesdata.description}
-                    </div>
-                  </MotionWrapper>
-                </div>
+          {hobbies.hobbies.map(({ title, description, image_path }, index) => ( // Destructure hobbies data
+            <div className="hobbies-data" key={index}> {/* Use index as key */}
+              <div className="hobbies-heading">
                 <MotionWrapper>
-                  <div className="hobbies-card-img">
-                    <img
-                      className="hobbies-image"
-                      src={require(`../../assets/images/${hobbiesdata["image_path"]}`)}
-                      alt={hobbiesdata.title}
-                    />
+                  <div className="hobbies-card-title" style={{ color: theme.text }}>
+                    {title}
+                  </div>
+                  <div className="hobbies-card-subtitle" style={{ color: theme.secondaryText }}>
+                    {description}
                   </div>
                 </MotionWrapper>
               </div>
-            );
-          })}
+              <MotionWrapper>
+                <div className="hobbies-card-img">
+                  <img
+                    className="hobbies-image"
+                    src={require(`../../assets/images/${image_path}`)} // Dynamic import
+                    alt={title}
+                  />
+                </div>
+              </MotionWrapper>
+            </div>
+          ))}
         </div>
       </MotionWrapper>
     </div>

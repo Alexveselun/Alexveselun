@@ -5,8 +5,7 @@ import MotionWrapper from "../animations/MotionWrapper";
 import { openSource } from "../../portfolio";
 import "./IssueChart.css";
 
-const IssueChart = (props) => {
-  const theme = props.theme;
+const IssueChart = ({ theme }) => { // Destructure theme directly from props
 
   // Check if the issue chart should be displayed
   if (!openSource.issue_chart) {
@@ -18,7 +17,7 @@ const IssueChart = (props) => {
     labels: ["Open", "Closed"],
     datasets: [
       {
-        data: [IssueData["open"], IssueData["closed"]],
+        data: [IssueData.open, IssueData.closed], // Use dot notation for readability
         backgroundColor: ["#28a745", "#d73a49"],
         hoverBackgroundColor: ["#28a745dd", "#d73a49dd"],
       },

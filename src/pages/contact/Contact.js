@@ -3,7 +3,6 @@ import { pageEnabled } from "../../portfolio";
 import { Header, TopButton, Footer } from "../../components";
 import {
   ContactSection,
-  BlogSection,
   AddressSection,
   ContactMessage,
 } from "../../containers";
@@ -18,7 +17,6 @@ const Contact = (props) => {
     <div className="main-page">
       <Header theme={theme} />
       <ContactSection theme={theme} />
-      <BlogSection theme={theme} />
       <AddressSection theme={theme} />
       <ContactMessage theme={theme} />
       <Footer theme={theme} onToggle={props.onToggle} />

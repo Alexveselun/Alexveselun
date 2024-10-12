@@ -6,7 +6,7 @@ import { openSource } from "../../portfolio";
 import "./PullRequestChart.css";
 
 const PullRequestChart = (props) => {
-  const theme = props.theme;
+  const { theme } = props; // Destructure theme for cleaner code
 
   // Check if pull request chart should be displayed
   if (!openSource.pr_chart) {
@@ -19,9 +19,9 @@ const PullRequestChart = (props) => {
     datasets: [
       {
         data: [
-          PullRequestsData["open"],
-          PullRequestsData["merged"],
-          PullRequestsData["closed"],
+          PullRequestsData.open,
+          PullRequestsData.merged,
+          PullRequestsData.closed,
         ],
         backgroundColor: ["#28a745", "#6f42c1", "#d73a49"],
         hoverBackgroundColor: ["#28a745dd", "#6f42c1dd", "#d73a49dd"],

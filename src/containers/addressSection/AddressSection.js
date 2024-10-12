@@ -5,40 +5,40 @@ import AddressImg from "./AddressImg";
 import { contactPageData } from "../../portfolio.js";
 import "./AddressSection.css";
 
-const AddressSection = (props) => {
-  const theme = props.theme;
-  const addressSection = contactPageData.addressSection;
-  // const phoneSection = contactPageData.phoneSection;
+const AddressSection = ({ theme }) => { // Destructure theme directly from props
+  const { addressSection } = contactPageData; // Destructure addressSection for cleaner access
+
   return (
     <div className="basic-contact">
       <MotionWrapper>
         <div className="address-heading-div">
           <div className="contact-heading-img-div">
-            {/* <img
-											src={require(`../../assests/images/${addressSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
             <AddressImg theme={theme} />
           </div>
           <div className="address-heading-text-div">
             <h1 className="address-heading-text" style={{ color: theme.text }}>
-              {addressSection["title"]}
+              {addressSection.title} {/* Use dot notation */}
             </h1>
             <p
               className="contact-header-detail-text subTitle"
               style={{ color: theme.secondaryText }}
             >
-              {addressSection["subtitle"]}
+              {addressSection.subtitle} {/* Use dot notation */}
             </p>
-            <h1 className="address-heading-text" style={{ color: theme.text }}>
-              {/* {phoneSection["title"]} */}
-            </h1>
-            <p
-              className="contact-header-detail-text subTitle"
-              // style={{ color: theme.secondaryText }}
-            >
-              {/* {phoneSection["subtitle"]} */}
-            </p>
+            {/* Conditional rendering for phone section */}
+            {addressSection.phone && (
+              <>
+                <h1 className="address-heading-text" style={{ color: theme.text }}>
+                  {addressSection.phone.title}
+                </h1>
+                <p
+                  className="contact-header-detail-text subTitle"
+                  style={{ color: theme.secondaryText }}
+                >
+                  {addressSection.phone.subtitle}
+                </p>
+              </>
+            )}
             <div className="address-btn-div">
               <Button
                 text="Visit on Google Maps"
@@ -53,4 +53,5 @@ const AddressSection = (props) => {
     </div>
   );
 };
+
 export default AddressSection;

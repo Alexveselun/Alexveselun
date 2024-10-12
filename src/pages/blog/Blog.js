@@ -10,7 +10,7 @@ const Blog = (props) => {
   const { theme } = props;
   const blogRef = useRef(null);
   const [blogData, setBlogData] = useState(null);
-  const [dataUnavailable, setDataUnavailable] = useState(false); 
+  const [dataUnavailable, setDataUnavailable] = useState(false);
 
   useEffect(() => {
     try {
@@ -18,7 +18,7 @@ const Blog = (props) => {
       setBlogData(data);
     } catch (error) {
       console.error("Error loading blog data:", error);
-      setDataUnavailable(true); 
+      setDataUnavailable(true);
     }
   }, []);
 
@@ -33,10 +33,10 @@ const Blog = (props) => {
     cleanEmptyNodes();
   }, []);
 
-  // Перевірка на тип блогів
+  // Validate blog type before rendering
   const blogType = blogSection.display;
   if (!["none", "myBlog", "hardcoded"].includes(blogType) || blogType === "none") {
-    return null;
+    return null; // Do not render anything if the blog type is invalid
   }
 
   const renderBlogCards = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import MotionWrapper from "../animations/MotionWrapper.js";
 import { NavLink } from "react-router-dom";
 import { greeting, pageEnabled } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
@@ -18,7 +18,7 @@ const onMouseOut = (event) => {
 };
 
 const Header = (props) => {
-  const theme = props.theme;
+  const { theme } = props;  // Destructure theme for better readability
   const styles = `
     .navic {
       background: ${theme.text};
@@ -29,15 +29,9 @@ const Header = (props) => {
     }
   `;
 
-  const viewExperience = pageEnabled.experience;
-  const viewEducation = pageEnabled.education;
-  const viewProjects = pageEnabled.projects;
-  const viewopenSource = pageEnabled.opensource;
-  const viewHobbbies = pageEnabled.hobbies;
-  const viewSplash = pageEnabled.splash;
-  const viewBlog = pageEnabled.blog;
-  const link = viewSplash ? "/splash" : "/home";
+  const link = pageEnabled.splash ? "/splash" : "/home"; // Logic for determining the logo link
 
+  // Render individual navigation links based on pageEnabled settings
   const MyLink = ({ name, link }) => (
     <li className="li">
       <NavLink
@@ -55,7 +49,7 @@ const Header = (props) => {
   );
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+    <MotionWrapper>
       <SeoHeader />
       <div>
         <style>{styles}</style>
@@ -73,12 +67,12 @@ const Header = (props) => {
           </label>
           <ul className="menu">
             <MyLink name="Home" link="/home" />
-            {viewExperience && <MyLink name="Experience" link="/experience" />}
-            {viewBlog && <MyLink name="Blog" link="/blog" />}
-            {viewEducation && <MyLink name="Education" link="/education" />}
-            {viewProjects && <MyLink name="Projects" link="/projects" />}
-            {viewopenSource && <MyLink name="IT" link="/opensource" />}
-            {viewHobbbies && <MyLink name="Hobbies" link="/hobbies" />}
+            {pageEnabled.experience && <MyLink name="Experience" link="/experience" />}
+            {pageEnabled.blog && <MyLink name="Blog" link="/blog" />}
+            {pageEnabled.education && <MyLink name="Education" link="/education" />}
+            {pageEnabled.projects && <MyLink name="Projects" link="/projects" />}
+            {pageEnabled.opensource && <MyLink name="IT" link="/opensource" />}
+            {pageEnabled.hobbies && <MyLink name="Hobbies" link="/hobbies" />}
             <MyLink name="Contact" link="/contact" />
             <li className="li">
               <ToggleSwitch />
@@ -86,7 +80,7 @@ const Header = (props) => {
           </ul>
         </header>
       </div>
-    </motion.div>
+    </MotionWrapper>
   );
 };
 

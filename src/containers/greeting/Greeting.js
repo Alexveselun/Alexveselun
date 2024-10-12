@@ -47,7 +47,6 @@ const Greeting = (props) => {
 							src={require("../../assets/images/main-photo-home.png")}
               className="greeting-image" // Class added here
 						></img>
-            {/* <FeelingProud theme={theme} /> */}
           </div>
         </div>
       </div>

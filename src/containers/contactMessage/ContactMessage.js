@@ -5,58 +5,52 @@ import emailjs from "@emailjs/browser";
 import ContactImg from "./ContactImg";
 import "./ContactMessage.css";
 
-const ContactMessage = (props) => {
-  const theme = props.theme;
+const ContactMessage = ({ theme }) => { // Destructure theme directly from props
   const [disabled, setDisabled] = useState(false);
   const [formData, setFormData] = useState({});
+  const [error, setError] = useState(""); // State for error messages
   const buttonRef = useRef();
   const alertRef = useRef();
   const formRef = useRef();
 
   useEffect(() => {
-    buttonRef.current.disabled = disabled ? true : false;
+    buttonRef.current.disabled = disabled; // Simplified condition
   }, [disabled]);
 
   const toggleAlert = () => alertRef.current.classList.toggle("show");
 
   const handleChange = (e) => {
-    const field = e.target.name;
-    const value = e.target.value;
-    const data = { ...formData };
-    data[field] = value;
-    setFormData(data);
+    const { name, value } = e.target; // Destructure name and value directly
+    setFormData((prevData) => ({ ...prevData, [name]: value })); // Use functional state update
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (
-      formData.name &&
-      formData.email &&
-      formData.subject &&
-      formData.message
-    ) {
+    setError(""); // Reset error on submit
+    if (formData.name && formData.email && formData.subject && formData.message) {
       setDisabled(true);
-      await emailjs
-        .send(
+      try {
+        const response = await emailjs.send(
           contactMessage.serviceID,
           contactMessage.templateID,
           formData,
           contactMessage.emailjsUserID
-        )
-        .then(
-          (response) => {
-            if (response.text === "OK") {
-              toggleAlert();
-            }
-          },
-          (error) => {
-            console.log(error);
-          }
         );
-      formRef.current.reset();
-      setDisabled(false);
-      setTimeout(() => {
-        toggleAlert();
-      }, 5000);
+        if (response.text === "OK") {
+          toggleAlert();
+          formRef.current.reset(); // Reset form only on success
+        }
+      } catch (error) {
+        console.log(error);
+        setError("Failed to send message. Please try again later."); // Set error message
+      } finally {
+        setDisabled(false);
+        setTimeout(() => {
+          toggleAlert();
+        }, 5000);
+      }
+    } else {
+      setError("All fields are required."); // Set error if fields are missing
     }
   };
 
@@ -67,6 +61,7 @@ const ContactMessage = (props) => {
   ) {
     return null;
   }
+
   return (
     <div id="contact" className="mt-4">
       <div className="contactMessage-main">
@@ -98,6 +93,7 @@ const ContactMessage = (props) => {
                     placeholder="Name"
                     height="60px"
                     onChange={handleChange}
+                    required // Add required attribute for accessibility
                   />
                   <Input
                     name="email"
@@ -105,6 +101,7 @@ const ContactMessage = (props) => {
                     placeholder="Email"
                     height="60px"
                     onChange={handleChange}
+                    required // Add required attribute for accessibility
                   />
                   <Input
                     name="subject"
@@ -112,6 +109,7 @@ const ContactMessage = (props) => {
                     placeholder="Subject"
                     height="60px"
                     onChange={handleChange}
+                    required // Add required attribute for accessibility
                   />
                   <Input
                     name="message"
@@ -119,14 +117,16 @@ const ContactMessage = (props) => {
                     placeholder="Message"
                     height="100px"
                     onChange={handleChange}
+                    required // Add required attribute for accessibility
                   />
                 </div>
+                {error && <div className="alert alert-danger">{error}</div>} {/* Display error messages */}
                 <button
                   ref={buttonRef}
                   type="submit"
                   className="btn btn-primary"
                 >
-                  Send Message
+                  {disabled ? "Sending..." : "Send Message"} {/* Loading state */}
                 </button>
               </form>
               <div className="fade alert alert-success" ref={alertRef}>

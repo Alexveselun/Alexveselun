@@ -13,17 +13,10 @@
   display: flex;
 }
 
-.blog-heading-div {
-  display: flex;
-}
 
 .address-heading-div {
   display: flex;
   margin-top: 80px;
-}
-
-.blog-heading-div > * {
-  flex: 1;
 }
 
 .contact-heading-div > * {
@@ -153,10 +146,6 @@
 
   .address-heading-text {
     font-size: 20px;
-  }
-
-  .blog-heading-div {
-    flex-direction: column-reverse;
   }
 
   .address-heading-div {

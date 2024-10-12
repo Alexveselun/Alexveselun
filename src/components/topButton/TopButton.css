@@ -1,11 +1,21 @@
 .topButton {
-  visibility: hidden;
   position: fixed;
-  bottom: 1.2rem;
-  right: 1.5rem;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 50%;
   cursor: pointer;
-  padding: 15px;
-  outline: none;
-  border-radius: 2rem;
-  font-size: 1.5rem;
+  transition: visibility 0.3s, opacity 0.3s ease;
+  opacity: 0; /* Default state */
+  visibility: hidden; /* Default state */
+}
+
+.topButton.visible {
+  opacity: 1; /* When visible */
+  visibility: visible; /* When visible */
+}
+
+.topButton.hidden {
+  opacity: 0; /* When hidden */
+  visibility: hidden; /* When hidden */
 }
