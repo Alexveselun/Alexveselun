@@ -1,8 +1,8 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 
 import { openSource } from "../../portfolio";
-import IssueCard from "../../components/issueCard/IssueCard";
+import IssueCard from "../../components/cards/issueCard/IssueCard";
 import IssuesData from "../../shared/opensource/issues.json";
 import "./Issues.css";
 

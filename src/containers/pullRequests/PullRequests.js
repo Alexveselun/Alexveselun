@@ -1,7 +1,7 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { openSource } from "../../portfolio";
-import PullRequestCard from "../../components/pullRequestCard/PullRequestCard";
+import PullRequestCard from "../../components/cards/pullRequestCard/PullRequestCard";
 import PullRequestsData from "../../shared/opensource/pull_requests.json";
 import "./PullRequests.css";
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { skills } from "../../portfolio";
 import FullStackImg from "./FullStackImg";
 import TerminalImg from "./TerminalImg";
@@ -7,7 +7,7 @@ import DesignImg from "./DesignImg";
 import AppDevelopImg from "./AppDevelopImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DataScienceImg from "./DataScienceImg";
-import SoftwareSkills from "../../components/softwareSkills/SoftwareSkills";
+import SoftwareSkills from "../../components/media/softwareSkills/SoftwareSkills";
 import "./Skills.css";
 
 const skillImageComponents = {

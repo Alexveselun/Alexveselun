@@ -1,6 +1,6 @@
 import React from "react";
 import { contactPageData } from "../../portfolio";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
+import SocialMedia from "../../components/layouts/socialMedia/SocialMedia";
 import "./Contact.css";
 
 const Contact = () => {

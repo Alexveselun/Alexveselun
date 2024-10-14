@@ -1,7 +1,7 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { degrees } from "../../portfolio";
-// import DegreeCard from "../../components/degreeCard/DegreeCard.js";
+// import DegreeCard from "../../components/degreeCard/DegreeCard";
 import "./Degrees.css";
 
 const Degrees = (props) => {

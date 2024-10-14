@@ -1,6 +1,6 @@
 import React from "react";
 import { splashScreen } from "../../portfolio";
-import LoaderLogo from "../../components/loader/LoaderLogo.js";
+import LoaderLogo from "../../components/layouts/animations/loader/LoaderLogo";
 import "./NormalSplash.css";
 
 const NormalSplash = (props) => {

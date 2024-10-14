@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { contactMessage } from "../../portfolio.js";
-import Input from "../../components/input/Input.js";
+import Input from "../../components/forms/input/Input.js";
 import emailjs from "@emailjs/browser";
 import ContactImg from "./ContactImg";
 import "./ContactMessage.css";

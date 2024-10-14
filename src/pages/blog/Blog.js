@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { Header, TopButton, Footer } from "../../components";
 import { BlogSection } from "../../containers";
 import { blogSection } from "../../portfolio";
-import BlogCard from "../../components/blogCard/BlogCard";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import BlogCard from "../../components/cards/blogCard/BlogCard";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import "./Blog.css";
 
 const Blog = (props) => {

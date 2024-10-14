@@ -1,5 +1,5 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { blogSection } from "../../portfolio";
 import "./BlogSection.css";
 

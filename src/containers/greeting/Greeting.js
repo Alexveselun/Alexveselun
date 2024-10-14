@@ -1,7 +1,7 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { greeting } from "../../portfolio";
-import Button from "../../components/button/Button";
+import Button from "../../components/layouts/button/Button";
 import "./Greeting.css";
 
 const Greeting = (props) => {

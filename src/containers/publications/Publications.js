@@ -1,7 +1,7 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper.js";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { publications } from "../../portfolio.js";
-import PublicationCard from "../../components/publicationCard/PublicationCard";
+import PublicationCard from "../../components/cards/publicationCard/PublicationCard";
 import "./Publications.css";
 
 const Publications = ({ theme }) => { // Destructure theme directly from props

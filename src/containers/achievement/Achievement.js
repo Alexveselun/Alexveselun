@@ -1,5 +1,5 @@
 import React from "react";
-import AchievementCard from "../../components/achievementCard/AchievementCard";
+import AchievementCard from "../../components/cards/achievementCard/AchievementCard";
 import { certifications } from "../../portfolio";
 import "./Achievement.css";
 

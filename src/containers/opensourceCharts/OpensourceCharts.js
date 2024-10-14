@@ -1,8 +1,8 @@
 import React from "react";
 import "chart.js/auto";
-import MotionWrapper from "../../components/animations/MotionWrapper";
-import PullRequestChart from "../../components/pullRequestChart/PullRequestChart.js";
-import IssueChart from "../../components/issueChart/IssueChart.js";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
+import PullRequestChart from "../../components/charts/pullRequestChart/PullRequestChart";
+import IssueChart from "../../components/charts/issueChart/IssueChart";
 import "./OpensourceCharts.css";
 
 const OpensourceCharts = (props) => {

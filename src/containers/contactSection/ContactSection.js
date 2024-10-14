@@ -1,9 +1,8 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
-
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper.js";
 import { greeting, contactPageData } from "../../portfolio.js";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
+import SocialMedia from "../../components/layouts/socialMedia/SocialMedia";
+import Button from "../../components/layouts/button/Button";
 import "./ContactSection.css";
 
 const ContactSection = ({ theme }) => { // Destructure theme directly from props

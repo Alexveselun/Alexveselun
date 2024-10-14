@@ -1,8 +1,8 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { openSource } from "../../portfolio";
-import OrganizationList from "../../components/organizationList/OrganizationList";
-import OrganizationsData from "../../shared/opensource/organizations.json";
+import OrganizationList from "../../components/media/organizationList/OrganizationList";
+import OrganizationsData from "../../shared/opensource/organizations";
 import "./Organizations.css";
 
 const Organizations = (props) => {

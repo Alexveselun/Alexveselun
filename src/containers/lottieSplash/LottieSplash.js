@@ -1,7 +1,7 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { greeting, splashScreen } from "../../portfolio";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import DisplayLottie from "../../components/layouts/animations/displayLottie/DisplayLottie";
 import "./LottieSplash.css";
 
 const LottieSplash = (props) => {

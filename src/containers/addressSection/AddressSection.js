@@ -1,6 +1,6 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper.js";
-import Button from "../../components/button/Button";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper.js";
+import Button from "../../components/layouts/button/Button";
 import AddressImg from "./AddressImg";
 import { contactPageData } from "../../portfolio.js";
 import "./AddressSection.css";

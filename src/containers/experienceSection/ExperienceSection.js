@@ -1,5 +1,5 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper.js";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper.js";
 import ExperienceImg from "./ExperienceImg";
 import { experience } from "../../portfolio.js";
 import "./ExperienceSection.css";

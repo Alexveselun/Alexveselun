@@ -1,5 +1,5 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { Link } from "react-router-dom";
 import "./Error404.css";
 

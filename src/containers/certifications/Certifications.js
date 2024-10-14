@@ -1,8 +1,7 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
-
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { certifications } from "../../portfolio";
-import CertificationCard from "../../components/certificationCard/CertificationCard";
+import CertificationCard from "../../components/cards/certificationCard/CertificationCard";
 import "./Certifications.css";
 
 const Certifications = (props) => {

@@ -1,7 +1,7 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { talkSection } from "../../portfolio";
-import TalkCard from "../../components/talkCard/TalkCard";
+import TalkCard from "../../components/cards/talkCard/TalkCard";
 import "./Talks.css";
 
 export default function Talks(props) {

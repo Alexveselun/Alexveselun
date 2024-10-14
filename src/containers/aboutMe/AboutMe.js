@@ -1,7 +1,7 @@
 import React from "react";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
+import { SocialMedia } from "../../components";
 import { contactPageData } from "../../portfolio";
-import MotionWrapper from "../../components/animations/MotionWrapper";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import UserData from "../../shared/opensource/user.json";
 import "./AboutMe.css";
 

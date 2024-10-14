@@ -1,6 +1,6 @@
 import React from "react";
-import MotionWrapper from "../../components/animations/MotionWrapper";
-import TechStack from "../../components/techStack/TechStack";
+import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
+import TechStack from "../../components/media/techStack/TechStack";
 import SkillSection from "./SkillSection";
 import "./Skills.css";
 
