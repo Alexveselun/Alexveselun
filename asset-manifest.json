@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Alexveselun/static/css/main.5fbc20e8.css",
-    "main.js": "/Alexveselun/static/js/main.b8169df0.js",
+    "main.css": "/Alexveselun/static/css/main.0b3bfaec.css",
+    "main.js": "/Alexveselun/static/js/main.2e1425db.js",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/fa-brands-400.ttf": "/Alexveselun/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
@@ -49,11 +49,11 @@
     "static/media/googleAssistant.svg": "/Alexveselun/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.5fbc20e8.css.map": "/Alexveselun/static/css/main.5fbc20e8.css.map",
-    "main.b8169df0.js.map": "/Alexveselun/static/js/main.b8169df0.js.map"
+    "main.0b3bfaec.css.map": "/Alexveselun/static/css/main.0b3bfaec.css.map",
+    "main.2e1425db.js.map": "/Alexveselun/static/js/main.2e1425db.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fbc20e8.css",
-    "static/js/main.b8169df0.js"
+    "static/css/main.0b3bfaec.css",
+    "static/js/main.2e1425db.js"
   ]
 }
