@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Alexveselun/static/css/main.0b3bfaec.css",
-    "main.js": "/Alexveselun/static/js/main.2e1425db.js",
+    "main.css": "/Alexveselun/static/css/main.6bb58008.css",
+    "main.js": "/Alexveselun/static/js/main.d3abd311.js",
+    "static/media/background2Slide.png": "/Alexveselun/static/media/background2Slide.d11c2e0f85f7f3685899.png",
+    "static/media/background1Slide.png": "/Alexveselun/static/media/background1Slide.7f7317f1d36316edc357.png",
+    "static/media/background3Slide.png": "/Alexveselun/static/media/background3Slide.94d6c5be04a7e997b5ea.png",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
-    "static/media/Montserrat-Regular.ttf": "/Alexveselun/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/fa-brands-400.ttf": "/Alexveselun/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.d58d758a79617b0b04d6.png",
     "static/media/fa-solid-900.woff2": "/Alexveselun/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
     "static/media/Music.png": "/Alexveselun/static/media/Music.fa31de01cba91222dfa4.png",
     "static/media/Reading.png": "/Alexveselun/static/media/Reading.bc59c757ced469788a14.png",
-    "static/media/GoogleSans-Italic.ttf": "/Alexveselun/static/media/GoogleSans-Italic.40bb50bd202405745006.ttf",
-    "static/media/GoogleSans-MediumItalic.ttf": "/Alexveselun/static/media/GoogleSans-MediumItalic.56d4f777a7997e5a10b3.ttf",
-    "static/media/GoogleSans-BoldItalic.ttf": "/Alexveselun/static/media/GoogleSans-BoldItalic.d282e9c31d0f894a7f06.ttf",
-    "static/media/GoogleSans-Regular.ttf": "/Alexveselun/static/media/GoogleSans-Regular.bec0591b6a291c3ca895.ttf",
-    "static/media/GoogleSans-Medium.ttf": "/Alexveselun/static/media/GoogleSans-Medium.963c3e555aaada9ef8a9.ttf",
     "static/media/fa-brands-400.woff2": "/Alexveselun/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
-    "static/media/GoogleSans-Bold.ttf": "/Alexveselun/static/media/GoogleSans-Bold.d907e4bf3e32637a636e.ttf",
     "static/media/contactMail.png": "/Alexveselun/static/media/contactMail.d4c9ac42fba95158a55c.png",
-    "static/media/Agustina.woff": "/Alexveselun/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/ibm_logo.png": "/Alexveselun/static/media/ibm_logo.8204bba7daa4eedf644b.png",
+    "static/media/silka-semibold-webfont.ttf": "/Alexveselun/static/media/silka-semibold-webfont.149a5f2da5d81ecd3f15.ttf",
+    "static/media/silkamono-regular-webfont.ttf": "/Alexveselun/static/media/silkamono-regular-webfont.93d3a52ebcc3cb633fcb.ttf",
+    "static/media/silka-medium-webfont.ttf": "/Alexveselun/static/media/silka-medium-webfont.3b85279d5967d3f1e066.ttf",
+    "static/media/silkamono-bold-webfont.ttf": "/Alexveselun/static/media/silkamono-bold-webfont.6dd1ed26fa0e22dd865f.ttf",
+    "static/media/silka-regular-webfont.ttf": "/Alexveselun/static/media/silka-regular-webfont.093bd741a8030ee6cba8.ttf",
     "static/media/animated_logo.svg": "/Alexveselun/static/media/animated_logo.abd0b20ec83cb1f60d42.svg",
     "static/media/Writing.png": "/Alexveselun/static/media/Writing.1d4fc63c18182b390ac3.png",
     "static/media/fa-regular-400.ttf": "/Alexveselun/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
@@ -35,7 +35,6 @@
     "static/media/address_image.svg": "/Alexveselun/static/media/address_image.3385d92e5e426e57a5b1.svg",
     "static/media/experience.svg": "/Alexveselun/static/media/experience.c50c576af78a4172f78d.svg",
     "static/media/Mr.Yanyk.jpeg": "/Alexveselun/static/media/Mr.Yanyk.77f56958ec18f7c0fe76.jpeg",
-    "static/media/Dhestora.ttf": "/Alexveselun/static/media/Dhestora.7ce535059c02ab66c16d.ttf",
     "static/media/feelingProud.svg": "/Alexveselun/static/media/feelingProud.288e616ff8dc11bd4713.svg",
     "static/media/cloud_infrastructure.svg": "/Alexveselun/static/media/cloud_infrastructure.20b580f8784fe74e6e38.svg",
     "static/media/blogs_image.svg": "/Alexveselun/static/media/blogs_image.08bcc48d9a3783389c93.svg",
@@ -49,11 +48,11 @@
     "static/media/googleAssistant.svg": "/Alexveselun/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.0b3bfaec.css.map": "/Alexveselun/static/css/main.0b3bfaec.css.map",
-    "main.2e1425db.js.map": "/Alexveselun/static/js/main.2e1425db.js.map"
+    "main.6bb58008.css.map": "/Alexveselun/static/css/main.6bb58008.css.map",
+    "main.d3abd311.js.map": "/Alexveselun/static/js/main.d3abd311.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b3bfaec.css",
-    "static/js/main.2e1425db.js"
+    "static/css/main.6bb58008.css",
+    "static/js/main.d3abd311.js"
   ]
 }
