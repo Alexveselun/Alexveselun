@@ -1,50 +1,9 @@
-@font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
-}
-@font-face {
-  font-family: "Dhestora";
-  src: local("Dhestora"),
-  url("./assets/fonts/Dhestora.ttf") format("woff");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Bold";
-  src: local("Google Sans Bold"),
-    url("./assets/fonts/GoogleSans-Bold.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Bold Italic";
-  src: local("Google Sans Bold Italic"),
-    url("./assets/fonts/GoogleSans-BoldItalic.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Italic";
-  src: local("Google Sans Italic"),
-    url("./assets/fonts/GoogleSans-Italic.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Medium";
-  src: local("Google Sans Medium"),
-    url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Medium Italic";
-  src: local("Google Sans Medium Italic"),
-    url("./assets/fonts/GoogleSans-MediumItalic.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Regular";
-  src: local("Google Sans Regular"),
-    url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
-}
+@font-face {font-family: Silka-Regular;  src: url("./assets/fonts/silka-regular-webfont.ttf");}
+@font-face {font-family: Silka-Medium; src: url("./assets/fonts/Silka/silka-medium-webfont.ttf");}
+@font-face {font-family: Silka-SemiBold; src: url("./assets/fonts/Silka/silka-semibold-webfont.ttf");}
+@font-face {font-family: SilkaMono-Regular; src: url("./assets/fonts/Silka/Silka_Mono/silkamono-regular-webfont.ttf");}
+@font-face {font-family: SilkaMono-Medium; src: url("./assets/fonts/Silka/Silka_Mono/silkamono-bold-webfont.ttf");}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -53,16 +12,21 @@ code {
   min-width: 100vw;
   min-height: 100vh;
 }
-html,
-body {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+html, body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
 }
 body {
-  margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font-family: 'Silka-Medium', sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 400;
+  background: #000;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  top: 0;  
+  left: 0;
 }
 /* Media Query */
 @media (max-width: 1380px) {
@@ -73,8 +37,18 @@ body {
   }
 }
 
-/* Classes from bootstrap */
-/* Credit: BootStrap */
+.btn {
+  height: 50px;
+  color: #000;
+  display: inline-block;
+  padding: 13px 30px 13px 30px;
+  position: relative;
+  font-size: 14px; 
+  line-height: 24px; 
+  text-decoration: none; 
+  background: #fff;
+  border-radius: 25px;
+}
 
 .btn.disabled {
   pointer-events: none;

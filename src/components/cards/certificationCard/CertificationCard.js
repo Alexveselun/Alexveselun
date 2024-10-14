@@ -15,7 +15,7 @@ const CertificationCard = (props) => {
           >
             <div className="content-overlay"></div>
             <div
-              className="cert-header"
+              className="cert-main"
               style={{ backgroundColor: certificate.color_code }}
             >
               <img

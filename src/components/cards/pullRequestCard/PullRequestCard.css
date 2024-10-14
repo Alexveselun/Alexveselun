@@ -24,7 +24,7 @@
   display: inline-block;
   margin-bottom: 0px;
   font-size: 12px;
-  font-family: "Google Sans Regular";
+  font-family: SilkaMono-Regular;
   padding: 2px;
   color: #fff;
   border-radius: 10%;
@@ -36,7 +36,7 @@
   margin-bottom: 0px;
   margin-left: 10px;
   font-size: 12px;
-  font-family: "Google Sans Regular";
+  font-family: SilkaMono-Regular;
 }
 
 .pr-header {
@@ -61,7 +61,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 10px;
-  font-family: "Google Sans Regular";
+  font-family: SilkaMono-Regular;
   color: #808080;
 }
 
@@ -73,7 +73,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 16px;
-  font-family: "Google Sans Regular";
+  font-family: SilkaMono-Regular;
 }
 
 .pr-title > a {
@@ -126,7 +126,7 @@
   text-align: left;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: "Google Sans Regular";
+  font-family: SilkaMono-Regular;
   font-size: 12px;
   margin-top: 5px;
 }
@@ -147,7 +147,7 @@
   margin-bottom: 0px;
   color: #28a745;
   font-size: 14px;
-  font-family: "Google Sans Regular";
+  font-family: SilkaMono-Regular;
 }
 
 .deletions-files {
@@ -156,7 +156,7 @@
   margin-bottom: 0px;
   color: #d73a49;
   font-size: 14px;
-  font-family: "Google Sans Regular";
+  font-family: SilkaMono-Regular;
 }
 
 /* .owner-img-div{

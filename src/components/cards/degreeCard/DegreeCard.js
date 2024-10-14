@@ -23,10 +23,10 @@ const DegreeCard = (props) => {
       <MotionWrapper>
         <div className="card-body">
           <div
-            className="body-header"
+            className="body-titler"
             style={{ backgroundColor: theme.headerColor }}
           >
-            <div className="body-header-title">
+            <div className="body-title-main">
               <h2 className="card-title" style={{ color: theme.text }}>
                 {degree.title}
               </h2>
@@ -34,7 +34,7 @@ const DegreeCard = (props) => {
                 {degree.subtitle}
               </h3>
             </div>
-            <div className="body-header-duration">
+            <div className="body-title-duration">
               <h3 className="duration" style={{ color: theme.text }}>
                 {degree.duration}
               </h3>
@@ -58,7 +58,7 @@ const DegreeCard = (props) => {
               rel="noopener noreferrer"
             >
               <div
-                className="visit-btn"
+                className="btn"
                 style={{ backgroundColor: theme.headerColor }}
               >
                 <p className="btn-text" style={{ color: theme.text }}>

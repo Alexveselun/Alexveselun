@@ -21,7 +21,7 @@ const ExperienceAccordion = (props) => {
                     border: `1px solid ${theme.headerColor}`,
                     borderRadius: `5px`,
                     marginBottom: `3px`,
-                    fontFamily: "Google Sans Regular",
+                    fontFamily: "SilkaMono-Regular",
                     outline: "none",
                     boxShadow: "none",
                   }),

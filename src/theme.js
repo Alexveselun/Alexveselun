@@ -1,5 +1,19 @@
 // theme.js
-export const blueTheme = {
+//new style
+export const blackNewTheme = {
+  body: "#181818", /* Темний фон для сучасного вигляду */
+  text: "#FFFFFF", /* Білий текст для контрасту на темному фоні */
+  highlight: "#ff4081", /* Яскравий рожевий акцент для молодіжної динаміки */
+  dark: "#121212", /* Дуже темний фон для секцій */
+  secondaryText: "#B0BEC5", /* Світло-сірий для вторинного тексту */
+  imageHighlight: "#1E88E5", /* Яскраво-синій для акцентів на зображеннях */
+  compImgHighlight: "#424242", /* Темно-сірий для компонентів */
+  jacketColor: "#FF8A65", /* Теплий кораловий для кнопок або виділених елементів */
+  headerColor: "#1E88E577", /* Напівпрозорий темно-синій для заголовків */
+  
+};
+//old style
+export const blueThemeOld = {
   body: "#EDF9FE",
   text: "#001C55",
   highlight: "#ffba08",
@@ -121,6 +135,6 @@ export const darkTheme = {
 };
 
 // Change this value of Theme
-const Theme = blueTheme;
+const Theme = blackNewTheme;
 
 export default Theme;

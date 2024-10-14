@@ -64,14 +64,14 @@ const IssueCard = (props) => {
         }}
       >
         <div className="issue-top">
-          <div className="issue-header">
+          <div className="issue-main">
             <span
               className="iconify issue-icons"
               data-icon={iconPR.iconifyClass}
               style={iconPR.style}
               data-inline="false"
             ></span>
-            <div className="issue-title-header">
+            <div className="issue-title-main">
               <p className="issue-title">
                 <a
                   href={issue["url"]}

@@ -17,7 +17,7 @@ const Greeting = (props) => {
               </h1>
               {greeting.nickname !== null && (
                 <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                  {greeting.nickname} 
+                  {greeting.nickname}
                 </h2>
               )}
               <p
@@ -35,18 +35,14 @@ const Greeting = (props) => {
                   className="portfolio-repo-btn"
                 />
               </div>
-              {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
             </div>
           </div>
-          <div className="greeting-image-div" >
+          <div className="greeting-image-div">
             <img
-							alt="main-photo"
-							src={require("../../assets/images/main-photo-home.png")}
-              className="greeting-image" // Class added here
-						></img>
+              alt="main-photo"
+              src={require("../../assets/images/main-photo-home.png")}
+              className="greeting-image"
+            />
           </div>
         </div>
       </div>

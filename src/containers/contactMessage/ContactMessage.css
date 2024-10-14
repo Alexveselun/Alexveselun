@@ -32,6 +32,13 @@
   cursor: pointer;
 }
 
+.btn-text {
+  margin: 0px;
+  padding: 0px;
+  font-family: SilkaMono-Regular;
+  /* color: #000000; */
+}
+
 @media (min-width: 768px) {
   .contactMessage-main {
     display: flex;
