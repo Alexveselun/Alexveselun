@@ -6,7 +6,7 @@ const ProjectLanguages = (props) => {
   const logos = props.logos;
   return (
     <div>
-      <div className="software-skills-main-div">
+      <div className="skills-main-div">
         <ul className="dev-icons-languages">
           {logos.map((logo) => {
             return (

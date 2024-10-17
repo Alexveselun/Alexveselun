@@ -10,13 +10,12 @@ import DataScienceImg from "./DataScienceImg";
 import SoftwareSkills from "../../components/media/softwareSkills/SoftwareSkills";
 import "./Skills.css";
 
-// Define the Theme interface
+// Інтерфейси для теми та навичок
 interface Theme {
   text: string;
   secondaryText: string;
 }
 
-// Define the SoftwareSkill interface to match the data structure
 interface SoftwareSkill {
   skillName: string;
   fontAwesomeClassname: string;
@@ -26,20 +25,17 @@ interface SoftwareSkill {
   };
 }
 
-// Update the Skill interface to match the portfolio structure
 interface Skill {
   title: string;
   imageName: string;
-  softwareSkills: SoftwareSkill[]; // Updated to match the structure
+  softwareSkills: SoftwareSkill[];
   skills: string[];
 }
 
-// Define the SkillSectionProps interface
 interface SkillSectionProps {
   theme: Theme;
 }
 
-// Skill image components mapping
 const skillImageComponents: Record<string, React.FC<{ theme: Theme }>> = {
   TerminalImg,
   FullStackImg,
@@ -49,41 +45,32 @@ const skillImageComponents: Record<string, React.FC<{ theme: Theme }>> = {
   DesignImg,
 };
 
-// Functional component to get the skill SVG
-function GetSkillSvg({ imageName, theme }: { imageName: string; theme: Theme }) {
+const GetSkillSvg: React.FC<{ imageName: string; theme: Theme }> = ({ imageName, theme }) => {
   const SkillComponent = skillImageComponents[imageName] || skillImageComponents.DesignImg;
   return <SkillComponent theme={theme} />;
-}
+};
 
-// Class component for SkillSection
+// Основний компонент для секції навичок
 class SkillSection extends Component<SkillSectionProps> {
   render() {
     const { theme } = this.props;
 
     return (
-      <div>
+      <div className="skills-main-div"> 
         {skills.data.map((skill: Skill) => (
-          <div className="skills-main-div" key={skill.title}>
-            <MotionWrapper>
+          <div className="skills-container" key={skill.title}>
               <div className="skills-image-div">
                 <GetSkillSvg imageName={skill.imageName} theme={theme} />
               </div>
-            </MotionWrapper>
-
-            <div className="skills-text-div">
-              <MotionWrapper>
-                <h1 className="skills-heading" style={{ color: theme.text }}>
+                <h1 className="title-main">
                   {skill.title}
                 </h1>
-              </MotionWrapper>
-              <MotionWrapper>
                 <SoftwareSkills logos={skill.softwareSkills} />
-              </MotionWrapper>
               <MotionWrapper>
                 <div>
                   {skill.skills.map((skillSentence, index) => (
                     <p
-                      key={index} // Use index as key if skillSentence doesn't have a unique value
+                      key={index}
                       className="subTitle skills-text"
                       style={{ color: theme.secondaryText }}
                     >
@@ -92,7 +79,6 @@ class SkillSection extends Component<SkillSectionProps> {
                   ))}
                 </div>
               </MotionWrapper>
-            </div>
           </div>
         ))}
       </div>

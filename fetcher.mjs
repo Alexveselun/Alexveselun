@@ -138,14 +138,15 @@ if (!githubUserName || !githubConvertedToken) {
         headers: headers,
         body: JSON.stringify({ query }),
       });
-
+  
       const data = await response.json();
-
-      if (data.errors) {
-        console.error("Error fetching data:", data.errors);
+      
+      // Check if 'data.user' exists
+      if (!data.data || !data.data.user) {
+        console.error(`Error: 'user' field is missing in the response for ${filename}`, data);
         return;
       }
-
+  
       const processedData = processData(data.data);
       fs.writeFileSync(`./src/shared/opensource/${filename}`, JSON.stringify(processedData, null, 2));
       console.log(`Fetched and saved ${filename}\n`);
@@ -153,6 +154,7 @@ if (!githubUserName || !githubConvertedToken) {
       console.error(`Error fetching ${filename}:`, error);
     }
   };
+  
 
   //GitHub Data processing functions
   const processUserData = (data) => ({ data: data.user });

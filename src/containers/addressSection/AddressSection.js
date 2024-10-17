@@ -9,31 +9,27 @@ const AddressSection = ({ theme }) => { // Destructure theme directly from props
   const { addressSection } = contactPageData; // Destructure addressSection for cleaner access
 
   return (
-    <div className="basic-contact">
+    <div className="container">
       <MotionWrapper>
-        <div className="address-heading-div">
+        <div className="heading-div">
           <div className="contact-heading-img-div">
             <AddressImg theme={theme} />
           </div>
-          <div className="address-heading-text-div">
-            <h1 className="address-heading-text" style={{ color: theme.text }}>
+          <div className="heading-text-div">
+            <h1 className="heading-text">
               {addressSection.title} {/* Use dot notation */}
             </h1>
-            <p
-              className="contact-header-detail-text subTitle"
-              style={{ color: theme.secondaryText }}
-            >
+            <p className="header-detail-text">
               {addressSection.subtitle} {/* Use dot notation */}
             </p>
             {/* Conditional rendering for phone section */}
             {addressSection.phone && (
               <>
-                <h1 className="address-heading-text" style={{ color: theme.text }}>
+                <h1 className="heading-text">
                   {addressSection.phone.title}
                 </h1>
                 <p
-                  className="contact-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
+                  className="header-detail-text"
                 >
                   {addressSection.phone.subtitle}
                 </p>

@@ -13,7 +13,7 @@ const ExperienceSection = (props) => {
   return (
     <div className="basic-experience">
       <MotionWrapper>
-        <div className="experience-heading-div">
+        <div className="heading-div">
           <div className="experience-heading-img-div">
             {/* <img
 									src={require(`../../assests/images/${experience["header_image_path"]}`)}
@@ -21,7 +21,7 @@ const ExperienceSection = (props) => {
 								/> */}
             <ExperienceImg theme={theme} />
           </div>
-          <div className="experience-heading-text-div">
+          <div className="heading-text-div">
             <h1
               className="experience-heading-text"
               style={{ color: theme.text }}
@@ -35,7 +35,7 @@ const ExperienceSection = (props) => {
               {experience["subtitle"]}
             </h3>
             <p
-              className="experience-header-detail-text subTitle"
+              className="header-detail-text"
               style={{ color: theme.secondaryText }}
             >
               {experience["description"]}

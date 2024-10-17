@@ -13,14 +13,10 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ theme }) => {
   return (
-    <div className="main" id="skills">
-      <div className="skills-header-div">
-        <MotionWrapper>
-          <h1 className="skills-header" style={{ color: theme.text }}>
+    <div className="skills-main" id="skills">
+          <h1 className="title-main">
             What I Do?
           </h1>
-        </MotionWrapper>
-      </div>
       <SkillSection theme={theme} />
       <TechStack theme={theme} />
     </div>

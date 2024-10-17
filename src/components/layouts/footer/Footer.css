@@ -4,12 +4,17 @@
   color: #868e96;
   font-weight: bold;
   font-family: "SilkaMono-Regular";
-  margin-bottom: 0px;
 }
 
-.footer-div {
-  margin-top: 2rem;
+
+.footer {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 10px;
 }
+
+
 @media (min-width: 768px) {
   .footer-text {
     font-size: 25px;

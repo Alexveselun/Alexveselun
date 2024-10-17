@@ -65,12 +65,12 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
   return (
     <div className="blog-section">
       <MotionWrapper>
-        <div className="blog-heading-div">
-          <div className="blog-heading-text-div">
+        <div className="heading-div">
+          <div className="heading-text-div">
             <h1 className="blog-heading-text" style={{ color: theme.text }}>
               {blogSection.title}
             </h1>
-            <p className="blog-header-detail-text subTitle" style={{ color: theme.secondaryText }}>
+            <p className="subtitle-main" style={{ color: theme.secondaryText }}>
               {blogSection.subtitle}
             </p>
           </div>

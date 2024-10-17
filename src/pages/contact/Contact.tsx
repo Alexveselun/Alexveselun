@@ -8,19 +8,29 @@ import {
 } from "../../containers";
 import "./Contact.css";
 
-const Contact = (props) => {
-  const theme = props.theme;
+interface ContactProps {
+  theme: {
+    text: string;
+    secondaryText: string;
+  };
+  onToggle: () => void;
+}
+
+const Contact: React.FC<ContactProps> = (props) => {
+  const { theme } = props;
+
   if (!pageEnabled.contact) {
     return null;
   }
+
   return (
     <div className="main-page">
-      <Header theme={theme} />
-      <ContactSection theme={theme} />
+      <Header/>
+      <ContactSection theme={theme}/>
       <AddressSection theme={theme} />
       <ContactMessage theme={theme} />
-      <Footer theme={theme} onToggle={props.onToggle} />
-      <TopButton theme={theme} />
+      <Footer/>
+      <TopButton />
     </div>
   );
 };

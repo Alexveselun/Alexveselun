@@ -8,22 +8,11 @@
   margin-right: 5%;
 }
 
-.projects-heading-div {
-  display: flex;
-}
-
-.projects-heading-div > * {
-  flex: 1;
-}
-
 .projects-heading-img-div {
   align-items: center;
   justify-content: center;
 }
 
-.projects-heading-text-div {
-  text-align: center;
-}
 
 .projects-heading-img-div > * {
   max-width: 100%;
@@ -44,20 +33,6 @@
   font-family: SilkaMono-Regular;
   text-align: center;
   margin-bottom: 10px;
-}
-
-.projects-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "SilkaMono-Medium";
-}
-.publications-heading-text-div {
-  text-align: center;
-  font-family: SilkaMono-Regular;
-  margin-top: 70px;
 }
 
 .publications-heading-text {
@@ -94,18 +69,10 @@
     font-size: 20px;
   }
 
-  .projects-heading-div {
+  .heading-div {
     flex-direction: column;
   }
-
-  .projects-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
-    line-height: normal;
-    text-align: center;
-  }
-
+  
   .repo-cards-div-main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-left: 10px;

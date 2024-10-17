@@ -63,8 +63,7 @@ const ContactMessage = ({ theme }) => { // Destructure theme directly from props
   }
 
   return (
-    <div id="contact" className="mt-4">
-      <div className="contactMessage-main">
+      <div className="container">
         <div className="cont-image">
           <ContactImg theme={theme} />
         </div>
@@ -136,7 +135,6 @@ const ContactMessage = ({ theme }) => { // Destructure theme directly from props
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

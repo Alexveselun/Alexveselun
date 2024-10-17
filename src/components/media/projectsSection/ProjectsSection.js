@@ -17,7 +17,7 @@ const ProjectsSection = (props) => {
     <div>
       <div className="basic-projects">
         <MotionWrapper>
-          <div className="projects-heading-div">
+          <div className="heading-div">
             <div className="projects-heading-img-div">
               {/* <img
 											src={require(`../../assests/images/${projectsHeader["avatar_image_path"]}`)}
@@ -25,16 +25,14 @@ const ProjectsSection = (props) => {
 										/> */}
               <ProjectsImg theme={theme} />
             </div>
-            <div className="projects-heading-text-div">
+            <div className="heading-text-div">
               <h1
                 className="projects-heading-text"
-                style={{ color: theme.text }}
               >
                 {projects.title}
               </h1>
               <p
-                className="projects-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
+                className="header-detail-text"
               >
                 {projects["description"]}
               </p>

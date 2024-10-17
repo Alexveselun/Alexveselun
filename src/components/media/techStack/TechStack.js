@@ -11,7 +11,7 @@ const TechStack = ({ theme }) => {
       <MotionWrapper>
         <div className="skills-container">
           <div className="skills-bar">
-            <h1 className="techstack-heading" style={{ color: theme.text }}>
+            <h1 className="title-main" style={{ color: theme.text }}>
               {techStack.title}
             </h1>
             {techStack.experience.map((exp) => {

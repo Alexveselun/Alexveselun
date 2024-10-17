@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./TopButton.css";
 
 const TopButton: React.FC = () => {
   const buttonRef = useRef<HTMLDivElement>(null); // Specify the type for useRef
@@ -26,7 +25,7 @@ const TopButton: React.FC = () => {
   return (
     <div
       onClick={goUpEvent}
-      className={`topButton-${isVisible ? 'visible' : 'hidden'}`}
+      className={`btn-go-up ${isVisible ? 'visible' : 'hidden'}`}
       ref={buttonRef}
       title="Go up"
       aria-label="Scroll to top"

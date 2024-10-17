@@ -15,12 +15,12 @@ const Publications = ({ theme }) => { // Destructure theme directly from props
     <div>
       <div className="basic-projects">
         <MotionWrapper>
-          <div className="publications-heading-div">
-            <div className="publications-heading-text-div">
-              <h1 className="publications-heading-text" style={{ color: theme.text }}>
+          <div className="heading-div">
+            <div className="heading-text-div">
+              <h1 className="publications-heading-text">
                 {title}
               </h1>
-              <p className="projects-header-detail-text subTitle" style={{ color: theme.secondaryText }}>
+              <p className="header-detail-text ">
                 {description}
               </p>
             </div>

@@ -57,7 +57,7 @@ const IssueCard: React.FC<IssueCardProps> = ({ issue }) => {
         <div className="issue-top">
           <div className="issue-main">
             <span className="iconify issue-icons" data-icon={isClosed ? "octicon:issue-closed" : "octicon:issue-opened"} style={iconStyle} data-inline="false"></span>
-            <div className="issue-title-main">
+            <div className="title-main">
               <p className="issue-title">
                 <a href={issue.url} target="_blank" rel="noopener noreferrer">{issue.title}</a>
               </p>

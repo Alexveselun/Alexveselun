@@ -3,21 +3,9 @@
   margin-right: 5%;
 }
 
-.experience-heading-div {
-  display: flex;
-}
-
-.experience-heading-div > * {
-  flex: 1;
-}
-
 .experience-heading-img-div {
   align-items: center;
   justify-content: center;
-}
-
-.experience-heading-text-div {
-  text-align: center;
 }
 
 .experience-heading-img-div > * {
@@ -41,15 +29,6 @@
   margin-bottom: 10px;
 }
 
-.experience-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "SilkaMono-Medium";
-}
-
 @media (max-width: 1380px) {
   .experience-heading-text {
     font-size: 50px;
@@ -70,14 +49,7 @@
     font-size: 20px;
   }
 
-  .experience-heading-div {
+  .heading-div {
     flex-direction: column;
-  }
-
-  .experience-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
   }
 }

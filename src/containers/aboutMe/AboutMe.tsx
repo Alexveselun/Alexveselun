@@ -1,60 +1,46 @@
 import React from "react";
-import { SocialMedia } from "../../components";
+// import { SocialMedia } from "../../components";
 import { contactPageData } from "../../portfolio";
 import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import UserData from "../../shared/opensource/user.json";
 import "./AboutMe.css";
 
-const AboutMe = ({ theme }) => { // Destructure theme from props
+interface AboutMeProps {
+  theme: {
+    text: string;
+    secondaryText: string;
+  };
+}
 
-  // Consolidate UserData checks
+
+const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
   if (!UserData?.data || Object.keys(UserData.data).length === 0) {
     return null;
   }
 
-  const { avatarUrl, name, bio, location } = UserData.data; 
+  const { avatarUrl, name, location } = UserData.data;
   const isHireable = UserData.data.isHireable ? "Yes" : "No";
 
   return (
     <div className="about-main">
       <MotionWrapper>
-        <div className="main" id="contact" align="center">
-          <h1 className="prof-title" style={{ color: theme.text }}>
-            Reach Out to Me!
-          </h1>
-          <div className="row" align="center">
+        <div className="main">
+          <h1 className="title-main">Reach Out to Me!</h1>
             <div className="main-content-profile">
-              <div className="blog-header">
-                <MotionWrapper>
-                  <p
-                    className="subTitle blog-sub"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {contactPageData.contactSection.description}
-                  </p>
-                </MotionWrapper>
+              <div className="subtitle-main"> {contactPageData.contactSection.description}
               </div>
               {avatarUrl && (
-                <div className="image-content-profile" style={{ padding: "20px" }}>
-                  <MotionWrapper>
+                <div className="image-content-profile">
                     <img
                       src={avatarUrl}
                       alt={name}
                       className="profile-image"
                     />
-                  </MotionWrapper>
                 </div>
               )}
-              {bio && (
-                <MotionWrapper>
-                  <h2 className="bio-text" style={{ color: theme.imageHighlight }}>
-                    "{bio}"
-                  </h2>
-                </MotionWrapper>
-              )}
               {location && (
-                <div className="location-div" style={{ color: theme.secondaryText }}>
-                  <div className="desc-prof">
+                <div className="location-div">
+                  <div className="icon">
                     <svg
                       className="loc-im"
                       viewBox="-0.5 -2 20 19"
@@ -73,16 +59,11 @@ const AboutMe = ({ theme }) => { // Destructure theme from props
                   </div>
                 </div>
               )}
-              <div className="opp-div">
-                <MotionWrapper>
-                  <span className="desc-prof" style={{ color: theme.text }}>
-                    Open for opportunities: {isHireable} {/* Display hireable status */}
-                  </span>
-                </MotionWrapper>
+              <div className="main-content-profile">
+                <div className="subtitle-main">Open for opportunities: {isHireable}
               </div>
-              <SocialMedia theme={theme} />
+              </div>
             </div>
-          </div>
         </div>
       </MotionWrapper>
     </div>

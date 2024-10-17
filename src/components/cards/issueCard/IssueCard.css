@@ -52,7 +52,7 @@
   text-align: left;
 }
 
-.issue-title-main {
+.title-main {
   width: 95%;
   display: inline-block;
 }
@@ -221,7 +221,7 @@
     font-size: 20px;
   }
 
-  .issue-title-main {
+  .title-main {
     width: 93%;
   }
 
