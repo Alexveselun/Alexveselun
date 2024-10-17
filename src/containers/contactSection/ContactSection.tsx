@@ -1,5 +1,4 @@
 import React from "react";
-import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { greeting, contactPageData } from "../../portfolio";
 import SocialMedia from "../../components/layouts/socialMedia/SocialMedia";
 import Button from "components/layouts/button/Button";

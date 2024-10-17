@@ -1,5 +1,4 @@
 import React from "react";
-import MotionWrapper from "../animations/MotionWrapper";
 import { greeting } from "../../../portfolio";
 import "./Footer.css";
 
