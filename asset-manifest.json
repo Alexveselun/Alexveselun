@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Alexveselun/static/css/main.6bb58008.css",
-    "main.js": "/Alexveselun/static/js/main.d3abd311.js",
+    "main.css": "/Alexveselun/static/css/main.b973918d.css",
+    "main.js": "/Alexveselun/static/js/main.ce94ad74.js",
     "static/media/background2Slide.png": "/Alexveselun/static/media/background2Slide.d11c2e0f85f7f3685899.png",
     "static/media/background1Slide.png": "/Alexveselun/static/media/background1Slide.7f7317f1d36316edc357.png",
     "static/media/background3Slide.png": "/Alexveselun/static/media/background3Slide.94d6c5be04a7e997b5ea.png",
@@ -48,11 +48,11 @@
     "static/media/googleAssistant.svg": "/Alexveselun/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.6bb58008.css.map": "/Alexveselun/static/css/main.6bb58008.css.map",
-    "main.d3abd311.js.map": "/Alexveselun/static/js/main.d3abd311.js.map"
+    "main.b973918d.css.map": "/Alexveselun/static/css/main.b973918d.css.map",
+    "main.ce94ad74.js.map": "/Alexveselun/static/js/main.ce94ad74.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bb58008.css",
-    "static/js/main.d3abd311.js"
+    "static/css/main.b973918d.css",
+    "static/js/main.ce94ad74.js"
   ]
 }
