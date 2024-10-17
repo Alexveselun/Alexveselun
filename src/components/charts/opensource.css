@@ -1,0 +1,24 @@
+/* General chart styles */
+.chart-section {
+  width: 100%;
+  text-align: center;
+}
+
+canvas {
+  margin: 0 auto;
+}
+
+/* Header styles for issue chart */
+.chart-main {
+  font-family: "SilkaMono-Regular";
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .chart-main,
+  .chart-main {
+    font-size: 20px;
+  }
+}

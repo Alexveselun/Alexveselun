@@ -6,22 +6,24 @@
   "homepage": "https://alexveselun.github.io/Alexveselun/",
   "version": "1.0.0",
   "scripts": {
-    "build": "node prepareAssets.js && node fetcher.mjs && react-scripts build",
-    "predeploy": "npm run prepareAssets && npm run build",
+    "build": "node prepareAssets.ts && node fetcher.mjs && react-scripts build",
+    "predeploy": "yarn run prepareAssets && yarn run build",
     "deploy": "gh-pages -b gh-pages -d build",
-    "prepareAssets": "node prepareAssets.js",
+    "prepareAssets": "node prepareAssets.ts",
     "eject": "react-scripts eject",
-    "start": "node fetcher.mjs && react-scripts start",
+    "start": "react-scripts start",
     "android": "node node_modules/react-scripts/bin/react-scripts.js start",
     "format": "prettier --write .",
-    "heroku-prebuild": "npm i -f",
-    "heroku-postbuild": "npm run build"
+    "heroku-prebuild": "yarn install",
+    "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@jamesives/github-pages-deploy-action": "^4.6.8",
+    "@types/node": "^22.7.6",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "18.3.1",
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
     "baseui": "^14.0.0",
@@ -44,6 +46,7 @@
     "styled-components": "^6.1.13",
     "styletron-engine-atomic": "^1.6.2",
     "styletron-react": "^6.1.1",
+    "typescript": "^5.6.3",
     "web-vitals": "^4.2.3"
   },
   "devDependencies": {

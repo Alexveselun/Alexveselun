@@ -135,6 +135,6 @@ export const darkTheme = {
 };
 
 // Change this value of Theme
-const Theme = blackNewTheme;
+const Theme = blueThemeOld;
 
 export default Theme;

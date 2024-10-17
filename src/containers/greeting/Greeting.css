@@ -20,6 +20,18 @@
   display: flex;
 }
 
+greeting-left-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+greeting-right-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .greeting-main > * {
   flex: 1;
   margin-bottom: 30px;
@@ -51,12 +63,6 @@
   font-family: "Google Sans Medium";
 }
 
-.greeting-image-div {
-  display: flex;
-  justify-content: center; /* Center the image */
-  align-items: center; /* Center the image */
-  /* Add any additional styles you need for the div */
-}
 
 .greeting-image {
   width: 100%;

@@ -21,9 +21,9 @@ const pageEnabled = {
   opensource: true, // Change this to false if you don't want opensource contribution (from github data) page
   hobbies: true, // Change this to false if you don't want hobbies page
   contact: true, // Change this to false if you don't want contact page
-  projects: false, // Change this to false if you don't want projects (from github data) and publications page
-  education: false, // Change this to false if you don't want education (degrees, certifications, competitiveSites) page
-  experience: false, // Change this to false if you don't want experience page
+  projects: true, // Change this to false if you don't want projects (from github data) and publications page
+  newhome: true, // Change this to false if you don't want education (degrees, certifications, competitiveSites) page
+  experience: true, // Change this to false if you don't want experience page
 };
 
 // Routing with or without '#'
@@ -434,7 +434,7 @@ const competitiveSites = {
 
 // Degrees received from institutions
 const degrees = {
-  display: false, // Set it false to hide degrees, defaults to true
+  display: true, // Set it false to hide degrees, defaults to true
   degrees: [
     {
       title: "",
@@ -450,7 +450,7 @@ const degrees = {
 
 // Certifications in education page
 const certifications = {
-  display: false, // Set it false to hide certifications, defaults to true
+  display: true, // Set it false to hide certifications, defaults to true
   certifications: [
     {
       title: "",
@@ -642,8 +642,8 @@ export {
   socialMediaLinks,
   skills,
   techStack,
-  competitiveSites,
-  degrees,
+  competitiveSites, //deletedFunctional
+  degrees, //deletedFunctional
   certifications,
   experience,
   hobbies,

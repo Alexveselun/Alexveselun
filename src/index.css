@@ -4,6 +4,24 @@
 @font-face {font-family: SilkaMono-Regular; src: url("./assets/fonts/Silka/Silka_Mono/silkamono-regular-webfont.ttf");}
 @font-face {font-family: SilkaMono-Medium; src: url("./assets/fonts/Silka/Silka_Mono/silkamono-bold-webfont.ttf");}
 
+
+
+h1, h2, h3, h4, p, a, b, strong  {padding: 0; margin: 0; font-weight: 400; letter-spacing: normal;}
+li, ul {padding: 0; margin: 0; list-style: none;}
+h1.center, h2.center, h3.center, h4.center, p.center {text-align: center;}
+a:focus { outline: none; }
+
+h1          {font-family: 'SilkaMono-Medium', sans-serif; font-size: 42px; margin-bottom: 24px; letter-spacing: -1px;}
+h2          {font-family: 'Silka-SemiBold', sans-serif; font-size: 24px;}
+h3          {font-family: 'SilkaMono-Regular', sans-serif; font-size: 18px; color: rgba(255, 255, 255, .6); text-transform: uppercase; letter-spacing: 2px;}
+p           {font-size: 14px; color: rgba(255, 255, 255, 0.7); margin-bottom: 24px; line-height: 24px;}
+strong 	    {font-family: 'Silka-SemiBold', sans-serif; color: rgba(255, 255, 255, 1);}
+a           {text-decoration: none; outline: 0;}
+p a         {text-decoration: underline; color: rgba(255, 255, 255, 0.7);}
+p a:hover   {color: rgba(255, 255, 255, 1);}
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

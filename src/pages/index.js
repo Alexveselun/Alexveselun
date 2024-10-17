@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Route, Routes, BrowserRouter, HashRouter } from "react-router-dom";
 import Home from "./home/HomeComponent";
 import Hobbies from "./hobbies/Hobbies";
-import Education from "./education/Education";
+import NewHome from "./newHome/NewHome";
 import Experience from "./experience/Experience";
 import Opensource from "./opensource/Opensource";
 import Contact from "./contact/Contact";
@@ -16,7 +16,7 @@ import { darkTheme } from "../theme";
 
 const Main = (props) => {
   const viewExperience = pageEnabled.experience;
-  const viewEducation = pageEnabled.education;
+  const viewNewHome = pageEnabled.newhome;
   const viewProjects = pageEnabled.projects;
   const viewopenSource = pageEnabled.opensource;
   const viewHobbbies = pageEnabled.hobbies;
@@ -42,8 +42,8 @@ const Main = (props) => {
             {viewHobbbies && (
               <Route path="/hobbies" element={<Hobbies theme={theme} />} />
             )}
-            {viewEducation && (
-              <Route path="/education" element={<Education theme={theme} />} />
+            {viewNewHome && (
+              <Route path="/newhome" element={<NewHome theme={theme} />} />
             )}
             {viewopenSource && (
               <Route
@@ -80,8 +80,8 @@ const Main = (props) => {
             {viewHobbbies && (
               <Route path="/hobbies" element={<Hobbies theme={theme} />} />
             )}
-            {viewEducation && (
-              <Route path="/education" element={<Education theme={theme} />} />
+            {viewNewHome && (
+              <Route path="/newhome" element={<NewHome theme={theme} />} />
             )}
             {viewopenSource && (
               <Route

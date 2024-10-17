@@ -1,4 +1,4 @@
-.hobbies-card {
+.hobbies-cards {
   margin-top: 50px;
   text-align: center;
   margin-left: 5%;
@@ -18,12 +18,12 @@
   .hobbies-image {
     width: 60%;
   }
-  .hobbies-data {
+  .hobbie-section {
     display: flex;
     flex-direction: row;
     overflow: hidden;
   }
-  .hobbies-data > * {
+  .hobbie-section > * {
     flex: 1;
     margin-bottom: 30px;
     margin-left: 30px;
