@@ -1,10 +1,13 @@
 .header {
   position: fixed; /* Фіксуємо хедер у верхній частині екрана */
-  display: block;
+  display: flex;
   width: 100%;
   margin: auto;
   z-index: 1000; /* Встановлюємо високий z-index, щоб хедер був над іншими елементами */
   background-color: white; /* Можна додати фоновий колір, щоб хедер не зливався з контентом при скролі */
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .header ul {

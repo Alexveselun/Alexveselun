@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { greeting, pageEnabled } from "../../../portfolio";
 import MotionWrapper from "../animations/MotionWrapper";
@@ -19,6 +19,18 @@ const onMouseOut = (event: React.MouseEvent<HTMLElement>) => {
 
 const Header: React.FC = () => {
   const link = pageEnabled.splash ? "/splash" : "/home"; // Logic for determining the logo link
+  const [isScrolled, setIsScrolled] = useState<boolean>(false); // State for scroll detection
+
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 50); // Change class on scroll
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Render individual navigation links based on pageEnabled settings
   const MyLink: React.FC<{ name: string; link: string }> = ({ name, link }) => (
@@ -36,32 +48,32 @@ const Header: React.FC = () => {
   return (
     <>
       <SeoHeader />
-      <header className="header">
+      <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+          <NavLink to={link} className="logo">
+            <span className="logo-name">{greeting.logo_name}</span>
+          </NavLink>
+          <input className="menu-btn" type="checkbox" id="menu-btn" />
+          <label className="menu-icon" htmlFor="menu-btn">
+            <span className="navicon navic"></span>
+          </label>
         <MotionWrapper>
-            <NavLink to={link} className="logo">
-              <span className="logo-name">{greeting.logo_name}</span>
-            </NavLink>
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className="menu-icon" htmlFor="menu-btn">
-              <span className="navicon navic"></span>
-            </label>
-            <ul className="menu">
-              <MyLink name="Home" link="/home" />
-              {pageEnabled.experience && (
-                <MyLink name="Experience" link="/experience" />
-              )}
-              {pageEnabled.blog && <MyLink name="Blog" link="/blog" />}
-              {pageEnabled.projects && (
-                <MyLink name="Projects" link="/projects" />
-              )}
-              {pageEnabled.opensource && <MyLink name="IT" link="/opensource" />}
-              {pageEnabled.hobbies && <MyLink name="Hobbies" link="/hobbies" />}
-              {pageEnabled.newhome && <MyLink name="NewHome" link="/newhome" />}
-              <MyLink name="Contact" link="/contact" />
-              <li className="li">
-                <ToggleSwitch />
-              </li>
-            </ul>
+          <ul className="menu">
+            <MyLink name="Home" link="/home" />
+            {pageEnabled.experience && (
+              <MyLink name="Experience" link="/experience" />
+            )}
+            {pageEnabled.blog && <MyLink name="Blog" link="/blog" />}
+            {pageEnabled.projects && (
+              <MyLink name="Projects" link="/projects" />
+            )}
+            {pageEnabled.opensource && <MyLink name="IT" link="/opensource" />}
+            {pageEnabled.hobbies && <MyLink name="Hobbies" link="/hobbies" />}
+            {pageEnabled.newhome && <MyLink name="NewHome" link="/newhome" />}
+            <MyLink name="Contact" link="/contact" />
+            <li className="li">
+              <ToggleSwitch />
+            </li>
+          </ul>
         </MotionWrapper>
       </header>
     </>

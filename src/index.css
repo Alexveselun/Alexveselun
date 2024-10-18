@@ -262,26 +262,30 @@ title-main {
   transition: visibility 0.3s, opacity 0.3s ease;
 }
 
-.btn-go-up.visible {  
-  height: 50px;
+.btn-go-up {
   color: #000;
   display: inline-block;
-  padding: 13px 30px 13px 30px;
-  position: relative;
-  font-size: 14px; 
-  line-height: 24px; 
-  text-decoration: none; 
+  position: fixed; 
+  padding: 13px 30px;
   background: #fff;
   border-radius: 25px;
-  opacity: 1;
   transition: visibility 0.3s, opacity 0.3s ease;
+  z-index: 1000; /* Кнопка поверх інших елементів */
+  right: 20px; /* Відстань від правого краю */
+  top: 50%; /* Відстань від верхнього краю */
+  transform: translateY(-30%); /* Центрує кнопку по вертикалі */
+  opacity: 0; 
 }
 
+.btn-go-up.visible {  
+  opacity: 1; /* Кнопка стає видимою */
+}
 
 .btn.hidden {
-  pointer-events: none;
-  opacity: 0;
+  pointer-events: none; /* Зневагує події миші для невидимої кнопки */
+  opacity: 0; /* Кнопка невидима */
 }
+
 
 .form-control {
   display: block;
