@@ -17,12 +17,12 @@ const Blog: React.FC<BlogProps> = ({ theme }) => {
   }
 
   return (
-    <>
+    <div className="main-page">
       <Header />
       <BlogSection theme={theme} />
       <Footer />
       <TopButton />
-    </>
+    </div>
   );
 };
 

@@ -14,9 +14,7 @@ interface Experience {
 
 interface ExperienceCardProps {
   theme: {
-    headerColor: string;
     text: string;
-    dark: string;
     secondaryText: string;
   };
   experience: Experience;
@@ -28,7 +26,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ theme, experience }) =>
       className="experience-card"
       style={{
         border: `1px solid ${experience.color}`,
-        backgroundColor: theme.headerColor,
       }}
     >
       <div className="experience-card-logo-div">
@@ -41,10 +38,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ theme, experience }) =>
       <div className="experience-card-body-div">
         <div className="experience-card-title-div">
           <div className="experience-card-heading-left">
-            <h3 className="experience-card-title" style={{ color: theme.text }}>
+            <h3 className="experience-card-title">
               {experience.title}
             </h3>
-            <p className="experience-card-company" style={{ color: theme.dark }}>
+            <p className="experience-card-company" >
               <a
                 href={experience.company_url}
                 target="_blank"
@@ -55,10 +52,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ theme, experience }) =>
             </p>
           </div>
           <div className="experience-card-heading-right">
-            <p className="experience-card-duration" style={{ color: theme.secondaryText }}>
+            <p className="experience-card-duration">
               {experience.duration}
             </p>
-            <p className="experience-card-location" style={{ color: theme.dark }}>
+            <p className="experience-card-location" >
               {experience.location}
             </p>
           </div>

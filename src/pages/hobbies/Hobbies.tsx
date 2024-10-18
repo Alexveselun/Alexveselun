@@ -17,12 +17,12 @@ const Hobbies: React.FC<HobbiesProps> = ({ theme }) => {
   }
 
   return (
-    <>
+    <div className="main-page">
       <Header />
       <HobbiesSection theme={theme} />
       <Footer/>
       <TopButton/>
-    </>
+    </div>
   );
 };
 

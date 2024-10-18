@@ -1,16 +1,28 @@
 .basic-experience {
   margin-left: 5%;
   margin-right: 5%;
+  padding: 2rem; /* Optional: Add some padding around the section */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.heading-div {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  margin-bottom: 2rem; /* Space below the heading */
 }
 
 .experience-heading-img-div {
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Flexbox for image alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
 .experience-heading-img-div > * {
   max-width: 100%;
-  height: auto;
+  height: auto; /* Maintain aspect ratio */
 }
 
 .experience-heading-text {
@@ -24,9 +36,17 @@
 
 .experience-heading-sub-text {
   font-size: 30px;
-  font-family: SilkaMono-Regular;
+  font-family: "SilkaMono-Regular";
   text-align: center;
   margin-bottom: 10px;
+}
+
+.header-detail-text {
+  font-size: 1rem; /* Description text size */
+  color: #555; /* Description color */
+  line-height: 1.5; /* Line height for better readability */
+  text-align: center; /* Center the description text */
+  margin-top: 10px; /* Space above the description */
 }
 
 @media (max-width: 1380px) {
@@ -34,6 +54,7 @@
     font-size: 50px;
     margin-top: 80px;
   }
+  
   .experience-heading-sub-text {
     font-size: 25px;
   }
@@ -50,6 +71,38 @@
   }
 
   .heading-div {
-    flex-direction: column;
+    flex-direction: column; /* Stack elements on smaller screens */
+  }
+}
+
+/* Optional: Styles for the accordion panel */
+.baseui-accordion {
+  background-color: #fff; /* Background for the accordion */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for accordion */
+}
+
+/* Style for each panel */
+.baseui-accordion__panel {
+  margin-bottom: 1rem; /* Space between panels */
+}
+
+/* Style for panel title */
+.baseui-accordion__panel-title {
+  font-weight: bold; /* Bold title */
+  color: #333; /* Text color for the title */
+}
+
+/* Style for panel content */
+.baseui-accordion__panel-content {
+  padding: 1rem; /* Padding for content */
+  background-color: #f1f1f1; /* Background for content area */
+  border-radius: 4px; /* Rounded corners for content */
+}
+
+/* Optional: Responsive adjustments for accordion */
+@media (max-width: 768px) {
+  .baseui-accordion {
+    margin: 0; /* Remove margin on smaller screens */
   }
 }

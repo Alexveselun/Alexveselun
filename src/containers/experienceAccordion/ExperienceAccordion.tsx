@@ -21,12 +21,8 @@ interface Section {
 
 interface ExperienceAccordionProps {
   theme: {
-    jacketColor: string;
-    headerColor: string;
-    body: string;
-    text: string;           // Added this line
-    dark: string;           // Added this line
-    secondaryText: string;  // Added this line
+    text: string;          // Вже було
+    secondaryText: string; // Вже було
   };
   sections: Section[];
 }
