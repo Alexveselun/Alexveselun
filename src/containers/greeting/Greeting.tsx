@@ -18,27 +18,25 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
         <div className="greeting-main">
           <div className="greeting-left-div">
             <div>
-              <h1 className="greeting-text">
+              <h1 className="heading-text-div">
                 {greeting.title}
               </h1>
               {greeting.nickname !== null && (
-                <h2 className="greeting-nickname">
+                <h2 className="heading-text-dive">
                   {greeting.nickname}
                 </h2>
               )}
-              <p className="greeting-text-p subTitle">
+              <h3 className="header-detail-text">
                 {greeting.subTitle}
-              </p>
-              <div className="portfolio-repo-btn-div">
-                <Button
+              </h3>
+            </div>
+            <Button
                   text="⭐ Contact me"
                   newTab={true}
                   href={greeting.portfolio_repository}
                   theme={theme}
-                  className="portfolio-repo-btn"
+                  className="btn"
                 />
-              </div>
-            </div>
           </div>
           <div className="greeting-right-div">
             <img

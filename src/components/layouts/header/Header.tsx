@@ -38,30 +38,30 @@ const Header: React.FC = () => {
       <SeoHeader />
       <header className="header">
         <MotionWrapper>
-          <NavLink to={link} className="logo">
-            <span className="logo-name">{greeting.logo_name}</span>
-          </NavLink>
-          <input className="menu-btn" type="checkbox" id="menu-btn" />
-          <label className="menu-icon" htmlFor="menu-btn">
-            <span className="navicon navic"></span>
-          </label>
-          <ul className="menu">
-            <MyLink name="Home" link="/home" />
-            {pageEnabled.experience && (
-              <MyLink name="Experience" link="/experience" />
-            )}
-            {pageEnabled.blog && <MyLink name="Blog" link="/blog" />}
-            {pageEnabled.projects && (
-              <MyLink name="Projects" link="/projects" />
-            )}
-            {pageEnabled.opensource && <MyLink name="IT" link="/opensource" />}
-            {pageEnabled.hobbies && <MyLink name="Hobbies" link="/hobbies" />}
-            {pageEnabled.newhome && <MyLink name="NewHome" link="/newhome" />}
-            <MyLink name="Contact" link="/contact" />
-            <li className="li">
-              <ToggleSwitch />
-            </li>
-          </ul>
+            <NavLink to={link} className="logo">
+              <span className="logo-name">{greeting.logo_name}</span>
+            </NavLink>
+            <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <label className="menu-icon" htmlFor="menu-btn">
+              <span className="navicon navic"></span>
+            </label>
+            <ul className="menu">
+              <MyLink name="Home" link="/home" />
+              {pageEnabled.experience && (
+                <MyLink name="Experience" link="/experience" />
+              )}
+              {pageEnabled.blog && <MyLink name="Blog" link="/blog" />}
+              {pageEnabled.projects && (
+                <MyLink name="Projects" link="/projects" />
+              )}
+              {pageEnabled.opensource && <MyLink name="IT" link="/opensource" />}
+              {pageEnabled.hobbies && <MyLink name="Hobbies" link="/hobbies" />}
+              {pageEnabled.newhome && <MyLink name="NewHome" link="/newhome" />}
+              <MyLink name="Contact" link="/contact" />
+              <li className="li">
+                <ToggleSwitch />
+              </li>
+            </ul>
         </MotionWrapper>
       </header>
     </>

@@ -34,9 +34,9 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ text, className, href, newTab }) => {
   return (
-    <div className={className}>
+    <div className="button">
       <a
-        className="main-button"
+        className={className}
         href={href}
         target={newTab ? "_blank" : "_self"}
         rel={newTab ? "noopener noreferrer" : undefined}

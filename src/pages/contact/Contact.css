@@ -6,20 +6,9 @@
   text-align: center;
 }
 
-.contact-heading-img-div {
-  align-items: center;
-  justify-content: center;
-}
-
 .blog-heading-img-div {
   align-items: center;
   justify-content: center;
-}
-
-
-.contact-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
 }
 
 .blog-heading-img-div > * {
@@ -27,14 +16,6 @@
   height: auto;
 }
 
-.contact-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "SilkaMono-Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 60px;
-}
 
 .blog-heading-text {
   font-size: 56px;

@@ -15,7 +15,7 @@
       "jsx": "react",
       "baseUrl": "src"
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/contact/Contact.tsx", "src/pages/blog/Blog.tsx", "src/reportWebVitals.js", "src/components/cards/achievementCard/AchievementCard.ts", "src/components/cards/hobbiesCard/HobbiesCard.js", "src/containers/skills/SkillSection.js", "src/components/charts/pullRequestChart/PullRequestChart.js", "src/containers/blogSection/BlogSection.js"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]
   }
   

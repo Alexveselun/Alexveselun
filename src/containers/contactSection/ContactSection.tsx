@@ -3,6 +3,7 @@ import { greeting, contactPageData } from "../../portfolio";
 import SocialMedia from "../../components/layouts/socialMedia/SocialMedia";
 import Button from "components/layouts/button/Button";
 import "./ContactSection.css";
+import MotionWrapper from "components/layouts/animations/MotionWrapper";
 
 interface ContactSectionProps {
   theme: {
@@ -17,24 +18,29 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
 
   return (
     <div className="container">
+      <MotionWrapper>
         <div className="heading-div">
           <div className="section">
-            <h1 className="heading-text-div">
-              {contactSection.title}
-            </h1>
-            <h2 className="header-detail-text">
-              {contactSection.description}
-            </h2>
-            <SocialMedia theme={theme}/>
-            <Button
-                className=".btn"
+
+            <div className="heading-text-div">
+              <h1 className="heading-text">
+                {contactSection.title}
+              </h1>
+              <p className="header-detail-text">
+                {contactSection.description}
+              </p>
+            </div>
+              <SocialMedia theme={theme}/>
+              <Button
+                className="btn"
                 text="See My Resume"
                 newTab={true}
                 href={greeting.resumeLink}
                 theme={theme}
               /> 
-            </div>
-            <div className="contact-heading-img-div">
+          </div>
+            
+            <div className="cont-image">
             <img
               src={require(`../../assets/images/${contactSection.profile_image_path}`)}
               alt="Profile"
@@ -44,7 +50,8 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
               }}
             />
           </div>
-        </div>  
+        </div>
+        </MotionWrapper>
     </div>
   );
 };

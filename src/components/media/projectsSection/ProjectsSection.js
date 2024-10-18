@@ -6,10 +6,12 @@ import ProjectsData from "../../../shared/opensource/projects.json";
 import ProjectsImg from "./ProjectsImg";
 import "./ProjectsSection.css";
 
-const ProjectsSection = (props) => {
-  const theme = props.theme;
 
-  if (!projects.display  || ProjectsData.data.length === 0) {
+const ProjectsSection = (props) => {
+  const { theme } = props;
+
+  // Check if projects should be displayed or if there's no data
+  if (!projects.display || ProjectsData.data.length === 0) {
     return null;
   }
 
@@ -19,23 +21,11 @@ const ProjectsSection = (props) => {
         <MotionWrapper>
           <div className="heading-div">
             <div className="projects-heading-img-div">
-              {/* <img
-											src={require(`../../assests/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
               <ProjectsImg theme={theme} />
             </div>
             <div className="heading-text-div">
-              <h1
-                className="projects-heading-text"
-              >
-                {projects.title}
-              </h1>
-              <p
-                className="header-detail-text"
-              >
-                {projects["description"]}
-              </p>
+              <h1 className="projects-heading-text">{projects.title}</h1>
+              <p className="header-detail-text">{projects.description}</p>
             </div>
           </div>
         </MotionWrapper>
