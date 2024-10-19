@@ -21,7 +21,7 @@ export { default as OrganizationList } from "./media/organizationList/Organizati
 export { default as ProjectLanguages } from "./media/projectLanguages/ProjectLanguages";
 export { default as ProjectsSection } from "./media/projectsSection/ProjectsSection"; 
 export { default as SocialMedia } from "./layouts/socialMedia/SocialMedia";
-export { default as SoftwareSkills } from "./media/softwareSkills/SoftwareSkills"; 
+export { default as SoftwareSkills } from "./media/skills/SoftwareSkills"; 
 export { default as TechStack } from "./media/techStack/TechStack"; 
 export { default as ToggleSwitch } from "./layouts/toggleSwitch/ToggleSwitch";
 export { default as TopButton } from "./layouts/topButton/TopButton"; 

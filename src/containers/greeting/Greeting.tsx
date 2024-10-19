@@ -14,18 +14,17 @@ interface GreetingProps {
 const Greeting: React.FC<GreetingProps> = ({ theme }) => {
   return (
     <div className="container">
+      <div className="section greetings">
       <MotionWrapper>
-      <div className="heading-div">
-      <div className="section">
-        <div className="greeting-left-div">
+        <div className="section-two-components">
           <div className="heading-text-div">
-            <h1 className="heading-text">{greeting.title}</h1>
+            <h1 className="title-main">{greeting.title}</h1>
             {greeting.nickname !== null && (
-                <h2 className="heading-text-dive">
+                <h2 className="second-heading-text-div">
                   {greeting.nickname}
                 </h2>
               )}
-            <h3 className="header-detail-text">
+            <h3 className="heading-detail-text">
                 {greeting.subTitle}
             </h3>
             <Button
@@ -36,17 +35,17 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
                   className="btn"
                 />
             </div>
-          </div>
+            <div className="cont-image">
+              <img
+                alt="main-photo"
+                src={require("../../assets/images/main-photo-home.png")}
+                className="cont-image"
+              />
+            </div>
         </div>
-        <div className="cont-image">
-        <img
-              alt="main-photo"
-              src={require("../../assets/images/main-photo-home.png")}
-              className="cont-image"
-          />
-      </div>
-      </div>
+   
       </MotionWrapper>
+      </div>
     </div>
   );
 };

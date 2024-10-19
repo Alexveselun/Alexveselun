@@ -1,5 +1,4 @@
 .techMain {
-  margin-bottom: 0px;
   overflow: hidden;
 }
 
@@ -18,7 +17,7 @@
   margin-top: 100px;
 }
 
-.meter {
+.bar-meter {
   height: 20px;
   margin-bottom: 15px;
   position: relative;
@@ -27,7 +26,7 @@
   -webkit-border-radius: 25px;
   border-radius: 25px;
 }
-.meter > span {
+.bar-meter > span {
   display: block;
   height: 100%;
   border-top-right-radius: 6px;
@@ -38,29 +37,14 @@
   position: relative;
   overflow: hidden;
 }
-.skill {
+.bar-skill {
   line-height: 3.5vw;
 }
-.skill-bars {
+.bars-skill {
   font-size: 28px;
   width: 40%;
 }
-.skills-container {
-  display: flex;
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
-}
-.skills-container > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
-.skills-image > img {
-  margin-left: 80px;
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* Media Query */
 
@@ -74,29 +58,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .skills-container {
-    flex-direction: column;
-  }
-  .skills-bar {
-    line-height: 3rem;
-    margin: 20px;
-  }
-  .skills-image {
-    display: none;
-    order: 2;
-  }
-}
-
-/* Media Query */
-@media (max-width: 1380px) {
-  .title-main {
-    font-size: 40px;
-  }
-  /* .skills-image-div > img {
-    margin-top: 0px;
-  } */
-}
 @media (max-width: 768px) {
   .title-main {
     font-size: 30px;

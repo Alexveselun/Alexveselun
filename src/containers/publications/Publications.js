@@ -20,7 +20,7 @@ const Publications = ({ theme }) => { // Destructure theme directly from props
               <h1 className="publications-heading-text">
                 {title}
               </h1>
-              <p className="header-detail-text ">
+              <p className="heading-detail-text ">
                 {description}
               </p>
             </div>

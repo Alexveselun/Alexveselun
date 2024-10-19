@@ -1,13 +1,13 @@
 .header {
-  position: fixed; /* Фіксуємо хедер у верхній частині екрана */
+  position: fixed;
   display: flex;
   width: 100%;
-  margin: auto;
-  z-index: 1000; /* Встановлюємо високий z-index, щоб хедер був над іншими елементами */
-  background-color: white; /* Можна додати фоновий колір, щоб хедер не зливався з контентом при скролі */
+  z-index: 1000;
+  background-color: white;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: space-between; /* Зрушуємо елементи на різні кінці */
+  flex-direction: row; /* Зміна на горизонтальне вирівнювання */
+  padding: 10px 20px; /* Додаємо падінг для заголовка */
 }
 
 .header ul {
@@ -15,18 +15,11 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .header ul li {
   margin-top: -5px;
-}
-
-.grey-color {
-  color: #868e96;
-}
-
-.switch {
-  margin: 10px;
 }
 
 .header li a {
@@ -35,117 +28,126 @@
   text-decoration: none;
 }
 
-.header .logo {
-  display: block;
-  float: left;
+.logo {
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
-  line-height: normal;
+  margin: 10px;
 }
 
-.header .logo-name {
+.logo-name-div {
+  padding: 10px;
+}
+
+.logo-name {
   font-family: "Silka-Regular";
   font-weight: bold;
-  padding: 0 10px;
 }
 
-.menu {
+.header-menu {
   font-family: "SilkaMono-Regular";
-}
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-
-/* Menu Icon */
-
-.header .menu-icon {
+  align-items: center;
   cursor: pointer;
-  float: right;
-  /* padding: 28px 20px; */
-  position: relative;
+  position: absolute; /* Фіксуємо кнопку в правому верхньому куті */
+  right: 1rem; /* Вирівнювання по правому краю */
+  top: 1rem; /* Вирівнювання по верхньому краю */
   user-select: none;
 }
 
-.header .menu-icon .navicon {
-  display: block;
-  height: 2px;
-  transition: background 0.2s ease-out;
-  width: 18px;
+.menu-btn {
+  display: none;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
+.menu-icon {
+  cursor: pointer;
+   position: absolute;
+  right: 1rem;
+  top: 1rem; 
+  user-select: none;
+}
+
+.menu-icon .navicon {
+  display: block;
+  height: 2px;
+  width: 18px;
+  background-color: black;
+  transition: background 0.2s ease-out;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
   content: "";
   display: block;
   height: 2px;
   position: absolute;
+  background-color: black;
   transition: all 0.2s ease-out;
   width: 100%;
 }
 
-.header .menu-icon .navicon:before {
+.menu-icon .navicon:before {
   top: 5px;
 }
 
-.header .menu-icon .navicon:after {
+.menu-icon .navicon:after {
   top: -5px;
 }
 
-/* Menu Button */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 450px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.menu-btn:checked ~ .menu-icon .navicon:before,
+.menu-btn:checked ~ .menu-icon .navicon:after {
   top: 0;
 }
 
-/* Responsive design for larger screens (min-width: 768px) */
+.menu {
+  max-height: 0;
+  overflow: hidden;
+}
 
+.open {
+  max-height: 100%;
+  background-color: aliceblue;
+}
+
+/* Адаптивність для великих екранів */
 @media (min-width: 48em) {
   .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  flex-direction: row;
+
   }
-  
-  .header li {
+
+  .header ul li {
     float: left;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
-  
+
   .header .menu {
     max-height: none;
   }
-  
+
   .header .menu-icon {
     display: none;
   }
-  
+
   .switch {
-    margin-top: 15px;
     margin-left: 5px;
   }
+}
+
+.switch {
+  margin: 10px;
+}
+
+.grey-color {
+  color: #868e96;
 }

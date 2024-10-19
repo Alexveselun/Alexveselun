@@ -41,14 +41,6 @@
   margin-bottom: 10px;
 }
 
-.header-detail-text {
-  font-size: 1rem; /* Description text size */
-  color: #555; /* Description color */
-  line-height: 1.5; /* Line height for better readability */
-  text-align: center; /* Center the description text */
-  margin-top: 10px; /* Space above the description */
-}
-
 @media (max-width: 1380px) {
   .experience-heading-text {
     font-size: 50px;

@@ -28,9 +28,6 @@
   display: flex;
 } */
 
-.main-content-profile {
-  flex: 80%;
-}
 
 .image-content-profile {
   text-align: center;
@@ -54,11 +51,7 @@
     flex-direction: column;*/
     margin-bottom: -20px;
   }
-
-  .main-content-profile {
-    text-align: center;
-    order: 2;
-  }
+  .heading-detail-text
   .blog-sub {
     margin-bottom: 0px;
     margin-top: -15px;

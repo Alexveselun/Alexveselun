@@ -64,7 +64,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
 
   return (
     <div className="container"> 
-    <div className="blog-section">
+    <div className="section gallery-section">
       <MotionWrapper>
         <div className="heading-div">
           <div className="heading-text-div">

@@ -26,7 +26,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
               <h1 className="heading-text">
                 {contactSection.title}
               </h1>
-              <p className="header-detail-text">
+              <p className="heading-detail-text">
                 {contactSection.description}
               </p>
             </div>

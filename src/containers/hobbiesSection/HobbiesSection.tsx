@@ -21,7 +21,7 @@ const HobbiesSection: React.FC<HobbiesSectionProps> = ({ theme }) => {
         <h1 className="heading-text">
           {hobbies.title}
         </h1>
-        <h2 className="header-detail-text">
+        <h2 className="heading-detail-text">
           {hobbies.subTitle}
         </h2>
       <HobbiesCards theme={theme} />

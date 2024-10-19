@@ -12,13 +12,9 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ theme }) => {
   return (
-    <div className="skills-main" id="skills">
-          <h1 className="title-main">
-            What I Do?
-          </h1>
-      <SkillSection theme={theme} />
-      <TechStack theme={theme} />
-    </div>
+
+      <>
+      <SkillSection theme={theme} /><TechStack theme={theme} /></>
   );
 };
 

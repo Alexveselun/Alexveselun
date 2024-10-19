@@ -55,7 +55,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ theme }) => {
           <div className="heading-text-div">
             <h1 className="heading-text">{expData.title}</h1>
             <h3 className="experience-heading-sub-text">{expData.subtitle}</h3>
-            <p className="header-detail-text">{expData.description}</p>
+            <p className="heading-detail-text">{expData.description}</p>
           </div>
         </div>
         <ExperienceAccordion sections={experience["sections"]} theme={theme} />

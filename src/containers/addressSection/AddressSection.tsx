@@ -42,11 +42,11 @@ const AddressSection: React.FC<AddressSectionProps> = ({ theme }) => {
         <div className="column">
           <div className="heading-text-div">
             <h1 className="heading-text">{addressSection.title}</h1>
-            <p className="header-detail-text">{addressSection.subtitle}</p>
+            <p className="heading-detail-text">{addressSection.subtitle}</p>
             {addressSection.phone && (
             <>
             <h1 className="heading-text">{addressSection.phone.title}</h1>
-            <p className="header-detail-text">{addressSection.phone.subtitle}</p>
+            <p className="heading-detail-text">{addressSection.phone.subtitle}</p>
             </>
             )}
             <Button

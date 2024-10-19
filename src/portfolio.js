@@ -575,6 +575,7 @@ const openSource = {
 /****************            Projects Page           ********************/
 
 const projects = {
+  display: true, //
   title: "Projects",
   description: "",
   avatar_image_path: "projects_image.svg",

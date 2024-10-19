@@ -49,7 +49,7 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
                   <div className="heading-text">
                     {title}
                   </div>
-                  <div className="header-detail-text">
+                  <div className="heading-detail-text">
                     {description}
                   </div>
                 </MotionWrapper>

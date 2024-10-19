@@ -18,11 +18,12 @@ const onMouseOut = (event: React.MouseEvent<HTMLElement>) => {
 };
 
 const Header: React.FC = () => {
-  const link = pageEnabled.splash ? "/splash" : "/home"; // Logic for determining the logo link
-  const [isScrolled, setIsScrolled] = useState<boolean>(false); // State for scroll detection
+  const link = pageEnabled.splash ? "/splash" : "/home"; // Логіка для логотипа
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false); // Стан для відкриття/закриття меню
 
   const handleScroll = () => {
-    setIsScrolled(window.scrollY > 50); // Change class on scroll
+    setIsScrolled(window.scrollY > 50); // Зміна класу при скролі
   };
 
   useEffect(() => {
@@ -32,12 +33,17 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  // Render individual navigation links based on pageEnabled settings
+  // Логіка для відкриття/закриття меню
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  // Рендеримо індивідуальні навігаційні посилання на основі pageEnabled
   const MyLink: React.FC<{ name: string; link: string }> = ({ name, link }) => (
     <li className="li">
       <NavLink
         to={link}
-        onMouseEnter={(event) => onMouseEnter(event, "#yourColor")} // Provide a color for hover effect
+        onMouseEnter={(event) => onMouseEnter(event, "#yourColor")} // Колір при наведенні
         onMouseOut={onMouseOut}
       >
         {name}
@@ -49,15 +55,24 @@ const Header: React.FC = () => {
     <>
       <SeoHeader />
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-          <NavLink to={link} className="logo">
+        <div className="logo">
+          <NavLink to={link} className="logo-name-div">
             <span className="logo-name">{greeting.logo_name}</span>
           </NavLink>
-          <input className="menu-btn" type="checkbox" id="menu-btn" />
+        </div>
+        <div className={`header-menu ${menuOpen ? "open" : ""}`}>
+         
+          <ul className={`menu ${menuOpen ? "open" : ""}`}>
+          <input
+            type="checkbox"
+            className="menu-btn"
+            id="menu-btn"
+            checked={menuOpen}
+            onChange={toggleMenu}
+          />
           <label className="menu-icon" htmlFor="menu-btn">
-            <span className="navicon navic"></span>
+            <span className="navicon"></span>
           </label>
-        <MotionWrapper>
-          <ul className="menu">
             <MyLink name="Home" link="/home" />
             {pageEnabled.experience && (
               <MyLink name="Experience" link="/experience" />
@@ -70,11 +85,9 @@ const Header: React.FC = () => {
             {pageEnabled.hobbies && <MyLink name="Hobbies" link="/hobbies" />}
             {pageEnabled.newhome && <MyLink name="NewHome" link="/newhome" />}
             <MyLink name="Contact" link="/contact" />
-            <li className="li">
-              <ToggleSwitch />
-            </li>
+            <ToggleSwitch />
           </ul>
-        </MotionWrapper>
+        </div>
       </header>
     </>
   );

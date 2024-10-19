@@ -22,12 +22,12 @@ const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
   const isHireable = UserData.data.isHireable ? "Yes" : "No";
 
   return (
-    <div className="about-main">
+    <div className="container">
+      <div className="section aboutMe"> 
       <MotionWrapper>
-        <div className="main">
+
           <h1 className="title-main">Reach Out to Me!</h1>
-            <div className="main-content-profile">
-              <div className="subtitle-main"> {contactPageData.contactSection.description}
+              <div className="heading-detail-text"> {contactPageData.contactSection.description}
               </div>
               {avatarUrl && (
                 <div className="image-content-profile">
@@ -59,13 +59,10 @@ const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
                   </div>
                 </div>
               )}
-              <div className="main-content-profile">
-                <div className="subtitle-main">Open for opportunities: {isHireable}
+                <div className="heading-detail-text">Open for opportunities: {isHireable}
               </div>
-              </div>
-            </div>
-        </div>
       </MotionWrapper>
+      </div>
     </div>
   );
 };
