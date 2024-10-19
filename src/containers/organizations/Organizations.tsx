@@ -19,6 +19,7 @@ const Organizations: React.FC<OrganizationsProps> = ({ theme }) => {
   }
 
   return (
+    <div className="container">
     <div id="organizations">
       <div className="organizations-header-div">
         <MotionWrapper>
@@ -28,6 +29,7 @@ const Organizations: React.FC<OrganizationsProps> = ({ theme }) => {
         </MotionWrapper>
       </div>
       <OrganizationList logos={OrganizationsData.data} />
+    </div>
     </div>
   );
 };

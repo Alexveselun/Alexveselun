@@ -63,6 +63,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
   };
 
   return (
+    <div className="container"> 
     <div className="blog-section">
       <MotionWrapper>
         <div className="heading-div">
@@ -85,6 +86,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
           </div>
         </div>
       </MotionWrapper>
+    </div>
     </div>
   );
 };

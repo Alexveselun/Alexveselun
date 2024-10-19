@@ -13,6 +13,7 @@ interface OpensourceChartsProps {
 
 const OpensourceCharts: React.FC<OpensourceChartsProps> = ({ theme }) => {
   return (
+    <div className="container">
     <MotionWrapper>
           <h1 className="center">
             Contributions
@@ -22,7 +23,7 @@ const OpensourceCharts: React.FC<OpensourceChartsProps> = ({ theme }) => {
         <PullRequestChart theme={theme} />
       </div>
     </MotionWrapper>
-
+    </div>
   );
 };
 

@@ -21,6 +21,7 @@ const IssuesPullRequestsList: React.FC<IssuesPullRequestsProps> = ({ theme }) =>
     }
 
     return (
+     <div className="container">
     <div className="issues-section">
         <MotionWrapper>
                 <h1 className="center">Issues</h1>
@@ -30,6 +31,7 @@ const IssuesPullRequestsList: React.FC<IssuesPullRequestsProps> = ({ theme }) =>
                     ))}
                 </div>
         </MotionWrapper>
+    </div>
     </div>
     );
   };

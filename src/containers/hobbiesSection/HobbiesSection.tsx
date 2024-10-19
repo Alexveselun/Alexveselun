@@ -16,15 +16,17 @@ const HobbiesSection: React.FC<HobbiesSectionProps> = ({ theme }) => {
   if (!pageEnabled.hobbies) return null;
 
   return (
+    <div className="container">
     <MotionWrapper>
-        <h1 className="center">
+        <h1 className="heading-text">
           {hobbies.title}
         </h1>
-        <h2 className="center">
+        <h2 className="header-detail-text">
           {hobbies.subTitle}
         </h2>
       <HobbiesCards theme={theme} />
     </MotionWrapper>
+    </div>
   );
 };
 

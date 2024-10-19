@@ -13,23 +13,21 @@ interface GreetingProps {
 
 const Greeting: React.FC<GreetingProps> = ({ theme }) => {
   return (
-      <div className="greet-main" id="greeting">
-        <MotionWrapper>
-        <div className="greeting-main">
-          <div className="greeting-left-div">
-            <div>
-              <h1 className="heading-text-div">
-                {greeting.title}
-              </h1>
-              {greeting.nickname !== null && (
+    <div className="container">
+      <MotionWrapper>
+      <div className="heading-div">
+      <div className="section">
+        <div className="greeting-left-div">
+          <div className="heading-text-div">
+            <h1 className="heading-text">{greeting.title}</h1>
+            {greeting.nickname !== null && (
                 <h2 className="heading-text-dive">
                   {greeting.nickname}
                 </h2>
               )}
-              <h3 className="header-detail-text">
+            <h3 className="header-detail-text">
                 {greeting.subTitle}
-              </h3>
-            </div>
+            </h3>
             <Button
                   text="⭐ Contact me"
                   newTab={true}
@@ -37,18 +35,21 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
                   theme={theme}
                   className="btn"
                 />
-          </div>
-          <div className="greeting-right-div">
-            <img
-              alt="main-photo"
-              src={require("../../assets/images/main-photo-home.png")}
-              className="greeting-image"
-            />
+            </div>
           </div>
         </div>
+        <div className="cont-image">
+        <img
+              alt="main-photo"
+              src={require("../../assets/images/main-photo-home.png")}
+              className="cont-image"
+          />
+      </div>
+      </div>
       </MotionWrapper>
     </div>
   );
 };
+
 
 export default Greeting;

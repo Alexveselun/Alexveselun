@@ -33,11 +33,11 @@ code {
 
 .container {
   width: 100%;
-  padding: 20px 10px;
-  margin: 0px auto;
+  margin: auto;
+  padding-top: 8rem;
 }
 .cont-image {
-  width: 80%;
+  width: 75%;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -54,11 +54,8 @@ code {
     display: flex;
     flex-direction: row-reverse;
     text-align: center;
+    padding-top: 8rem;
   }
-  .cont-image {
-    margin-top: 15%;
-    margin-bottom: 40px;
-    }
 }
 
 .section {
@@ -133,7 +130,7 @@ body {
   left: 0;
 }
 
-title-main {
+.title-main {
   text-align: center;
   font-size: 45px;
   font-weight: 400;
@@ -237,14 +234,17 @@ title-main {
 }
 
 
-.button {  
-  display: flex;  
-  margin-top: 20px;
+.button {
+  display: flex;           
+  justify-content: center; 
+  margin: 20px;
+
 }
+
 
 @media (max-width: 768px) {
   .button {
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 

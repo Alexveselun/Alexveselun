@@ -46,19 +46,18 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
             <div className="hobbie-section" key={index}>
               <div className="hobbies-heading">
                 <MotionWrapper>
-                  <div className="hobbies-card-title" style={{ color: theme.text }}>
+                  <div className="heading-text">
                     {title}
                   </div>
-                  <div className="hobbies-card-subtitle" style={{ color: theme.secondaryText }}>
+                  <div className="header-detail-text">
                     {description}
                   </div>
                 </MotionWrapper>
               </div>
               <MotionWrapper>
-                <div className="hobbies-card-img">
+                <div className="cont-image">
                   {images[image_path] && (
                     <img
-                      className="hobbies-image"
                       src={images[image_path]}
                       alt={title}
                     />
