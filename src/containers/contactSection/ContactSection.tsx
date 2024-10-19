@@ -39,7 +39,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
                 theme={theme}
               /> 
           </div>
-            
+            <div className="picture">
             <div className="cont-image">
             <img
               src={require(`../../assets/images/${contactSection.profile_image_path}`)}
@@ -49,6 +49,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
                 e.currentTarget.src = '../../assets/images/default_profile.png';
               }}
             />
+            </div>
           </div>
         </div>
         </MotionWrapper>

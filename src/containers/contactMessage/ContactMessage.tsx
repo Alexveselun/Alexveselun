@@ -141,8 +141,10 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
           </div>
         </div>
       </div>
+      <div className="picture">
       <div className="cont-image">
         <ContactImg theme={theme} />
+      </div>
       </div>
       </div>
       </MotionWrapper>

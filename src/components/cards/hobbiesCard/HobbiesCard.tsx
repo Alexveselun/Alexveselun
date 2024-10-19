@@ -55,6 +55,7 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
                 </MotionWrapper>
               </div>
               <MotionWrapper>
+                <div className="picture">
                 <div className="cont-image">
                   {images[image_path] && (
                     <img
@@ -62,6 +63,7 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
                       alt={title}
                     />
                   )}
+                </div>
                 </div>
               </MotionWrapper>
             </div>

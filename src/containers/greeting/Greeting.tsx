@@ -35,12 +35,14 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
                   className="btn"
                 />
             </div>
+            <div className="picture">
             <div className="cont-image">
               <img
                 alt="main-photo"
                 src={require("../../assets/images/main-photo-home.png")}
                 className="cont-image"
               />
+            </div>
             </div>
         </div>
    
