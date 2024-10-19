@@ -24,13 +24,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16.15.1'
+          node-version: '20.12'
           
       - name: Install dependencies 🤖
-        run: npm install --legacy-peer-deps
+        run: yarn install
     
       - name: Build the project 👷
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to GitHub Pages 🚀
         env:
