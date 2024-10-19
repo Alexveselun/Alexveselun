@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { greeting, pageEnabled } from "../../../portfolio";
-import MotionWrapper from "../animations/MotionWrapper";
 import SeoHeader from "./seoHeader/SeoHeader";
 import ToggleSwitch from "../toggleSwitch/ToggleSwitch";
 import "./Header.css";

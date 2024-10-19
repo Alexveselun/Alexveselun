@@ -1,5 +1,5 @@
 import React from "react";
-import { pageEnabled, experience } from "../../portfolio";
+import { pageEnabled } from "../../portfolio";
 import { Header, TopButton, Footer } from "../../components";
 import { ExperienceSection } from "../../containers";
 
