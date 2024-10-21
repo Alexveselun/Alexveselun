@@ -35,8 +35,10 @@ const AddressSection: React.FC<AddressSectionProps> = ({ theme }) => {
     <div className="container">
       <MotionWrapper>
       <div className="heading-div">
+      <div className="picture">
       <div className="cont-image">
         <AddressImg theme={theme} />
+      </div>
       </div>
       <div className="section">
         <div className="column">

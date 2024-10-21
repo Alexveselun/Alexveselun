@@ -26,8 +26,8 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
   const [disabled, setDisabled] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>({});
   const [error, setError] = useState<string>("");
+  const [showSuccess, setShowSuccess] = useState<boolean>(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const alertRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
@@ -36,7 +36,11 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
     }
   }, [disabled]);
 
-  const toggleAlert = () => alertRef.current?.classList.toggle("show");
+  // Очистка формы после отправки
+  const clearForm = () => {
+    setFormData({});
+    formRef.current?.reset();
+  };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -46,9 +50,14 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
+    setShowSuccess(false);
 
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       setError("All fields are required.");
+      
+      // Автоматически скрываем ошибку через 10 секунд
+      setTimeout(() => setError(""), 10000);
+      
       return;
     }
 
@@ -62,19 +71,24 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
       );
 
       if (response.text === "OK") {
-        toggleAlert();
-        formRef.current?.reset();
+        setShowSuccess(true);
+        clearForm(); 
       } else {
         setError("Failed to send message. Please try again.");
+        
+        setTimeout(() => setError(""), 10000);
       }
     } catch (error) {
       console.error("EmailJS error:", error);
       setError("Failed to send message. Please try again later.");
+      
+      setTimeout(() => setError(""), 10000);
+      clearForm();
     } finally {
       setDisabled(false);
-      setTimeout(() => {
-        toggleAlert();
-      }, 5000);
+      
+      // Скрываем сообщение об успехе через 5 секунд
+      setTimeout(() => setShowSuccess(false), 5000);
     }
   };
 
@@ -86,69 +100,62 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
     <div className="container">
       <MotionWrapper>
         <div className="heading-div">
-      <div className="section">
-      <div className="form">
-        <div className="column">
-          <div className="heading-text-div">
-            <h1 className="heading-text">Contact Message</h1>
-          </div>
-        </div>
-        <div className="column main-form">
-          <form onSubmit={handleSubmit} ref={formRef}>
-            <div className="form">
-              <Input
-                name="name"
-                type="text"
-                placeholder="Name"
-                onChange={handleChange}
-                required
-              />
-              <Input
-                name="email"
-                type="email"
-                placeholder="Email"
-                onChange={handleChange}
-                required
-              />
-              <Input
-                name="subject"
-                type="text"
-                placeholder="Subject"
-                onChange={handleChange}
-                required
-              />
-              <Input
-                name="message"
-                type="text"
-                placeholder="Message"
-                style={{ height: "150px", width: "90%", padding: "10px" }}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            {error && <div className="fade alert alert-danger">{error}</div>}
-          
-          <div className="fade alert alert-success" ref={alertRef}>
-            <div className="alert-heading">
-              Please, write me the message. For now this form is disabled.
-            </div>
-          </div>
-          <button ref={buttonRef} type="submit" className="btn btn-primary">
-              {disabled ? "Sending..." : "Send Message"}
-            </button>
-          </form>
+          <div className="section">
+                <div className="heading-text-div">
+                  <h1 className="heading-text">Contact Message</h1>
+                </div>
+              <div className="form form-main">
+                <form onSubmit={handleSubmit} ref={formRef}>
+                  <div className="form">
+                    <Input
+                      name="name"
+                      type="text"
+                      placeholder="Name"
+                      onChange={handleChange}
+                      required
+                    />
+                    <Input
+                      name="email"
+                      type="email"
+                      placeholder="Email"
+                      onChange={handleChange}
+                      required
+                    />
+                    <Input
+                      name="subject"
+                      type="text"
+                      placeholder="Subject"
+                      onChange={handleChange}
+                      required
+                    />
+                    <Input
+                      name="message"
+                      type="text"
+                      placeholder="Message"
+                      style={{ height: "150px"}}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  {error && <div className="fade alert alert-danger">{error}</div>}
 
-          </div>
-        </div>
-      </div>
-      <div className="picture">
-      <div className="cont-image">
-        <ContactImg theme={theme} />
-      </div>
-      </div>
-      </div>
+                  {showSuccess && (
+                    <div className="fade alert alert-success">
+                      <div className="alert-heading">
+                        Message sent successfully!
+                      </div>
+                    </div>
+                  )}
+
+                  <button ref={buttonRef} type="submit" className="btn">
+                    {disabled ? "Sending..." : "Send Message"}
+                  </button>
+                </form>
+              </div>
+              </div>
+            </div>
       </MotionWrapper>
-  </div>
+    </div>
   );
 };
 

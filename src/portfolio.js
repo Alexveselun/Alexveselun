@@ -22,8 +22,8 @@ const pageEnabled = {
   hobbies: true, // Change this to false if you don't want hobbies page
   contact: true, // Change this to false if you don't want contact page
   projects: true, // Change this to false if you don't want projects (from github data) and publications page
-  newhome: true, // Change this to false if you don't want education (degrees, certifications, competitiveSites) page
-  experience: true, // Change this to false if you don't want experience page
+  newhome: false, // Change this to false if you don't want education (degrees, certifications, competitiveSites) page
+  experience: false, // Change this to false if you don't want experience page
 };
 
 // Routing with or without '#'

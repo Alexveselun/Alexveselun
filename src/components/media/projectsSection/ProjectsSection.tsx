@@ -18,7 +18,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       <div className="basic-projects">
         <MotionWrapper>
           <div className="heading-div">

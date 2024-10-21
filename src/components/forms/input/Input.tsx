@@ -20,7 +20,6 @@ const Input: React.FC<InputProps> = ({ name, type, placeholder, style, onChange,
           onChange={onChange}
           required={required}
         />
-        <label htmlFor={name}>{placeholder}</label> {/* Add htmlFor for accessibility */}
     </div>
   );
 };

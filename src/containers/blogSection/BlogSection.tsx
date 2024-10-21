@@ -65,27 +65,28 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
   return (
     <div className="container"> 
     <div className="section gallery-section">
-      <MotionWrapper>
         <div className="heading-div">
           <div className="heading-text-div">
-            <h1 className="blog-heading-text" style={{ color: theme.text }}>
+            <h1 className="heading-text">
               {blogSection.title}
             </h1>
-            <p className="subtitle-main" style={{ color: theme.secondaryText }}>
+            <p className="heading-detail-text">
               {blogSection.subtitle}
             </p>
           </div>
         </div>
+        <MotionWrapper>
         <div className="blog-main-div">
           <div className="blog-text-div" ref={blogRef}>
             {dataUnavailable ? (
-              <div>Даних про блог, поки не має</div> // Message when data is unavailable
+              <div className="heading-detail-text">
+                Load something - to see data here</div> // Message when data is unavailable
             ) : (
               blogData && renderBlogCards() // Render blog cards if data is available
             )}
           </div>
         </div>
-      </MotionWrapper>
+        </MotionWrapper>
     </div>
     </div>
   );

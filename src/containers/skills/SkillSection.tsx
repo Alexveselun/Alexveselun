@@ -73,7 +73,7 @@ class SkillSection extends Component<SkillSectionProps> {
                   </div>
                 </div>  
                 {/* skills */}
-                <SoftwareSkills logos={skill.softwareSkills} />
+                {/* <SoftwareSkills logos={skill.softwareSkills} /> */}
                 {/* description of skills */}      
                 <div className="second-heading-text-div">
                   <MotionWrapper>

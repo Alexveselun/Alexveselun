@@ -19,73 +19,67 @@
   src: url("./assets/fonts/Silka/Silka_Mono/silkamono-bold-webfont.ttf");
 }
 
-/* Основні стилі тексту і заголовків */
-h1, h2, h3, h4, p, a, b, strong {
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-  letter-spacing: normal;
-}
-li, ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-h1.center, h2.center, h3.center, h4.center, p.center {
-  text-align: center;
-}
-a:focus {
-  outline: none;
+h1, h2, h3, h4, p, a, b, strong  {padding: 0; margin: 0; font-weight: 400; letter-spacing: normal;}
+li, ul {padding: 0; margin: 0; list-style: none;}
+h1.center, h2.center, h3.center, h4.center, p.center {text-align: center;}
+a:focus { outline: none; }
+
+h1          {font-family: 'SilkaMono-Medium', sans-serif; font-size: 42px; margin-bottom: 24px; letter-spacing: -1px;}
+h2          {font-family: 'Silka-SemiBold', sans-serif; font-size: 18px;}
+h3          {font-family: 'SilkaMono-Regular', sans-serif; font-size: 13px; color: rgba(255, 255, 255, .6); text-transform: uppercase; letter-spacing: 2px;}
+p           {font-size: 14px; color: rgba(255, 255, 255, 0.7); margin-bottom: 24px; line-height: 24px;}
+strong 	    {font-family: 'Silka-SemiBold', sans-serif; color: rgba(255, 255, 255, 1);}
+a           {text-decoration: none; outline: 0;}
+p a         {text-decoration: underline; color: rgba(255, 255, 255, 0.7);}
+p a:hover   {color: rgba(255, 255, 255, 1);}
+
+@media screen and (max-width: 640px){
+    h1 {font-size: 28px;}
+    h2 {}
+    h3 {}
+    p  {}
 }
 
-h1 {
-  font-family: 'SilkaMono-Medium', sans-serif;
-  font-size: 42px;
-  margin: 24px;
-  letter-spacing: -1px;
+
+body {
+  font-family: 'Silka-Medium', sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 400;
+background: #000;
+color: #fff;
+  -webkit-font-smoothing: antialiased;
+top: 0;  
+  left: 0;
 }
-h2 {
-  font-family: 'Silka-SemiBold', sans-serif;
-  font-size: 24px;
+
+html, body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
 }
-h3 {
-  font-family: 'SilkaMono-Regular', sans-serif;
-  font-size: 18px;
-  color: rgba(255, 255, 255, .6);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+
+::-webkit-scrollbar { 
+  display: none; 
 }
-p {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 12px;
+
+* { 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-strong {
-  font-family: 'Silka-SemiBold', sans-serif;
-  color: rgba(255, 255, 255, 1);
-}
-a {
-  text-decoration: none;
-  outline: 0;
-}
-p a {
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 0.7);
-}
-p a:hover {
-  color: rgba(255, 255, 255, 1);
-}
+
 
 /* Контейнери і загальна структура */
 .main-page {
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
   width: 100%;
   margin: auto;
   padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 
 .cont-image {
@@ -266,7 +260,50 @@ p a:hover {
   }
 }
 
-/* Стилі для зображень профілю */
+/* Стилі для зображень профілю PICTURES*/ 
+
+.picture {
+  width: 100%;                /* Контейнер занимает всю ширину */
+  max-width: 600px;           /* Ограничение максимальной ширины */
+  margin: 1.5rem;             /* Центрирование блока */
+  overflow: hidden;           /* Скрытие части изображения за пределами контейнера */
+  border-radius: 10px;        /* Закругление углов */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+  transition: all 0.3s ease;  /* Плавные переходы */
+}
+
+.picture img {
+  width: 100%;                /* Изображение адаптируется по ширине контейнера */
+  height: auto;               /* Сохранение пропорций */
+  display: block;             /* Убирает нижние отступы у img */
+  object-fit: cover;          /* Обрезка изображения, если оно выходит за пределы контейнера */
+  border-radius: 10px;        /* Закругление углов изображения */
+  transition: all 0.3s ease;  /* Плавные переходы для hover */
+}
+
+.picture:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Увеличение тени при наведении */
+  transform: scale(1.02);      /* Легкое увеличение изображения при наведении */
+}
+
+.picture img:hover {
+  filter: brightness(0.9);     /* Легкое затемнение изображения при наведении */
+}
+
+/* Адаптивный дизайн для различных экранов */
+@media (max-width: 768px) {
+  .picture {
+    max-width: 90%;            /* Уменьшение контейнера на меньших экранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .picture {
+    max-width: 100%;           /* Контейнер занимает 100% ширины на мобильных устройствах */
+  }
+}
+
+
 .profile-image {
   border-radius: 50%;
   border: 0.5rem solid #6c63ff;
@@ -287,10 +324,19 @@ p a:hover {
   height: 50px;
   color: #000;
   display: inline-block;
-  padding: 13px 30px;
+  padding: 13px 30px 13px 30px;
+  position: relative;
+  font-size: 14px; 
+  line-height: 24px; 
+  text-decoration: none; 
   background: #fff;
   border-radius: 25px;
-  transition: visibility 0.3s, opacity 0.3s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #252525;
+  color: #fff;
 }
 
 .btn-go-up {
@@ -319,30 +365,101 @@ p a:hover {
 }
 
 /* Форми */
-.form-control {
+/* Основные стили для элементов формы */
+.form-main {
+  background-color: #edf9fe;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.form {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.form-control-lg {
+.form:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.25); /* Голубая тень при фокусе */
+}
+
+/* Более крупные поля */
+.form-lg {
   min-height: calc(1.5em + 1rem + 2px);
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
-textarea.form-control-lg {
-  min-height: calc(1.5em + 1rem + 2px);
+textarea {
+  width: 100%;
+  resize: vertical; /* Разрешаем изменять высоту текстового поля */
 }
+
+/* Кнопки */
+.btn-submit {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 15px rgba(0, 91, 187, 0.4); /* Подсвечивание кнопки при наведении */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .form {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .form-lg {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+
+  .btn-submit {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Адаптивность для больших экранов */
+@media (min-width: 1200px) {
+  .form {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .form-lg {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .btn-submit {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+}
+
+
 
 /* Адаптивність для контейнерів на великих екранах */
 @media (min-width: 150px) {
