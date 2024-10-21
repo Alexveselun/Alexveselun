@@ -27,7 +27,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
 
   useEffect(() => {
     try {
-      const data: BlogData[] = require("../../../assets/blogData/869945985_images.json");
+      const data: BlogData[] = require("../../assets/blogData/869945985_images.json");
       setBlogData(data);
     } catch (error) {
       console.error("Error loading blog data:", error);
