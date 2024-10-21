@@ -4,10 +4,9 @@ import BlogCard from "../../components/cards/blogCard/BlogCard";
 import { blogSection } from "../../portfolio";
 import "./BlogSection.css";
 
-// Define the shape of the blog data
 interface BlogData {
-  chatId: string;
-  fileName: any;
+  chatId: number; // Changed to number based on your data
+  fileName: string; // Changed to string
   title: string;
   description: string;
   pictureName: string;
@@ -20,9 +19,10 @@ interface BlogSectionProps {
   };
 }
 
+
 const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
   const blogRef = useRef<HTMLDivElement>(null);
-  const [blogData, setBlogData] = useState<BlogData[] | null>(null);
+  const [blogData, setBlogData] = useState<BlogData[]>([]);
   const [dataUnavailable, setDataUnavailable] = useState<boolean>(false);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
   }, []);
 
   const renderBlogCards = () => {
-    return blogData?.map((blog) => (
+    return blogData.map((blog) => (
       <BlogCard
         theme={theme}
         blog={{
@@ -58,13 +58,14 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
           description: blog.description,
           image: blog.pictureName,
         }}
+        key={blog.chatId} // Ensure a unique key for each blog card
       />
     ));
   };
 
   return (
-    <div className="container"> 
-    <div className="section gallery-section">
+    <div className="container">
+      <div className="section">
         <div className="heading-div">
           <div className="heading-text-div">
             <h1 className="heading-text">
@@ -76,18 +77,19 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
           </div>
         </div>
         <MotionWrapper>
-        <div className="blog-main-div">
-          <div className="blog-text-div" ref={blogRef}>
-            {dataUnavailable ? (
-              <div className="heading-detail-text">
-                Load something - to see data here</div> // Message when data is unavailable
-            ) : (
-              blogData && renderBlogCards() // Render blog cards if data is available
-            )}
-          </div>
+        <div className="section gallery-section ">
+              {dataUnavailable ? (
+                <div className="heading-detail-text">
+                  Load something - to see data here
+                </div>
+
+              ) : (
+                renderBlogCards()
+              )}
         </div>
         </MotionWrapper>
-    </div>
+
+      </div>
     </div>
   );
 };

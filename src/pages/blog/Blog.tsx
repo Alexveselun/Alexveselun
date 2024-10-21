@@ -11,7 +11,7 @@ interface BlogProps {
   onToggle: () => void;
 }
 
-const Blog: React.FC<BlogProps> = ({ theme }) => {
+const Gallery: React.FC<BlogProps> = ({ theme }) => {
   if (!["myBlog", "hardcoded"].includes(blogSection.display) || blogSection.display === "none") {
     return null;
   }
@@ -26,4 +26,4 @@ const Blog: React.FC<BlogProps> = ({ theme }) => {
   );
 };
 
-export default Blog;
+export default Gallery;

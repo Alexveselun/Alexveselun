@@ -52,7 +52,7 @@ const Main = (props) => {
               />
             )}
             {viewBlog && (
-              <Route path="/blog" element={<Blogs theme={theme} />} /> 
+              <Route path="/gallery" element={<Blogs theme={theme} />} /> 
             )}
             <Route path="/contact" element={<Contact theme={theme} />} />
             <Route path="/splash" element={<Splash theme={theme} />} />
@@ -90,7 +90,7 @@ const Main = (props) => {
               />
             )}
             {viewBlog && (
-              <Route path="/blog" element={<Blogs theme={theme} />} />
+              <Route path="/gallery" element={<Blogs theme={theme} />} />
             )}
             <Route path="/contact" element={<Contact theme={theme} />} />
             {viewProjects && (

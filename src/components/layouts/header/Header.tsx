@@ -76,7 +76,7 @@ const Header: React.FC = () => {
             {pageEnabled.experience && (
               <MyLink name="Experience" link="/experience" />
             )}
-            {pageEnabled.blog && <MyLink name="Blog" link="/blog" />}
+            {pageEnabled.blog && <MyLink name="Gallery" link="/gallery" />}
             {pageEnabled.projects && (
               <MyLink name="Projects" link="/projects" />
             )}

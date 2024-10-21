@@ -1,7 +1,16 @@
-{
-  "chatId": 869945985,
-  "fileName": "Test",
-  "title": "Title",
-  "description": "Test description",
-  "pictureName": "Image_1728574781322.jpg"
-}
+[
+  {
+    "chatId": 869945985,
+    "fileName": "Title_1729371579254",
+    "title": "Title",
+    "description": "OLEG CLASSIC",
+    "pictureName": "Image_1729371579254.jpg"
+  },
+  {
+    "chatId": 869945985,
+    "fileName": "Title_1729519031913",
+    "title": "Title",
+    "description": "TEST Image",
+    "pictureName": "Image_1729519031913.jpg"
+  }
+]

@@ -7,7 +7,7 @@ interface Blog {
   fileName: any; 
   title: string;
   description: string;
-  image?: string; // Optional
+  image: string; // Optional
   url?: string; // Optional
 }
 
@@ -16,7 +16,7 @@ interface BlogCardProps {
   theme: { jacketColor?: string; text: string; secondaryText: string };
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ blog, theme }) => {
+const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
   const imageSource = `${process.env.PUBLIC_URL}/assets/blogData/${blog.image}`;
   const [show, setShow] = useState(false);
 
@@ -35,45 +35,35 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog, theme }) => {
   if (!blog) return null;
 
   return (
-    <MotionWrapper>
-      <div onClick={() => openUrlInNewTab(blog.url)}>
-        <div
-          className="blog-container"
-          style={{ backgroundColor: theme.jacketColor || '#ffffff' }} // Fallback color
-        >
-          <a
-            className="blog-card blog-card-shadow"
-            href={blog.url || '#'} // Use blog.url or fallback to '#'
-            onClick={(e) => {
-              if (!blog.url) {
-                e.preventDefault(); // Prevent default only if url is not valid
-                openUrlInNewTab(); // Show alert instead
-              }
-            }}
-          >
-            <h3 className="blog-title" style={{ color: theme.text }}>
+    <div className="blog-container">
+          <div className="blog-card  blog-card-shadow">
+            <div onClick={() => openUrlInNewTab(blog.url)}>
+            <div className="heading-div-text">
+            <h1 className="heading-text">
               {blog.title}
-            </h3>
-            <p className="small" style={{ color: theme.secondaryText }}>
+            </h1>
+            <p className="heading-detail-text">
               {blog.description}
             </p>
+            </div>
+            <div className="cont-image">
             {blog.image && (
               <img
                 src={imageSource}
-                alt={blog.title}
-                className="blog-image" 
+                className="cont-image" 
               />
             )}
+            </div>
             <div className="go-corner">
               <div className="go-arrow">→</div>
             </div>
-          </a>
+            </div>
+          {/* </a> */}
         </div>
-      </div>
       <Alert show={show} variant="danger">
-        <Alert.Heading>404 | Not Found!</Alert.Heading>
+        <Alert.Heading>Will be available later</Alert.Heading>
       </Alert>
-    </MotionWrapper>
+    </div>
   );
 };
 

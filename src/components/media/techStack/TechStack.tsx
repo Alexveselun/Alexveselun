@@ -27,7 +27,7 @@ const TechStack: React.FC<TechStackProps> = ({ theme }) => {
         <MotionWrapper>
           <div className="section bar-skills">
             <div className="heading-text-div">
-              <h1 className="heading-text" style={{ color: theme.text }}>
+              <h1 className="heading-text">
                 {techStack.title}
               </h1>
             </div>
