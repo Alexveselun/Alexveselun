@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
-import MotionWrapper from "../../layouts/animations/MotionWrapper";
 import "./BlogCard.css";
 
 interface Blog {
@@ -51,6 +50,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
               <img
                 src={imageSource}
                 className="cont-image" 
+                alt={blog.title || "Blog image"}
               />
             )}
             </div>
