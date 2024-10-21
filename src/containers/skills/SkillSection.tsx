@@ -7,7 +7,6 @@ import DesignImg from "./DesignImg";
 import AppDevelopImg from "./AppDevelopImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DataScienceImg from "./DataScienceImg";
-import SoftwareSkills from "../../components/media/skills/SoftwareSkills";
 import "./Skills.css";
 
 // Інтерфейси для теми та навичок

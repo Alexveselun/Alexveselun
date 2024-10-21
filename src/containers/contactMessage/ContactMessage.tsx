@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef, ChangeEvent, FormEvent } from "reac
 import { contactMessage } from "../../portfolio.js";
 import Input from "../../components/forms/input/Input"; // Ensure Input can handle <textarea>
 import emailjs from "@emailjs/browser";
-import ContactImg from "./ContactImg.js";
 import "./ContactMessage.css";
 import MotionWrapper from "components/layouts/animations/MotionWrapper";
 
