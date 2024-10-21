@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alexveselun/static/css/main.c1e4df8f.css",
-    "main.js": "/Alexveselun/static/js/main.adf90039.js",
+    "main.js": "/Alexveselun/static/js/main.bada4442.js",
     "static/media/background2Slide.png": "/Alexveselun/static/media/background2Slide.d11c2e0f85f7f3685899.png",
     "static/media/background1Slide.png": "/Alexveselun/static/media/background1Slide.7f7317f1d36316edc357.png",
     "static/media/background3Slide.png": "/Alexveselun/static/media/background3Slide.94d6c5be04a7e997b5ea.png",
@@ -50,10 +50,10 @@
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.c1e4df8f.css.map": "/Alexveselun/static/css/main.c1e4df8f.css.map",
-    "main.adf90039.js.map": "/Alexveselun/static/js/main.adf90039.js.map"
+    "main.bada4442.js.map": "/Alexveselun/static/js/main.bada4442.js.map"
   },
   "entrypoints": [
     "static/css/main.c1e4df8f.css",
-    "static/js/main.adf90039.js"
+    "static/js/main.bada4442.js"
   ]
 }
