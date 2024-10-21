@@ -88,16 +88,8 @@ p a:hover {
   padding-top: 8rem;
 }
 
-.picture{
-  max-width: 35%;
-  margin: auto;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-}
-
 .cont-image {
-  max-width: 100%;
+  width: 50%;
   margin: auto;
   height: auto;
   align-items: center;
@@ -212,6 +204,10 @@ p a:hover {
   .profile-image {
     max-width: 250px;
   }
+
+  .cont-image {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1380px) {
@@ -230,13 +226,18 @@ p a:hover {
   .subtitle-main {
     font-size: 18px;
   }
+  .cont-image {
+    width: 80%;
+  }
 }
 
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
-
+  .cont-image {
+    width: 70%;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -259,6 +260,9 @@ p a:hover {
   p {
     font-size: 14px;
     line-height: 16px;
+  }
+  .cont-image {
+    width: 60%;
   }
 }
 
