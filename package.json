@@ -13,9 +13,7 @@
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "android": "node node_modules/react-scripts/bin/react-scripts.js start",
-    "format": "prettier --write .",
-    "heroku-prebuild": "yarn install",
-    "heroku-postbuild": "yarn run build"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
