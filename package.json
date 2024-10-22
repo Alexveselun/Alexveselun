@@ -7,9 +7,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node prepareAssets.ts && node fetcher.mjs && react-scripts build",
-    "predeploy": "yarn run prepareAssets && yarn run build",
+    "predeploy": "node prepareAssets.ts && yarn run build",
     "deploy": "gh-pages -b gh-pages -d build",
-    "prepareAssets": "node prepareAssets.ts",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "android": "node node_modules/react-scripts/bin/react-scripts.js start",
