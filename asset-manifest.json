@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alexveselun/static/css/main.f1c9bdca.css",
-    "main.js": "/Alexveselun/static/js/main.c3e6954f.js",
+    "main.js": "/Alexveselun/static/js/main.dfd23014.js",
     "static/media/background2Slide.png": "/Alexveselun/static/media/background2Slide.d11c2e0f85f7f3685899.png",
     "static/media/background1Slide.png": "/Alexveselun/static/media/background1Slide.7f7317f1d36316edc357.png",
     "static/media/background3Slide.png": "/Alexveselun/static/media/background3Slide.94d6c5be04a7e997b5ea.png",
@@ -50,10 +50,10 @@
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.f1c9bdca.css.map": "/Alexveselun/static/css/main.f1c9bdca.css.map",
-    "main.c3e6954f.js.map": "/Alexveselun/static/js/main.c3e6954f.js.map"
+    "main.dfd23014.js.map": "/Alexveselun/static/js/main.dfd23014.js.map"
   },
   "entrypoints": [
     "static/css/main.f1c9bdca.css",
-    "static/js/main.c3e6954f.js"
+    "static/js/main.dfd23014.js"
   ]
 }
