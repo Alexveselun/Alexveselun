@@ -28,6 +28,13 @@
   line-height: 45px;
   font-size: 19px;
   display: inline;
+
+}
+
+.icon:hover{
+  transition: all 0.3s ease-out;
+  box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.2); /* Увеличение тени при наведении */
+  transform: scale(1.08); 
 }
 
 @media (max-width: 768px) {

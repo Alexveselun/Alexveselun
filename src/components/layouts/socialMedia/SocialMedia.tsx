@@ -1,7 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { socialMediaLinks } from "../../../portfolio";
-import "./SocialMedia.css";
+import "./SocialMedia.css"; // Import the separate CSS file for styling
 
 interface SocialMediaProps {
   theme: {
@@ -10,26 +9,15 @@ interface SocialMediaProps {
   };
 }
 
-
-const IconWrapper = styled.span<{ backgroundColor: string; theme: { text: string } }>`
-  i {
-    background-color: ${(props) => props.backgroundColor};
-  }
-  &:hover i {
-    background-color: ${({ theme }) => theme.text};
-    transition: 0.3s ease-in;
-  }
-`;
-
 interface MediaLink {
   link: string;
   fontAwesomeIcon: string;
   backgroundColor: string;
 }
 
-const SocialMedia: React.FC<SocialMediaProps> = ({theme}) => {
+const SocialMedia: React.FC<SocialMediaProps> = ({ theme }) => {
   return (
-    <div className="icon">
+    <div className="social-media-wrapper">
       {socialMediaLinks.map((media: MediaLink) => (
         <a
           href={media.link}
@@ -37,10 +25,14 @@ const SocialMedia: React.FC<SocialMediaProps> = ({theme}) => {
           className="icon-button"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ backgroundColor: media.backgroundColor }} // Pass dynamic background color
         >
-          <IconWrapper backgroundColor={media.backgroundColor} theme={theme}>
+          <span
+            className="icon-wrapper"
+            style={{ backgroundColor: media.backgroundColor }}
+          >
             <i className={`fab ${media.fontAwesomeIcon}`}></i>
-          </IconWrapper>
+          </span>
         </a>
       ))}
     </div>

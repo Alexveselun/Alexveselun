@@ -1,5 +1,4 @@
 import React from "react";
-import MotionWrapper from "../../layouts/animations/MotionWrapper";
 import "./IssueCard.css";
 
 interface Assignee {
@@ -39,8 +38,6 @@ const IssueCard: React.FC<IssueCardProps> = ({ issue }) => {
 
   return (
       <div className="long-card">
-      <MotionWrapper>
-
         <div className="long-card-header">
           <span className="iconify issue-icons" data-icon={isClosed ? "octicon:issue-closed" : "octicon:issue-opened"} style={iconStyle} data-inline="false"></span>
           <p className="card-title">
@@ -57,7 +54,6 @@ const IssueCard: React.FC<IssueCardProps> = ({ issue }) => {
             rel="noopener noreferrer">{issue.repository.owner.login}/{issue.repository.name}
           </a>
           </div>
-      </MotionWrapper>
       </div>
   );
 };

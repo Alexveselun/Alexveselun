@@ -41,18 +41,15 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
 
   return (
     <div className="hobbies-cards">
-      <MotionWrapper>
           {hobbies.hobbies.map(({ title, description, image_path }, index) => (
             <div className="hobbie-section" key={index}>
               <div className="hobbies-heading">
-                <MotionWrapper>
                   <div className="text-second-title">
                     {title}
                   </div>
                   <div className="text-detail">
                     {description}
                   </div>
-                </MotionWrapper>
               </div>
               <MotionWrapper>
                 <div className="picture">
@@ -68,7 +65,6 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
               </MotionWrapper>
             </div>
           ))}
-      </MotionWrapper>
     </div>
   );
 };

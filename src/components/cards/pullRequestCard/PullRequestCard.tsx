@@ -1,6 +1,5 @@
 import React from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import MotionWrapper from "../../layouts/animations/MotionWrapper";
 import "./PullRequestCard.css";
 
 interface PullRequest {
@@ -76,7 +75,6 @@ const PullRequestCard: React.FC<PullRequestCardProps> = ({ pullRequest }) => {
   ) : null;
 
   return (
-    <MotionWrapper>
       <div className="long-card ">
           <div className="long-card-header">
             <span
@@ -119,7 +117,6 @@ const PullRequestCard: React.FC<PullRequestCardProps> = ({ pullRequest }) => {
             </a>
         </div>
       </div>
-    </MotionWrapper>
   );
 };
 
