@@ -8,13 +8,6 @@
   },
   {
     "chatId": 869945985,
-    "fileName": "Title_1729519031913",
-    "title": "Title",
-    "description": "Тестова картинка",
-    "pictureName": "Image_1729519031913.jpg"
-  },
-  {
-    "chatId": 869945985,
     "fileName": "Title_1729534436394",
     "title": "Title",
     "description": "Test for test",
@@ -26,12 +19,5 @@
     "title": "Title",
     "description": "Тест",
     "pictureName": "Image_1729615016218.jpg"
-  },
-  {
-    "chatId": 869945985,
-    "fileName": "Title_1729615049163",
-    "title": "Title",
-    "description": "Без опису",
-    "pictureName": "Image_1729615049163.jpg"
   }
 ]

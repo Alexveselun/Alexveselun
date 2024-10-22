@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alexveselun/static/css/main.3389d2bd.css",
-    "main.js": "/Alexveselun/static/js/main.cbe6bae2.js",
+    "main.js": "/Alexveselun/static/js/main.b98a2d0a.js",
     "static/media/background2Slide.png": "/Alexveselun/static/media/background2Slide.d11c2e0f85f7f3685899.png",
     "static/media/background1Slide.png": "/Alexveselun/static/media/background1Slide.7f7317f1d36316edc357.png",
     "static/media/background3Slide.png": "/Alexveselun/static/media/background3Slide.94d6c5be04a7e997b5ea.png",
@@ -50,10 +50,10 @@
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.3389d2bd.css.map": "/Alexveselun/static/css/main.3389d2bd.css.map",
-    "main.cbe6bae2.js.map": "/Alexveselun/static/js/main.cbe6bae2.js.map"
+    "main.b98a2d0a.js.map": "/Alexveselun/static/js/main.b98a2d0a.js.map"
   },
   "entrypoints": [
     "static/css/main.3389d2bd.css",
-    "static/js/main.cbe6bae2.js"
+    "static/js/main.b98a2d0a.js"
   ]
 }
