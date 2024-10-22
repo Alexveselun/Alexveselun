@@ -1,14 +1,69 @@
+/* ------------------------- Header -------------------------------------------------- */
+
 .header {
   position: fixed;
   display: flex;
   width: 100%;
   z-index: 1000;
-  background-color: white;
   align-items: center;
   justify-content: space-between; /* Зрушуємо елементи на різні кінці */
-  flex-direction: row; /* Зміна на горизонтальне вирівнювання */
-  padding: 10px 20px; /* Додаємо падінг для заголовка */
+  flex-direction: row; /* Горизонтальне вирівнювання */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------- Header Menu -------------------------------------------------- */
+
+.header-menu-div {
+  font-family: "SilkaMono-Regular";
+  cursor: pointer;
+  position: absolute;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: max-height 0.3s ease-out;
+}
+
+.open {
+  max-height: 100%;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* ------------------------- Header Menu Button -------------------------------------------------- */
+
+.header-menu-button-div {
+  top: 2.5rem;
+  right: 2rem;
+  position: absolute; 
+}
+
+.header-menu-btn {
+  display: none; /* Ховаємо кнопку, якщо меню не відкрито */  
+}
+
+.header-menu-btn-icon {
+  position: absolute;
+  right: 1rem;
+  user-select: none;
+  cursor: pointer;
+  padding: auto;
+}
+
+/* ------------------------- Header Items -------------------------------------------------- */
+
+.header-items-div {
 }
 
 .ul {
@@ -29,14 +84,23 @@
   text-decoration: none;
 }
 
-.logo {
-  font-size: 1.5em;
+/* ------------------------- Logo -------------------------------------------------- */
+
+.logo-div { 
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1rem;
   text-decoration: none;
-  margin: 10px;
+  left: 50%;
+  transform: translateX(-50%); 
 }
 
-.logo-name-div {
-  padding: 10px;
+.logo {
+  display: flex;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  flex-direction: column;
 }
 
 .logo-name {
@@ -44,29 +108,16 @@
   font-weight: bold;
 }
 
-.header-menu {
-  font-family: "SilkaMono-Regular";
-  align-items: center;
+/* ------------------------- Animation for Button -------------------------------------------------- */
+/* .header-menu-btn-icon {
   cursor: pointer;
-  position: absolute; /* Фіксуємо кнопку в правому верхньому куті */
-  right: 1rem; /* Вирівнювання по правому краю */
-  top: 1rem; /* Вирівнювання по верхньому краю */
-  user-select: none;
-}
-
-.menu-btn {
-  display: none;
-}
-
-.menu-icon {
-  cursor: pointer;
-   position: absolute;
+  position: absolute;
   right: 1rem;
-  top: 1rem; 
   user-select: none;
-}
+  padding: 10px; /* Додаємо відступ для збільшення зони кліка 
+}*/
 
-.menu-icon .navicon {
+.header-menu-btn-icon .navicon {
   display: block;
   height: 2px;
   width: 18px;
@@ -74,8 +125,8 @@
   transition: background 0.2s ease-out;
 }
 
-.menu-icon .navicon:before,
-.menu-icon .navicon:after {
+.header-menu-btn-icon .navicon:before,
+.header-menu-btn-icon .navicon:after {
   content: "";
   display: block;
   height: 2px;
@@ -85,65 +136,96 @@
   width: 100%;
 }
 
-.menu-icon .navicon:before {
+.header-menu-btn-icon .navicon:before {
   top: 5px;
 }
 
-.menu-icon .navicon:after {
+.header-menu-btn-icon .navicon:after {
   top: -5px;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon {
+/* Анімація при відкритті меню */
+.header-menu-btn:checked ~ .header-menu-btn-icon .navicon {
   background: transparent;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon:before {
+.header-menu-btn:checked ~ .header-menu-btn-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.menu-btn:checked ~ .menu-icon .navicon:after {
+.header-menu-btn:checked ~ .header-menu-btn-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.menu-btn:checked ~ .menu-icon .navicon:before,
-.menu-btn:checked ~ .menu-icon .navicon:after {
+.header-menu-btn:checked ~ .header-menu-btn-icon .navicon:before,
+.header-menu-btn:checked ~ .header-menu-btn-icon .navicon:after {
   top: 0;
 }
 
-.menu {
-  max-height: 0;
-  overflow: hidden;
+/* ------------------------- Responsive Styles -------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header-items-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .li a {
+    padding: 20px;
+    font-size: 1rem;
+  }
 }
 
-.open {
-  max-height: 100%;
-  background-color: aliceblue;
+/* Для маленьких екранів (до 768px) */
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header-menu-div {
+    position: relative;
+  }
+
+
+  .li a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
 }
 
+/* Для дуже маленьких екранів (до 480px) */
+@media (max-width: 480px) {
+  .header {
+  }
+
+  .li a {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+
+}
+
+/* Для великих екранів (від 1100px) */
+
+
+/* -----------––––––––------------------––––––––------------------––––––––------------------––––––––------- */
+
+
+
+/* 
 @media (min-width: 1100px) {
   .header {
     flex-direction: row;
+    width: 100%;
     }
 
-  .menu {
-    max-height: none;
-  }
-  .logo {
-    font-size: 1.5em;
-    text-decoration: none;
-    margin: 10px;
-  }
-  
-  .logo-name-div {
-    padding: 10px;
-  }
-  
-  .logo-name {
-    font-family: "Silka-Regular";
-    font-weight: bold;
-  }
-
-  .menu-icon {
+  .header-menu-btn-icon {
     display: none;
   }
 
@@ -167,10 +249,10 @@
 
 @media (width: 450px) {
   .header {
-    width: 45%;
+    width: 100%;
     }
-}
-  /* Адаптивність для великих екранів */
+} */
+
 .switch {
   margin: 10px;
 }
