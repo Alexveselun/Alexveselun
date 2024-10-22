@@ -58,7 +58,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
           description: blog.description,
           image: blog.pictureName,
         }}
-        key={blog.chatId} // Ensure a unique key for each blog card
+        key={blog.chatId} 
       />
     ));
   };
@@ -66,20 +66,20 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
   return (
     <div className="container">
       <div className="section">
-        <div className="heading-div">
+        <div className="section-two-components">
           <div className="heading-text-div">
-            <h1 className="heading-text">
+            <h1 className="text-title">
               {blogSection.title}
             </h1>
-            <p className="heading-detail-text">
+            <h2 className="text-subtitle">
               {blogSection.subtitle}
-            </p>
+            </h2>
           </div>
         </div>
         <MotionWrapper>
         <div className="section gallery-section ">
               {dataUnavailable ? (
-                <div className="heading-detail-text">
+                <div className="text-detail">
                   Load something - to see data here
                 </div>
 

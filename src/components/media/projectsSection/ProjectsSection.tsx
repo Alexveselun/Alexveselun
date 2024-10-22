@@ -21,18 +21,18 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
     <div className="container">
       <div className="basic-projects">
         <MotionWrapper>
-          <div className="heading-div">
+          <div className="section-two-components">
             <div className="projects-heading-img-div">
               <ProjectsImg />
             </div>
             <div className="heading-text-div">
-              <h1 className="projects-heading-text">{projects.title}</h1>
+              <h1 className="text-title">{projects.title}</h1>
               <p className="header-detail-text">{projects.description}</p>
             </div>
           </div>
         </MotionWrapper>
       </div>
-      <div className="repo-cards-div-main">
+      <div className="cards-div-main">
         {ProjectsData.data.map((repo) => (
           <GithubRepoCard repo={repo} />
         ))}

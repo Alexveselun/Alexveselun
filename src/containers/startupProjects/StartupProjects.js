@@ -27,12 +27,11 @@ export default function StartupProjects(props) {
         </h1>
       </MotionWrapper>
       <MotionWrapper>
-        <p
-          className="subTitle project-subtitle"
-          style={{ color: theme.secondaryText }}
+        <h2
+          className="text-subtitle"
         >
           {bigProjects.subtitle}
-        </p>
+        </h2>
       </MotionWrapper>
       <div className="projects-container">
         {bigProjects.projects.map((project, i) => {

@@ -22,12 +22,11 @@ const Achievement = (props) => {
           >
             {certifications.title}
           </h1>
-          <p
-            className="subTitle achievement-subtitle"
-            style={{ color: theme.secondaryText }}
+          <h2
+            className="text-subtitle"
           >
             {certifications.subtitle}
-          </p>
+          </h2>
         </div>
         <div className="achievement-cards-div">
           {certifications.certifications.map((card) => {

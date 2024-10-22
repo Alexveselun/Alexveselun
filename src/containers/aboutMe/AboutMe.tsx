@@ -25,12 +25,13 @@ const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
     <div className="container">
       <div className="section aboutMe"> 
       <MotionWrapper>
-
-          <h1 className="title-main">Reach Out to Me!</h1>
-              <div className="heading-detail-text"> {contactPageData.contactSection.description}
+        <div className="heading-text-div">
+          <h1 className="text-title">Reach Out to Me!</h1>
+              <div className="text-detail"> {contactPageData.contactSection.description}
               </div>
+        </div>
               {avatarUrl && (
-                <div className="image-content-profile">
+                <div className="profile-image-div">
                     <img
                       src={avatarUrl}
                       alt={name}
@@ -59,7 +60,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
                   </div>
                 </div>
               )}
-                <div className="heading-detail-text">Open for opportunities: {isHireable}
+                <div className="text-detail">Open for opportunities: {isHireable}
               </div>
       </MotionWrapper>
       </div>

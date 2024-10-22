@@ -4,28 +4,5 @@
     margin: 1rem;
     padding: 1rem;
   }
-  
-  .blog-heading-text {
-    font-size: 56px;
-    font-weight: 400;
-    font-family: "SilkaMono-Medium";
-    line-height: 1.1;
-    margin-top: 40px;
-  }
-  
-  /* Медіа-запити для адаптивності */
-  @media (max-width: 1380px) {
-    .blog-heading-text {
-      font-size: 50px;
-      margin-top: 40px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .blog-heading-text {
-      font-size: 30px;
-      margin-top: 0;
-    }
 
-  }
   

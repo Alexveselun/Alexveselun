@@ -17,23 +17,6 @@
 }
 
 
-.blog-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "SilkaMono-Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.heading-text {
-  font-size: 30px;
-  font-family: SilkaMono-Regular;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-
 .resume-btn-div {
   width: 100%;
   display: flex;
@@ -54,30 +37,8 @@
 }
 
 @media (max-width: 1380px) {
-  .contact-heading-text {
-    font-size: 50px;
-    margin-top: 60px;
-  }
-
-  .blog-heading-text {
-    font-size: 50px;
-    margin-top: 40px;
-  }
 }
 
 @media (max-width: 768px) {
-  .contact-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
-  }
-
-  .blog-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
-  }
-
-  .heading-text {
-    font-size: 20px;
-  }
 
 }

@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
       <div className="contact-div-main">
         <div className="contact-header">
           <h1 className="heading contact-title">{contactData.contactSection.title}</h1>
-          <p className="subTitle contact-subtitle">{contactData.contactSection.description}</p>
+          <p className="text-detail">{contactData.contactSection.description}</p>
 
           <div className="contact-text-div">
             <a className="contact-detail" href={`tel:${contactData.contactSection.number}`}>

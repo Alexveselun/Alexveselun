@@ -35,16 +35,14 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
 
   return (
     <div className="blog-container">
-          <div className="blog-card  blog-card-shadow">
-            <div onClick={() => openUrlInNewTab(blog.url)}>
-            <div className="heading-div-text">
-            <h1 className="heading-text">
-              {blog.title}
-            </h1>
-            <p className="heading-detail-text">
-              {blog.description}
-            </p>
+          <div className="blog-card  blog-card-shadow" onClick={() => openUrlInNewTab(blog.url)}>
+            <div className="heading-text-div">
+              <h1 className="text-second-title">
+                {blog.title}
+              </h1>
+              <p className="text-detail">{blog.description}</p>
             </div>
+
             <div className="cont-image">
             {blog.image && (
               <img
@@ -56,7 +54,6 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
             </div>
             <div className="go-corner">
               <div className="go-arrow">→</div>
-            </div>
             </div>
           {/* </a> */}
         </div>

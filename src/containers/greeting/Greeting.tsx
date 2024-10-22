@@ -18,15 +18,15 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
       <MotionWrapper>
         <div className="section-two-components">
           <div className="heading-text-div">
-            <h1 className="title-main">{greeting.title}</h1>
+            <h1 className="text-title">{greeting.title}</h1>
             {greeting.nickname !== null && (
-                <h2 className="second-heading-text-div">
+                <h2 className="text-second-title">
                   {greeting.nickname}
                 </h2>
               )}
-            <h3 className="heading-detail-text">
+            <h2 className="text-subtitle">
                 {greeting.subTitle}
-            </h3>
+            </h2>
             <Button
                   text="⭐ Contact me"
                   newTab={true}

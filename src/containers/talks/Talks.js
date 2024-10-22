@@ -19,12 +19,9 @@ export default function Talks(props) {
             </h1>
           </MotionWrapper>
           <MotionWrapper>
-            <p
-              className="subTitle talk-header-subtitle"
-              style={{ color: theme.secondaryText }}
-            >
+            <h2 className="text-subtitle">
               {talkSection.subtitle}
-            </p>
+            </h2>
           </MotionWrapper>
           {talkSection.talks.map((talk, i) => {
             return (

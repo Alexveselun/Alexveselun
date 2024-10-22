@@ -8,6 +8,7 @@
   justify-content: space-between; /* Зрушуємо елементи на різні кінці */
   flex-direction: row; /* Зміна на горизонтальне вирівнювання */
   padding: 10px 20px; /* Додаємо падінг для заголовка */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ul {

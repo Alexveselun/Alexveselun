@@ -19,14 +19,14 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
   return (
     <div className="container">
       <MotionWrapper>
-        <div className="heading-div">
+        <div className="section-two-components">
           <div className="section">
 
             <div className="heading-text-div">
-              <h1 className="heading-text">
+              <h1 className="text-second-title">
                 {contactSection.title}
               </h1>
-              <p className="heading-detail-text">
+              <p className="text-detail">
                 {contactSection.description}
               </p>
             </div>

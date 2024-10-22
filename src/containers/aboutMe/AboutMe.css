@@ -2,16 +2,6 @@
   overflow: hidden;
 }
 
-
-.title-main {
-  text-align: center;
-  font-size: 45px;
-  font-weight: 400;
-  font-family: "SilkaMono-Regular";
-  line-height: normal;
-  margin-bottom: 35px;
-}
-
 .location-div {
   font-size: 12px;
   text-shadow: #ffebcd;
@@ -28,11 +18,6 @@
   display: flex;
 } */
 
-
-.image-content-profile {
-  text-align: center;
-  max-width: 100%;
-}
 
 .bio-text {
   line-height: 30px;
@@ -51,7 +36,6 @@
     flex-direction: column;*/
     margin-bottom: -20px;
   }
-  .heading-detail-text
   .blog-sub {
     margin-bottom: 0px;
     margin-top: -15px;
@@ -60,19 +44,11 @@
     font-size: 16px;
   }
 
-  .image-content-profile {
-    margin-left: auto;
-    margin-right: auto;
-    order: 1;
-  }
-
   .icon {
     width: 16px;
     line-height: 30px;
     font-size: 16px;
   }
-
-
 
 }
 @media (min-width: 768px) {

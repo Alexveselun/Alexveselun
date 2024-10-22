@@ -18,12 +18,14 @@ const HobbiesSection: React.FC<HobbiesSectionProps> = ({ theme }) => {
   return (
     <div className="container">
     <MotionWrapper>
-        <h1 className="heading-text">
+      <div className="heading-text-div">
+        <h1 className="text-title">
           {hobbies.title}
         </h1>
-        <h2 className="heading-detail-text">
+        <h2 className="text-subtitle">
           {hobbies.subTitle}
         </h2>
+      </div>
       <HobbiesCards theme={theme} />
     </MotionWrapper>
     </div>

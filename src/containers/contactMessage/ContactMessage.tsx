@@ -98,10 +98,10 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
   return (
     <div className="container">
       <MotionWrapper>
-        <div className="heading-div">
+        <div className="section-two-components">
           <div className="section">
                 <div className="heading-text-div">
-                  <h1 className="heading-text">Contact Message</h1>
+                  <h1 className="text-second-title">Contact Message</h1>
                 </div>
               <div className="form form-main">
                 <form onSubmit={handleSubmit} ref={formRef}>

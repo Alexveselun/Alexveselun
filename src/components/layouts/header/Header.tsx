@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { greeting, pageEnabled } from "../../../portfolio";
 import SeoHeader from "./seoHeader/SeoHeader";
@@ -20,6 +20,7 @@ const Header: React.FC = () => {
   const link = pageEnabled.splash ? "/splash" : "/home"; // Логіка для логотипа
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false); // Стан для відкриття/закриття меню
+  const menuRef = useRef<HTMLDivElement>(null); // Створюємо реф для меню
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 50); // Зміна класу при скролі
@@ -32,10 +33,28 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  // Логіка для відкриття/закриття меню
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  // Закриваємо меню при кліку поза його межами
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false); // Закриваємо меню, якщо клік поза його межами
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
 
   // Рендеримо індивідуальні навігаційні посилання на основі pageEnabled
   const MyLink: React.FC<{ name: string; link: string }> = ({ name, link }) => (
@@ -53,25 +72,24 @@ const Header: React.FC = () => {
   return (
     <>
       <SeoHeader />
-      <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+      <header className={`header ${isScrolled ? "scrolled" : ""}`} ref={menuRef}>
         <div className="logo">
           <NavLink to={link} className="logo-name-div">
             <span className="logo-name">{greeting.logo_name}</span>
           </NavLink>
         </div>
         <div className={`header-menu ${menuOpen ? "open" : ""}`}>
-         
           <ul className={`menu ${menuOpen ? "open" : ""}`}>
-          <input
-            type="checkbox"
-            className="menu-btn"
-            id="menu-btn"
-            checked={menuOpen}
-            onChange={toggleMenu}
-          />
-          <label className="menu-icon" htmlFor="menu-btn">
-            <span className="navicon"></span>
-          </label>
+            <input
+              type="checkbox"
+              className="menu-btn"
+              id="menu-btn"
+              checked={menuOpen}
+              onChange={toggleMenu}
+            />
+            <label className="menu-icon" htmlFor="menu-btn">
+              <span className="navicon"></span>
+            </label>
             <MyLink name="Home" link="/home" />
             {pageEnabled.experience && (
               <MyLink name="Experience" link="/experience" />

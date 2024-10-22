@@ -57,12 +57,14 @@ class SkillSection extends Component<SkillSectionProps> {
 
     return (
       <div className="container" id="skills">
-        <div className="section skills"> 
-          <h1 className="title-main">What I Do?</h1>
+        <div className="section skills">
+          <div className="heading-text-div">
+            <h1 className="text-title">Who am I?</h1>
+          </div>
           {skills.data.map((skill: Skill) => (
             <div className="skills-container" key={skill.title}>
               <div className="heading-text-div">
-                <h1 className="heading-text">{skill.title}</h1>
+                <h1 className="text-second-title">{skill.title}</h1>
               </div>
               <div className="section-three-components">
                 {/* image */}
@@ -77,7 +79,7 @@ class SkillSection extends Component<SkillSectionProps> {
                 <div className="second-heading-text-div">
                   <MotionWrapper>
                     {skill.skills.map((skillSentence, index) => (
-                      <p key={index} className="heading-detail-text">{skillSentence}</p>
+                      <p key={index} className="text-detail">{skillSentence}</p>
                     ))}
                   </MotionWrapper>
                 </div>

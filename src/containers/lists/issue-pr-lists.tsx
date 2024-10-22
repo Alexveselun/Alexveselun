@@ -1,5 +1,4 @@
 import React from "react";
-import MotionWrapper from "components/layouts/animations/MotionWrapper";
 import { openSource } from "../../portfolio";
 import IssueCard from "components/cards/issueCard/IssueCard";
 import PullRequestCard from "components/cards/pullRequestCard/PullRequestCard";
@@ -21,17 +20,13 @@ const IssuesPullRequestsList: React.FC<IssuesPullRequestsProps> = ({ theme }) =>
     }
 
     return (
-     <div className="container">
     <div className="issues-section">
-        <MotionWrapper>
-                <h1 className="center">Issues</h1>
-                <div className="issues-body-div">
-                    {IssuesData.data.map((issue) => (
-                    <IssueCard issue={issue} key={issue.id} />
-                    ))}
-                </div>
-        </MotionWrapper>
-    </div>
+      <h1 className="text-title">Issues</h1>
+        <div className="cards-body-div">
+          {IssuesData.data.map((issue) => (
+          <IssueCard issue={issue} key={issue.id} />
+          ))}
+        </div>
     </div>
     );
   };
@@ -43,20 +38,18 @@ const IssuesPullRequestsList: React.FC<IssuesPullRequestsProps> = ({ theme }) =>
 
     return (
     <div className="pull-requests-section">
-        <MotionWrapper>
-            <h1 className="center">Pull Requests</h1>
-            <div className="pull-request-body-div">
-                {PullRequestsData.data.map((pullRequest) => (
-                <PullRequestCard pullRequest={pullRequest} key={pullRequest.id} />
-                ))}
-            </div>
-        </MotionWrapper>
+      <h1 className="text-title">Pull Requests</h1>
+        <div className="cards-body-div">
+          {PullRequestsData.data.map((pullRequest) => (
+          <PullRequestCard pullRequest={pullRequest} key={pullRequest.id} />
+          ))}
+        </div>
     </div>    
     );
   };
 
   return (
-    <div className="sections">
+    <div className="container">
       {renderIssues()}
       {renderPullRequests()}
     </div>

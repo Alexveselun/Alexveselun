@@ -34,7 +34,7 @@ const PullRequestChart: React.FC<ChartProps> = ({ theme }) => {
 
   return (
     <div className="chart-section">
-        <h2 className="chart-main">
+        <h2 className="text-second-title">
           Pull Request Distribution
         </h2>
       <Doughnut
@@ -69,7 +69,7 @@ const IssueChart: React.FC<ChartProps> = ({ theme }) => {
 
   return (
     <div className="chart-section">
-        <h2 className="chart-main">
+        <h2 className="text-second-title">
           Issue Distribution
         </h2>
       <Doughnut

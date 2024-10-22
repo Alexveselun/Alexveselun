@@ -48,14 +48,14 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ theme }) => {
   return (
     <div className="basic-experience">
       <MotionWrapper>
-        <div className="heading-div">
+        <div className="section-two-components">
           <div className="heading-img-div">
             <ExperienceImg theme={theme} />
           </div>
           <div className="heading-text-div">
-            <h1 className="heading-text">{expData.title}</h1>
-            <h3 className="experience-heading-sub-text">{expData.subtitle}</h3>
-            <p className="heading-detail-text">{expData.description}</p>
+            <h1 className="text-second-title">{expData.title}</h1>
+            <h2 className="text-subtitle">{expData.subtitle}</h2>
+            <p className="text-detail">{expData.description}</p>
           </div>
         </div>
         <ExperienceAccordion sections={experience["sections"]} theme={theme} />

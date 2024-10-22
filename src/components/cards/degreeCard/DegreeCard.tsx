@@ -39,7 +39,7 @@ const DegreeCard: React.FC<DegreeCardProps> = ({ degree, theme }) => {
             className="body-titler"
             style={{ backgroundColor: theme.headerColor }}
           >
-            <div className="title-main">
+            <div className="title-main-div">
               <h2 className="card-title" style={{ color: theme.text }}>
                 {degree.title}
               </h2>

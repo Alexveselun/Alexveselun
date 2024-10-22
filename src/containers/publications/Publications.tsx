@@ -1,21 +1,18 @@
 import React from "react";
-import { publications } from "../../portfolio"; // Ensure this file has appropriate types
+import { publications } from "../../portfolio";
 import PublicationCard from "../../components/cards/publicationCard/PublicationCard";
 import "./Publications.css";
 
-// Define types for the publication data based on your actual data structure
+// Define types for the publication data
 interface Publication {
-  id?: string; // or number, depending on your data
+  id?: string;
   name: string;
-  createdAt: string; // Assuming this field exists in your data
+  createdAt: string;
   description: string;
-  url: string; // Assuming you want to include the URL of the publication
-  // Add other relevant fields based on your publication data
+  url: string;
 }
 
-interface PubData {
-  data: Publication[];
-}
+
 
 interface PublicationsProps {
   theme: {
@@ -24,19 +21,13 @@ interface PublicationsProps {
   };
 }
 
-// Define the structure of the publications object
-interface PublicationsInfo {
-  display: boolean;
-  title: string;
-  description: string;
-  publications: PubData;
-}
-
-// Assuming you have a specific type for the publications object in your portfolio
-const publicationsData: PublicationsInfo = publications as PublicationsInfo;
-
 const Publications: React.FC<PublicationsProps> = ({ theme }) => {
-  const { display, title, description, publications: pubData } = publicationsData;
+  const { display, title, description, publications: pubData } = publications as {
+    display: boolean;
+    title: string;
+    description: string;
+    publications: { data: Publication[] };
+  };
 
   if (!display) {
     return null;
@@ -44,33 +35,21 @@ const Publications: React.FC<PublicationsProps> = ({ theme }) => {
 
   return (
     <div className="container">
-      <div className="basic-projects">
-        <div className="heading-text-div">
-            <h1 className="heading-text">
-              {title}
-            </h1>
-            <p className="subtitle-main">
-              {description}
-            </p>
-          </div>
+      <div className="heading-text-div">
+        <h1 className="text-second-title">{title}</h1>
+        <p className="text-detail">{description}</p>
       </div>
-      <div className="repo-cards-div-main">
+      <div className="cards-div-main">
         {pubData.data.length > 0 ? (
-          pubData.data.map((pubs) => {
-            if (!pubs.name || pubs.name.length === 0) {
-              return null;
-            }
-
-            return (
-              <PublicationCard
-                publication={pubs}
-                theme={theme}
-                key={pubs.id || pubs.name} // Use a unique identifier if available
-              />
-            );
-          })
+          pubData.data.map((pub) => (
+            <PublicationCard
+              publication={pub}
+              theme={theme}
+              key={pub.id || pub.name}
+            />
+          ))
         ) : (
-          <p style={{ color: theme.secondaryText }}>No publications available.</p> // Fallback message
+          <p className="text-detail">No publications available.</p>
         )}
       </div>
     </div>

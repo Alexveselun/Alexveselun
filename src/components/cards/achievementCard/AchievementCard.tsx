@@ -27,10 +27,10 @@ const AchievementCard: React.FC<AchievementCardProps> = ({ theme, cardInfo }) =>
         <img src={cardInfo.image} alt="PWA" className="card-image" />
       </div>
       <div className="certificate-detail-div">
-        <h5 className="card-title" style={{ color: theme.text }}>
+        <h5 className="card-title">
           {cardInfo.title}
         </h5>
-        <p className="card-subtitle" style={{ color: theme.secondaryText }}>
+        <p className="card-subtitle">
           {cardInfo.description}
         </p>
       </div>

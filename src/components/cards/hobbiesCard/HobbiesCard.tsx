@@ -46,10 +46,10 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
             <div className="hobbie-section" key={index}>
               <div className="hobbies-heading">
                 <MotionWrapper>
-                  <div className="heading-text">
+                  <div className="text-second-title">
                     {title}
                   </div>
-                  <div className="heading-detail-text">
+                  <div className="text-detail">
                     {description}
                   </div>
                 </MotionWrapper>

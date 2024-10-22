@@ -27,7 +27,7 @@ const TechStack: React.FC<TechStackProps> = ({ theme }) => {
         <MotionWrapper>
           <div className="section bar-skills">
             <div className="heading-text-div">
-              <h1 className="heading-text">
+              <h1 className="text-second-title">
                 {techStack.title}
               </h1>
             </div>
@@ -38,7 +38,7 @@ const TechStack: React.FC<TechStackProps> = ({ theme }) => {
               return (
                 <div key={exp.Stack} className="bar-skill">
                   <MotionWrapper>
-                    <p style={{ color: theme.secondaryText }}>{exp.Stack}</p>
+                    <p className="text-detail left">{exp.Stack}</p>
                   </MotionWrapper>
                   <MotionWrapper>
                     <div className="bar-meter">

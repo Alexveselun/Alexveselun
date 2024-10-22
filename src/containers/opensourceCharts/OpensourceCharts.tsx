@@ -15,10 +15,10 @@ const OpensourceCharts: React.FC<OpensourceChartsProps> = ({ theme }) => {
   return (
     <div className="container">
     <MotionWrapper>
-          <h1 className="center">
+          <h1 className="text-title">
             Contributions
           </h1>
-      <div className="os-charts-body-div">
+      <div className="section-two-components">
         <IssueChart theme={theme} />
         <PullRequestChart theme={theme} />
       </div>

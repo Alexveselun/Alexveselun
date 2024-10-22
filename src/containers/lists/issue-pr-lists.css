@@ -9,7 +9,7 @@
     margin-bottom: 30px;
   }
   
-  .issues-body-div, .pull-request-body-div {
+  .cards-body-div {
     text-align: center;
     width: 100%;
   }

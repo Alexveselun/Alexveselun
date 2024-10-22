@@ -1,8 +1,6 @@
 import React from "react";
 import Button from "../../components/layouts/button/Button";
-import AddressImg from "./AddressImg";
 import { contactPageData } from "../../portfolio.js";
-import "./AddressSection.css";
 import MotionWrapper from "components/layouts/animations/MotionWrapper";
 
 interface PhoneSection {
@@ -34,21 +32,21 @@ const AddressSection: React.FC<AddressSectionProps> = ({ theme }) => {
   return (
     <div className="container">
       <MotionWrapper>
-      <div className="heading-div">
-      <div className="picture">
-      <div className="cont-image">
+      <div className="section-two-components">
+      {/* <div className="picture"> */}
+      {/* <div className="cont-image">
         <AddressImg theme={theme} />
-      </div>
-      </div>
+      </div> */}
+        {/* </div> */}
       <div className="section">
         <div className="column">
           <div className="heading-text-div">
-            <h1 className="heading-text">{addressSection.title}</h1>
-            <p className="heading-detail-text">{addressSection.subtitle}</p>
+            <h1 className="text-second-title">{addressSection.title}</h1>
+            <p className="text-detail">{addressSection.subtitle}</p>
             {addressSection.phone && (
             <>
-            <h1 className="heading-text">{addressSection.phone.title}</h1>
-            <p className="heading-detail-text">{addressSection.phone.subtitle}</p>
+            <h1 className="text-second-title">{addressSection.phone.title}</h1>
+            <p className="text-detail">{addressSection.phone.subtitle}</p>
             </>
             )}
             <Button

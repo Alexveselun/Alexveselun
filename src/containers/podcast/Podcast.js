@@ -18,12 +18,11 @@ const Podcast = (props) => {
           </h1>
         </MotionWrapper>
         <MotionWrapper>
-          <p
-            className="subTitle podcast-header-subtitle"
-            style={{ color: theme.secondaryText }}
+          <h2
+            className="text-subtitle"
           >
             {podcastSection.subtitle}
-          </p>
+          </h2>
         </MotionWrapper>
       </div>
       <div className="podcast-main-div">

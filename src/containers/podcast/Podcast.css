@@ -21,9 +21,6 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
 }
-.subTitle {
-  color: #373baf;
-}
 
 @media (max-width: 768px) {
   .podcast-header-title {
