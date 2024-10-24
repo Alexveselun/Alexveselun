@@ -58,7 +58,7 @@
 .logo-container {
   position: absolute;
   font-size: 45px;
-  top: 1.5rem;
+  top: 1rem;
   left: 7rem;
   transform: translateX(-50%);
   z-index: 22;
@@ -155,15 +155,8 @@
 /* ------------------------- Адаптивні стилі -------------------------------------------------- */
 
 @media (max-width: 1380px) {
-  .logo-container {
-    top: 12rem;
-    left: 34%;
-  }
-
-  .mobile-disable {
-    display: none;
-  }
 }
+
 @media screen and (max-width: 1100px) {
   .header {
   }
@@ -178,10 +171,6 @@
     font-size: 1rem;
   }
 
-  .logo-container {
-    top: 7.5rem;
-    left: 38%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -190,11 +179,15 @@
   }
 
   .logo-container {
-    top: 2rem;
+    top: 3.5rem;
     left: 50%;
     font-size: 30px;
   }
   
+  .mobile-disable{
+    display: none;
+  }
+
   .menu-item a {
     padding: 15px;
     font-size: 1rem;
