@@ -72,6 +72,10 @@
   color: #333;
 }
 
+.white {
+  color: white;
+}
+
 /* ------------------------- Кнопка меню -------------------------------------------------- */
 .menu-toggle {
   position: absolute;
@@ -91,7 +95,15 @@
   z-index: 25;
   position: absolute;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.08);    
 }
 
 .hamburger {

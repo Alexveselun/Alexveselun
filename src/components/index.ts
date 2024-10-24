@@ -11,12 +11,11 @@ export { default as PullRequestCard } from "./cards/pullRequestCard/PullRequestC
 export { default as TalkCard } from "./cards/talkCard/TalkCard";
 export { PullRequestChart, IssueChart } from "./charts/opensource"
 export { default as Button } from "./layouts/button/Button";
-export { default as DisplayLottie } from "./layouts/animations/displayLottie/DisplayLottie";
+export { default as SplashAnimationLottie } from "./layouts/animations/AnimationLottie";
 export { default as Footer } from "./layouts/footer/Footer";
 export { default as Header } from "./layouts/header/Header"; 
 export { default as SeoHeader } from "./layouts/header/seoHeader/SeoHeader"; 
 export { default as Input } from "./forms/input/Input"; 
-export { default as LoaderLogo } from "./layouts/animations/loader/LoaderLogo";
 export { default as OrganizationList } from "./media/organizationList/OrganizationList";
 export { default as ProjectLanguages } from "./media/projectLanguages/ProjectLanguages";
 export { default as ProjectsSection } from "./media/projectsSection/ProjectsSection"; 

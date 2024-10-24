@@ -22,13 +22,14 @@ const Main = (props) => {
   const viewHobbbies = pageEnabled.hobbies;
   const viewSplash = pageEnabled.splash;
   const viewBlog = pageEnabled.blog;
+  const viewContact = pageEnabled.contact;
 
   const { isDark } = useContext(StyleContext);
   const theme = isDark ? darkTheme : props.theme;
   const Router = routerValue === "BrowserRouter" ? BrowserRouter : HashRouter;
   if (viewSplash) {
     return (
-      <div style={{ backgroundColor: theme.body }}>
+      <div>
         <Router>
           <Routes>
             <Route path="/" element={<Splash theme={theme} />} />
@@ -54,7 +55,9 @@ const Main = (props) => {
             {viewBlog && (
               <Route path="/gallery" element={<Blogs theme={theme} />} /> 
             )}
+            {viewContact && (
             <Route path="/contact" element={<Contact theme={theme} />} />
+            )}
             <Route path="/splash" element={<Splash theme={theme} />} />
             {viewProjects && (
               <Route path="/projects" element={<Projects theme={theme} />} />
@@ -92,7 +95,9 @@ const Main = (props) => {
             {viewBlog && (
               <Route path="/gallery" element={<Blogs theme={theme} />} />
             )}
+            {viewContact && (
             <Route path="/contact" element={<Contact theme={theme} />} />
+            )}
             {viewProjects && (
               <Route path="/projects" element={<Projects theme={theme} />} />
             )}

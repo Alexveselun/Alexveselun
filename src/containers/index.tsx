@@ -14,7 +14,6 @@ export { default as HobbiesSection } from "./hobbiesSection/HobbiesSection";
 export { default as IssuesPullRequestsList } from "./lists/issue-pr-lists";
 export { default as Loading } from "./loading/Loading";
 export { default as LottieSplash } from "./lottieSplash/LottieSplash";
-export { default as NormalSplash } from "./normalSplash/NormalSplash";
 export { default as OpensourceCharts } from "./opensourceCharts/OpensourceCharts";
 export { default as Organizations } from "./organizations/Organizations";
 export { default as Podcast } from "./podcast/Podcast";

@@ -16,9 +16,9 @@ Credits: masterPortfolio(https://github.com/ashutosh1919/masterPortfolio)
 // Which pages will be enabled
 
 const pageEnabled = {
-  splash: false, // Change this to false if you don't want Splash screen
+  splash: true, // Change this to false if you don't want Splash screen
   blog: true, // Change this to false if you don't want
-  opensource: true, // Change this to false if you don't want opensource contribution (from github data) page
+  opensource: false, // Change this to false if you don't want opensource contribution (from github data) page
   hobbies: true, // Change this to false if you don't want hobbies page
   contact: true, // Change this to false if you don't want contact page
   projects: true, // Change this to false if you don't want projects (from github data) and publications page
@@ -35,7 +35,8 @@ const routerValue =
 const splashScreen = {
   useLottie: true, // setting it false will show animation of src/components/loader
   animationFile:
-    "build" /* Supported Values
+    "loaderWinXp"
+    /* Supported Values
     					             1. splashAnimation
     					             2. email
     					             3. build
@@ -48,7 +49,7 @@ const splashScreen = {
     					             10. littleRobot
     					             11. poolChartLoading
     					             */,
-  duration: 3500, // Set animation duration(milliseconds) as per your animation
+  duration: 2000, // Set animation duration(milliseconds) as per your animation
 };
 
 /**************               Home Page                    ****************/

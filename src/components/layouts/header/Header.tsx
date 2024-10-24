@@ -48,7 +48,7 @@ const Header: React.FC = () => {
     { name: "IT", link: "/opensource", enabled: pageEnabled.opensource },
     { name: "Hobbies", link: "/hobbies", enabled: pageEnabled.hobbies },
     { name: "NewHome", link: "/newhome", enabled: pageEnabled.newhome },
-    { name: "Contact", link: "/contact", enabled: true },
+    { name: "Contact", link: "/contact", enabled: pageEnabled.contact },
   ];
 
   return (

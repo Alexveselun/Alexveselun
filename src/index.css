@@ -303,7 +303,6 @@ html, body {
 
 /* Адаптивний дизайн для текстових блоків */
 .heading-text-div, .second-heading-text-div {
-  flex: 1;
   text-align: center;
 }
 
@@ -439,8 +438,8 @@ html, body {
   max-width: 600px;           /* Ограничение максимальной ширины */
   margin: 1.5rem;             /* Центрирование блока */
   overflow: hidden;           /* Скрытие части изображения за пределами контейнера */
-  border-radius: 10px;        /* Закругление углов */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+  border-radius: 10px;      
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;  /* Плавные переходы */
 }
 
@@ -454,7 +453,7 @@ html, body {
 }
 
 .picture:hover {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Увеличение тени при наведении */
+  box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.2); /* Увеличение тени при наведении */
   transform: scale(1.02);      /* Легкое увеличение изображения при наведении */
 }
 
@@ -510,8 +509,7 @@ html, body {
   text-decoration: none; 
   border-radius: 25px;
   transition: all 0.3s ease-out;
-  box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.2); /* Увеличение тени при наведении */
-
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
