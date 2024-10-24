@@ -83,7 +83,7 @@
 .menu-toggle {
   position: absolute;
   top: 1rem;
-  right: 4rem;
+  right: 5rem;
 }
 
 .menu-checkbox {
@@ -194,6 +194,7 @@
     left: 50%;
     font-size: 30px;
   }
+  
   .menu-item a {
     padding: 15px;
     font-size: 1rem;
