@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Alexveselun/static/css/main.21e9bcb6.css",
-    "main.js": "/Alexveselun/static/js/main.9358a445.js",
+    "main.css": "/Alexveselun/static/css/main.e6ac2d7a.css",
+    "main.js": "/Alexveselun/static/js/main.e0fbc406.js",
     "static/media/background2Slide.png": "/Alexveselun/static/media/background2Slide.d11c2e0f85f7f3685899.png",
     "static/media/background1Slide.png": "/Alexveselun/static/media/background1Slide.7f7317f1d36316edc357.png",
     "static/media/background3Slide.png": "/Alexveselun/static/media/background3Slide.94d6c5be04a7e997b5ea.png",
+    "static/media/loader.gif": "/Alexveselun/static/media/loader.f9c9677d2f5fb6d9c9a0.gif",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/Alexveselun/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.d58d758a79617b0b04d6.png",
@@ -49,11 +50,11 @@
     "static/media/googleAssistant.svg": "/Alexveselun/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "/Alexveselun/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Alexveselun/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.21e9bcb6.css.map": "/Alexveselun/static/css/main.21e9bcb6.css.map",
-    "main.9358a445.js.map": "/Alexveselun/static/js/main.9358a445.js.map"
+    "main.e6ac2d7a.css.map": "/Alexveselun/static/css/main.e6ac2d7a.css.map",
+    "main.e0fbc406.js.map": "/Alexveselun/static/js/main.e0fbc406.js.map"
   },
   "entrypoints": [
-    "static/css/main.21e9bcb6.css",
-    "static/js/main.9358a445.js"
+    "static/css/main.e6ac2d7a.css",
+    "static/js/main.e0fbc406.js"
   ]
 }
