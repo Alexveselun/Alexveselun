@@ -1,33 +1,14 @@
-.pr-top {
-  display: flex;
-  width: 100%;
-}
 
 .files-changed-div {
   width: 20%;
   text-align: right;
 }
 
-
-
-
 .pr-icons {
   font-size: 18px;
   width: 5%;
   float: left;
   text-align: left;
-}
-
-.pr-down {
-  width: 95%;
-  display: flex;
-  margin-left: 4%;
-}
-
-.changes-repo-div{
-  width: 90%;
-  margin-right: 0px;
-  display: inline-block;
 }
 
 .parent-repo-div {
@@ -64,13 +45,6 @@
 }
 
 @media (max-width: 1380px) {
-  .pr-top {
-    flex-direction: column;
-  }
-
-  .changes-repo-div {
-    width: 87%;
-  }
 
   .files-changed-div {
     margin-top: 10px;
@@ -84,10 +58,4 @@
     font-size: 20px;
   }
 
-
-
-  .pr-down {
-    width: 93%;
-    margin-left: 7%;
-  }
 }

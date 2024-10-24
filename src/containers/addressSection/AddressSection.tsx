@@ -1,22 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../../components/layouts/button/Button";
 import { contactPageData } from "../../portfolio.js";
 import MotionWrapper from "components/layouts/animations/MotionWrapper";
 
-interface PhoneSection {
-  title: string;
-  subtitle: string;
-}
-
 interface AddressSectionData {
   title: string;
   subtitle: string;
-  phone?: PhoneSection; // Optional property
+  address_image: string;
   location_map_link: string;
-}
-
-interface ContactPageData {
-  addressSection: AddressSectionData;
 }
 
 interface AddressSectionProps {
@@ -27,38 +18,48 @@ interface AddressSectionProps {
 }
 
 const AddressSection: React.FC<AddressSectionProps> = ({ theme }) => {
-  const { addressSection } = contactPageData as ContactPageData;
+  const { addressSection } = contactPageData as { addressSection: AddressSectionData };
+  const [image, setImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    const loadImage = async () => {
+      if (addressSection.address_image) {
+        try {
+          const img = await import(`../../assets/images/contactSection/${addressSection.address_image}`);
+          setImage(img.default);
+        } catch (error) {
+          console.error("Error loading image:", error);
+        }
+      }
+    };
+
+    loadImage();
+  }, [addressSection.address_image]);
 
   return (
     <div className="container">
       <MotionWrapper>
-      <div className="section-two-components">
-      {/* <div className="picture"> */}
-      {/* <div className="cont-image">
-        <AddressImg theme={theme} />
-      </div> */}
-        {/* </div> */}
-      <div className="section">
-        <div className="column">
-          <div className="heading-text-div">
-            <h1 className="text-second-title">{addressSection.title}</h1>
-            <p className="text-detail">{addressSection.subtitle}</p>
-            {addressSection.phone && (
-            <>
-            <h1 className="text-second-title">{addressSection.phone.title}</h1>
-            <p className="text-detail">{addressSection.phone.subtitle}</p>
-            </>
+        <div className="section-two-components">
+          <div className="picture">
+            {image ? (
+              <img src={image} alt={addressSection.address_image} className="cont-image" />
+            ) : (
+              <div>Loading image...</div>
             )}
-            <Button
-              text="Visit on Google Maps"
-              newTab={true}
-              href={addressSection.location_map_link}
-              theme={theme}
-              className="btn"
+          </div>
+          <div className="section">
+            <div className="heading-text-div">
+              <h1 className="text-second-title">{addressSection.title}</h1>
+              <p className="text-detail">{addressSection.subtitle}</p>
+              <Button
+                text="Visit on Google Maps"
+                newTab={true}
+                href={addressSection.location_map_link}
+                theme={theme}
+                className="btn"
               />
             </div>
           </div>
-        </div>
         </div>
       </MotionWrapper>
     </div>

@@ -2,13 +2,13 @@ import React from "react";
 import { Header, TopButton, Footer } from "../../components";
 import {
   Greeting,
-  Skills,
   StartupProjects,
   Podcast,
   Talks,
   Twitter,
   AboutMe,
 } from "../../containers";
+import SkillSection from "containers/skills/SkillSection";
 
 // Define the props interface
 interface HomeProps {
@@ -25,7 +25,7 @@ const Home: React.FC<HomeProps> = (props) => {
     <div className="main-page">
       <Header />
       <Greeting theme={theme} />
-      <Skills theme={theme} />
+      <SkillSection theme={theme} />
       <StartupProjects theme={theme} />
       <Twitter />
       <Talks theme={theme} />

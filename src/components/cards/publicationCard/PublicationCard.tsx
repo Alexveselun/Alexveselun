@@ -44,7 +44,7 @@ const PublicationCard: React.FC<PublicationProps> = ({ theme, publication }) => 
         <p className="text-detail">
           {publication.description}
         </p>
-        <div className="publication-details">
+        <div className="publication-details-div">
           <p
             className="text-detail"
           >

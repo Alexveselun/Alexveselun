@@ -304,6 +304,7 @@ html, body {
 /* Адаптивний дизайн для текстових блоків */
 .heading-text-div, .second-heading-text-div {
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 
@@ -436,11 +437,11 @@ html, body {
 .picture {
   width: 100%;                /* Контейнер занимает всю ширину */
   max-width: 600px;           /* Ограничение максимальной ширины */
-  margin: 1.5rem;             /* Центрирование блока */
+  /* margin: 1.5rem;             Центрирование блока */
   overflow: hidden;           /* Скрытие части изображения за пределами контейнера */
   border-radius: 10px;      
-  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;  /* Плавные переходы */
+  cursor: pointer;
 }
 
 .picture img {
@@ -650,8 +651,6 @@ textarea {
     padding: 1rem;
   }
 }
-
-
 
 
 @media (min-width: 340px) {

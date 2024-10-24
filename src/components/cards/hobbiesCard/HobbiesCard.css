@@ -4,45 +4,34 @@
   margin-left: 5%;
   margin-right: 5%;
 }
-.hobbies-card-title {
-  font-size: 35px;
-  margin-top: 20px;
-}
-.hobbies-card-subtitle {
-  margin-top: 12px;
-  font-size: 25px;
-  margin-bottom: 20px;
+
+.hobbie-section {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .hobbies-image {
-    width: 60%;
-  }
-  .hobbie-section {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-  }
-  .hobbie-section > * {
-    flex: 1;
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-
-  .hobbies-image > * {
-    max-width: 60%;
-    height: auto;
-    margin-top: 100px;
-  }
+.hobbie-section > * {
+  flex: 1;
+  align-content: center;
+  margin: 30px;
 }
+
 @media (max-width: 768px) {
-  .hobbies-card-title {
-    font-size: 27px;
+  .hobbies-cards {
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
   }
-  .hobbies-card-subtitle {
-    font-size: 18px;
+
+  .hobbie-section {
+    flex-direction: column;
+    align-items: center;
   }
-  .hobbies-image {
-    width: 80%;
+
+  .hobbie-section > * {
+    margin: 20px 0; /* Reduce margin for better spacing */
+    width: 100%; /* Ensure elements take full width */
   }
 }

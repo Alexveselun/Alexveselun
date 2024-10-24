@@ -6,13 +6,8 @@ import ProjectsData from "../../../shared/opensource/projects.json";
 import ProjectsImg from "./ProjectsImg";
 import "./ProjectsSection.css";
 
-interface ProjectsSectionProps {
-  text: string;
-  secondaryText: string; // This can represent the theme if needed
-}
 
-const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
-  // Check if projects should be displayed or if there's no data
+const ProjectsSection: React.FC = () => {
   if (!projects.display || ProjectsData.data.length === 0) {
     return null;
   }

@@ -18,7 +18,7 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
       <MotionWrapper>
         <div className="section-two-components">
           <div className="heading-text-div">
-            <h1 className="text-title">{greeting.title}</h1>
+            <h1 className="text-title mobile-disable">{greeting.title}</h1>
             {greeting.nickname !== null && (
                 <h2 className="text-second-title">
                   {greeting.nickname}

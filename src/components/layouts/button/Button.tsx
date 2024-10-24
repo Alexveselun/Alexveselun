@@ -34,7 +34,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ text, className, href, newTab }) => {
   return (
-    <div className="button">
+    <div className="button-div">
       <a
         className={className}
         href={href}

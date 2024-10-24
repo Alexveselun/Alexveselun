@@ -1,14 +1,6 @@
-.main-button {
-  height: 50px;
-  color: #000;
-  display: inline-block;
-  padding: 13px 30px 13px 30px;
-  position: relative;
-  font-size: 14px; 
-  line-height: 24px; 
-  text-decoration: none; 
-  background: #fff;
-  border-radius: 25px;
+.button-div {
+  display: flex;
+  justify-content: center; 
 }
 
 .main-button:hover {

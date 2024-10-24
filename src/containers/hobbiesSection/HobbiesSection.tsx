@@ -1,7 +1,7 @@
 import React from "react";
 import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { hobbies, pageEnabled } from "../../portfolio";
-import { HobbiesCards } from "components";
+import { HobbiesCards } from "components"; // Make sure the import path is correct
 import "./HobbiesSection.css";
 
 interface HobbiesSectionProps {
@@ -12,22 +12,17 @@ interface HobbiesSectionProps {
 }
 
 const HobbiesSection: React.FC<HobbiesSectionProps> = ({ theme }) => {
-  // Return null if the hobbies page is disabled
   if (!pageEnabled.hobbies) return null;
 
   return (
-    <div className="container">
-    <MotionWrapper>
-      <div className="heading-text-div">
-        <h1 className="text-title">
-          {hobbies.title}
-        </h1>
-        <h2 className="text-subtitle">
-          {hobbies.subTitle}
-        </h2>
-      </div>
-      <HobbiesCards theme={theme} />
-    </MotionWrapper>
+    <div className="container" id="hobbies">
+      <MotionWrapper>
+        <div className="heading-text-div">
+          <h1 className="text-title">{hobbies.title}</h1>
+          {/* <h2 className="text-subtitle">{hobbies.subTitle}</h2> */}
+        </div>
+        <HobbiesCards theme={theme} />
+      </MotionWrapper>
     </div>
   );
 };

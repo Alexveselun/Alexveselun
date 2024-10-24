@@ -2,7 +2,6 @@ import React from "react";
 import { greeting, contactPageData } from "../../portfolio";
 import SocialMedia from "../../components/layouts/socialMedia/SocialMedia";
 import Button from "components/layouts/button/Button";
-import "./ContactSection.css";
 import MotionWrapper from "components/layouts/animations/MotionWrapper";
 
 interface ContactSectionProps {
@@ -42,12 +41,8 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
             <div className="picture">
             <div className="cont-image">
             <img
-              src={require(`../../assets/images/${contactSection.profile_image_path}`)}
-              alt="Profile"
-              onError={(e) => {
-                e.currentTarget.onerror = null;
-                e.currentTarget.src = '../../assets/images/default_profile.png';
-              }}
+              src={require(`../../assets/images/contactSection/${contactSection.profile_image}`)}
+              alt="contact"
             />
             </div>
           </div>

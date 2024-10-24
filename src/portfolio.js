@@ -18,7 +18,7 @@ Credits: masterPortfolio(https://github.com/ashutosh1919/masterPortfolio)
 const pageEnabled = {
   splash: true, // Change this to false if you don't want Splash screen
   blog: true, // Change this to false if you don't want
-  opensource: false, // Change this to false if you don't want opensource contribution (from github data) page
+  opensource: true, // Change this to false if you don't want opensource contribution (from github data) page
   hobbies: true, // Change this to false if you don't want hobbies page
   contact: true, // Change this to false if you don't want contact page
   projects: true, // Change this to false if you don't want projects (from github data) and publications page
@@ -68,7 +68,7 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Mr.Yanyk",
-  logo_name: "Mr.Yanyk",
+  logo_name: "Mr. Yanyk",
   nickname: "",
   subTitle:
     "I’m passionate about creating unique experiences that blend innovation and culture. I’m dedicated to building spaces that not only entertain but also educate and inspire.",
@@ -129,164 +129,75 @@ const skills = {
   data: [
     {
       title: "Entrepreneurship & Business Development",
-      imageName:
-        "BusinessDevelopmentImg" /* Available imageNames: 
-      
-      FullStackImg, 
-      TerminalImg,  
-      DesignImg, 
-      AppDevelopImg, 
-      CloudInfraImg,
-      DataScienceImg,
-      BusinessDevelopmentImg
-      */,
+      imageName: "entrepreneaur.png",
       skills: [
         "⚡ Proven track record in launching and growing successful ventures.",
         "⚡ Focus on innovative concepts and long-term strategy.",
         "⚡ Strong emphasis on business scaling and sustainable growth.",
       ],
-      softwareSkills: [
-        {
-          skillName: "Business Strategy",
-          fontAwesomeClassname: "simple-icons:business",
-          style: {
-            color: "#4285F4",
-          },
-        },
-      ],
-    },
-    {
-      title: "Creative Arts",
-      imageName: "DesignImg",
-      skills: [
-        "⚡ Former artist with experience in creative expression.",
-        "⚡ Unique approach to business and project management.",
-        "⚡ Contributions to artistic and cultural initiatives.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe Photoshop",
-          fontAwesomeClassname: "simple-icons:adobephotoshop",
-          style: {
-            color: "#31A8FF",
-          },
-        },
-      ],
-    },
-    {
-      title: "Problem-Solving & Innovation",
-      imageName: "InnovationImg",
-      skills: [
-        "⚡ Excellent analytical and creative problem-solving skills.",
-        "⚡ Applying innovative solutions to complex challenges.",
-      ],
-      softwareSkills: [],
-    },
-    {
-      title: "Leadership & Team Building",
-      imageName: "LeadershipImg",
-      skills: [
-        "⚡ Proven ability to lead diverse teams.",
-        "⚡ Fostering collaboration and guiding teams towards common goals.",
-        "⚡ Strong emphasis on mentorship and professional development.",
-      ],
-      softwareSkills: [],
-    },
- 
-    {
-      title: "Philanthropy",
-      imageName: "PhilanthropyImg",
-      skills: [
-        "⚡ Dedication to making a positive social impact through charitable projects.",
-        "⚡ Focus on community-building and social responsibility.",
-      ],
-      softwareSkills: [],
-    },
-    {
-      title: "Project Management",
-      imageName: "ProjectManagementImg",
-      skills: [
-        "⚡ Expertise in managing large-scale projects, from concept to execution.",
-        "⚡ Seamless coordination of teams, timelines, and resources.",
-        "⚡ Skilled in Agile and Waterfall methodologies.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Jira",
-          fontAwesomeClassname: "simple-icons:jira",
-          style: {
-            color: "#0052CC",
-          },
-        },
-        {
-          skillName: "Trello",
-          fontAwesomeClassname: "simple-icons:trello",
-          style: {
-            color: "#0079BF",
-          },
-        },
-      ],
-    },
-    {
-      title: "Marketing Strategy & Execution",
-      imageName: "MarketingImg",
-      skills: [
-        "⚡ Deep understanding of marketing trends and digital advertising.",
-        "⚡ Expertise in brand development and content creation.",
-        "⚡ Creating effective campaigns that resonate with target audiences.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Google Analytics",
-          fontAwesomeClassname: "simple-icons:googleanalytics",
-          style: {
-            color: "#EA4335",
-          },
-        },
-        {
-          skillName: "HubSpot",
-          fontAwesomeClassname: "simple-icons:hubspot",
-          style: {
-            color: "#FF7A59",
-          },
-        },
-      ],
     },
     {
       title: "IT & Technology",
-      imageName: "ITTechImg",
+      imageName: "computer.png",
       skills: [
         "⚡ Strong technical background with hands-on experience in IT.",
         "⚡ Proficient in software development and automation.",
         "⚡ Expertise in technology integration for businesses.",
       ],
-      softwareSkills: [
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#F89820",
-          },
-        },
-        {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
-          style: {
-            color: "#F05032",
-          },
-        },
+    },
+    {
+      title: "Creative Arts",
+      imageName: "design.png",
+      skills: [
+        "⚡ Former artist with experience in creative expression.",
+        "⚡ Unique approach to business and project management.",
+        "⚡ Contributions to artistic and cultural initiatives.",
       ],
     },
+    {
+      title: "Problem-Solving & Innovation",
+      imageName: "innovation.png",
+      skills: [
+        "⚡ Excellent analytical and creative problem-solving skills.",
+        "⚡ Applying innovative solutions to complex challenges.",
+      ],
+    },
+    // {
+    //   title: "Leadership & Team Building",
+    //   imageName: "leadership.img",
+    //   skills: [
+    //     "⚡ Proven ability to lead diverse teams.",
+    //     "⚡ Fostering collaboration and guiding teams towards common goals.",
+    //     "⚡ Strong emphasis on mentorship and professional development.",
+    //   ],
+    // },
  
-
+    // {
+    //   title: "Philanthropy",
+    //   imageName: "philantropu1.img",
+    //   skills: [
+    //     "⚡ Dedication to making a positive social impact through charitable projects.",
+    //     "⚡ Focus on community-building and social responsibility.",
+    //   ],
+    // },
+    // {
+    //   title: "Project Management",
+    //   imageName: "projects.jpg",
+    //   skills: [
+    //     "⚡ Expertise in managing large-scale projects, from concept to execution.",
+    //     "⚡ Seamless coordination of teams, timelines, and resources.",
+    //     "⚡ Skilled in Agile and Waterfall methodologies.",
+    //   ],
+    // },
+    // {
+    //   title: "Marketing Strategy & Execution",
+    //   imageName: "marketing.jpg",
+    //   skills: [
+    //     "⚡ Deep understanding of marketing trends and digital advertising.",
+    //     "⚡ Expertise in brand development and content creation.",
+    //     "⚡ Creating effective campaigns that resonate with target audiences.",
+    //   ],
+    // },
 
   ],
 };
@@ -533,28 +444,28 @@ const experience = {
 const hobbies = {
   
   title: "Hobbies",
-  subTitle: "Being happy is my favorite hobby",
+  // subTitle: "Being happy is my favorite hobby",
   hobbies: [
     {
       title: "Reading",
       description: "Enjoying books primarily on psychology and philosophy, with a favorite author being Carl Gustav Jung",
-      image_path: "Reading.png",
+      image_path: "reading.png",
     },
-    {
-      title: "Creative Arts",
-      description: "Engaging in various forms of artistic expression!",
-      image_path: "Writing.png",
-    },
-    {
-      title: "History",
-      description:
-        "A passion for learning about historical events and contexts",
-      image_path: "Memeing.png",
-    },
+    // {
+    //   title: "Creative Arts",
+    //   description: "Engaging in various forms of artistic expression!",
+    //   image_path: "writing.png",
+    // },
+    // {
+    //   title: "History",
+    //   description:
+    //     "A passion for learning about historical events and contexts",
+    //   image_path: "history.png",
+    // },
     {
       title: "Music",
       description: "Listening to a wide range of music, from classical to the latest rock compositions",
-      image_path: "Music.png",
+      image_path: "music.png",
     },
   ],
 };
@@ -611,14 +522,14 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "Mr.Yanyk.jpeg",
+    profile_image: "contactEmail.png",
     description:
       "I’m reachable via email and messenger. Feel free to message me. Looking forward to collaborating on creative projects!",
   },
   addressSection: {
     title: "Address",
     subtitle: "Kyiv, Ukraine",
-    avatar_image_path: "address_image.svg",
+    address_image: "addressImage.png",
     location_map_link:
       "https://www.google.com/maps/@50.4489098,30.52621,17.85z?gl=bd",
   },

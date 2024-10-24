@@ -57,9 +57,9 @@
 /* ------------------------- Логотип -------------------------------------------------- */
 .logo-container {
   position: absolute;
-  font-size: 1.5rem;
-  top: 1rem;
-  left: 6rem;
+  font-size: 45px;
+  top: 1.5rem;
+  left: 7rem;
   transform: translateX(-50%);
   z-index: 22;
 }
@@ -68,12 +68,15 @@
   font-family: "Silka-Regular";
   font-weight: bold;
   text-align: center;
-  font-size: 1.5em;
   color: #333;
 }
 
 .white {
   color: white;
+}
+
+.header.scrolled .logo-container {
+  display: none;
 }
 
 /* ------------------------- Кнопка меню -------------------------------------------------- */
@@ -150,9 +153,21 @@
 }
 
 /* ------------------------- Адаптивні стилі -------------------------------------------------- */
+
+@media (max-width: 1380px) {
+  .logo-container {
+    top: 12rem;
+    left: 34%;
+  }
+
+  .mobile-disable {
+    display: none;
+  }
+}
 @media screen and (max-width: 1100px) {
   .header {
   }
+
 
   .menu-list {
     flex-direction: column;
@@ -162,6 +177,11 @@
     padding: 20px;
     font-size: 1rem;
   }
+
+  .logo-container {
+    top: 7.5rem;
+    left: 38%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -169,6 +189,11 @@
     position: relative;
   }
 
+  .logo-container {
+    top: 2rem;
+    left: 50%;
+    font-size: 30px;
+  }
   .menu-item a {
     padding: 15px;
     font-size: 1rem;
@@ -181,8 +206,6 @@
     font-size: 0.9rem;
   }
 
-  .logo-container {
-  }
 }
 
 /* ------------------------- Додаткові стилі -------------------------------------------------- */

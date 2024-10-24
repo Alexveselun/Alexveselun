@@ -12,59 +12,48 @@ interface HobbiesCardProps {
 
 const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
   const [images, setImages] = useState<Record<string, string>>({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+
+  // Load hobby images asynchronously
+  const loadImages = async () => {
+    try {
+      const imageMap: Record<string, string> = {};
+
+      await Promise.all(
+        hobbies.hobbies.map(async ({ image_path }) => {
+          const image = await import(`../../../assets/images/hobbies_page/${image_path}`);
+          imageMap[image_path] = image.default;
+        })
+      );
+
+      setImages(imageMap);
+    } catch (error) {
+      console.error("Error loading images:", error);
+    }
+  };
 
   useEffect(() => {
-    const loadImages = async () => {
-      try {
-        const imagePromises = hobbies.hobbies.map(async ({ image_path }) => {
-          const image = await import(`../../../assets/images/${image_path}`);
-          return { [image_path]: image.default };
-        });
-
-        const resolvedImages = await Promise.all(imagePromises);
-        const imageMap = resolvedImages.reduce((acc, img) => ({ ...acc, ...img }), {});
-        setImages(imageMap);
-      } catch (err) {
-        setError("Error loading images");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadImages();
+    loadImages(); // Load images on component mount
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
-
   return (
-    <div className="hobbies-cards">
-          {hobbies.hobbies.map(({ title, description, image_path }, index) => (
-            <div className="hobbie-section" key={index}>
-              <div className="hobbies-heading">
-                  <div className="text-second-title">
-                    {title}
-                  </div>
-                  <div className="text-detail">
-                    {description}
-                  </div>
-              </div>
-              <MotionWrapper>
-                <div className="picture">
-                <div className="cont-image">
-                  {images[image_path] && (
-                    <img
-                      src={images[image_path]}
-                      alt={title}
-                    />
-                  )}
-                </div>
-                </div>
-              </MotionWrapper>
+    <div className="skills-container">
+      <MotionWrapper>
+      {hobbies.hobbies.map(({ title, description, image_path }, index) => (
+        <div className="hobbie-section" key={index}>
+          <div className="hobbies-heading">
+            <div className="text-second-title">{title}</div>
+            <div className="text-detail">{description}</div>
+          </div>
+          <div className="picture">
+              {images[image_path] ? (
+                <img src={images[image_path]} alt={title} className="cont-image" />
+              ) : (
+                <div>Loading image...</div>
+              )}
             </div>
-          ))}
+        </div>
+      ))}
+    </MotionWrapper>
     </div>
   );
 };
