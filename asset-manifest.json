@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/Alexveselun/static/css/main.68378e49.css",
-    "main.js": "/Alexveselun/static/js/main.7f306e3e.js",
+    "main.css": "/Alexveselun/static/css/main.2f186c38.css",
+    "main.js": "/Alexveselun/static/js/main.3eb47c40.js",
     "static/media/loader.gif": "/Alexveselun/static/media/loader.f9c9677d2f5fb6d9c9a0.gif",
+    "static/media/main-theme.png": "/Alexveselun/static/media/main-theme.2fdd885e4153140c1a97.png",
     "static/media/fa-solid-900.ttf": "/Alexveselun/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/reading.png": "/Alexveselun/static/media/reading.181a2a9ac5845230f330.png",
     "static/media/innovation.png": "/Alexveselun/static/media/innovation.09f3f57bfb8084e52b14.png",
@@ -28,11 +29,11 @@
     "static/media/fa-v4compatibility.woff2": "/Alexveselun/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/Alexveselun/index.html",
     "static/media/location_icon.svg": "/Alexveselun/static/media/location_icon.c8e586701eaf88e96631.svg",
-    "main.68378e49.css.map": "/Alexveselun/static/css/main.68378e49.css.map",
-    "main.7f306e3e.js.map": "/Alexveselun/static/js/main.7f306e3e.js.map"
+    "main.2f186c38.css.map": "/Alexveselun/static/css/main.2f186c38.css.map",
+    "main.3eb47c40.js.map": "/Alexveselun/static/js/main.3eb47c40.js.map"
   },
   "entrypoints": [
-    "static/css/main.68378e49.css",
-    "static/js/main.7f306e3e.js"
+    "static/css/main.2f186c38.css",
+    "static/js/main.3eb47c40.js"
   ]
 }
