@@ -3,7 +3,6 @@ import { Header, TopButton, Footer } from "../../components";
 import {
   Greeting,
   StartupProjects,
-  Podcast,
   Talks,
   Twitter,
   AboutMe,
@@ -29,7 +28,6 @@ const Home: React.FC<HomeProps> = (props) => {
       <StartupProjects theme={theme} />
       <Twitter />
       <Talks theme={theme} />
-      <Podcast theme={theme} />
       <AboutMe theme={theme} />
       <Footer/>
       <TopButton />

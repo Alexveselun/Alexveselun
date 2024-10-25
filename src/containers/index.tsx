@@ -15,7 +15,7 @@ export { default as Loading } from "./loading/Loading";
 export { default as LottieSplash } from "./lottieSplash/LottieSplash";
 export { default as OpensourceCharts } from "./opensourceCharts/OpensourceCharts";
 export { default as Organizations } from "./organizations/Organizations";
-export { default as Podcast } from "./podcast/Podcast";
+export { default as MusicPlayer } from "./podcast/Podcast";
 export { default as Publications } from "./publications/Publications";
 export { default as StartupProjects } from "./startupProjects/StartupProjects";
 export { default as Talks } from "./talks/Talks";

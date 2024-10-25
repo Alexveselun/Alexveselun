@@ -6,9 +6,7 @@ import "./LottieSplash.css";
 
 const LottieSplash: React.FC = () => {
   const animData = require(`../../assets/lottie/${splashScreen.animationFile}.json`);
-
-  if (!splashScreen.useLottie) return null;
-
+  
   return (
       <div className="splash-container">
         <div className="splash-animation-container">

@@ -34,22 +34,7 @@ const routerValue =
 
 // Splash Screen
 const splashScreen = {
-  useLottie: true, // setting it false will show animation of src/components/loader
-  animationFile:
-    "loaderWinXp"
-    /* Supported Values
-    					             1. splashAnimation
-    					             2. email
-    					             3. build
-    					             4. landingPerson
-    					             5. codingPerson
-    					             6. geometricLoader
-    					             7. starLoading
-    					             8. ripple
-    					             9. nightDay
-    					             10. littleRobot
-    					             11. poolChartLoading
-    					             */,
+  animationFile: "loaderWinXp",
   duration: 2000, // Set animation duration(milliseconds) as per your animation
 };
 
@@ -282,15 +267,14 @@ const talkSection = {
 
 // Podcast Section
 
-const podcastSection = {
-  display: false, // Set it true to show your podcasts
-  title: "Podcast",
-  subtitle: "I love to talk about myself and technology",
 
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo",
-  ],
+
+const podcastSection = {
+  display: true, // Set it true to show your podcasts
+  title: "Music",
+  subtitle: "slow down - and keep moving forward",
+
+  musicTrackTitle: ["track1.mp3",]
 };
 
 // Your tweets displayed in a iframe

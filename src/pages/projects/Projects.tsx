@@ -1,7 +1,7 @@
 import React from "react";
 import { pageEnabled } from "../../portfolio";
 import { Header, ProjectsSection, TopButton, Footer } from "../../components";
-import { Publications } from "../../containers";
+import { MusicPlayer, Publications } from "../../containers";
 
 // Define props type for Projects component
 interface ProjectsProps {
@@ -21,6 +21,7 @@ const Projects: React.FC<ProjectsProps> = ({ theme }) => {
       <Header />
       <ProjectsSection />
       <Publications theme={theme} />
+      <MusicPlayer theme={theme}/>
       <Footer />
       <TopButton/>
     </div>
