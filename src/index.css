@@ -78,7 +78,7 @@ html, body {
 
 /* Контейнери і загальна структура */
 .main-page {
-  background-image: url("/src/assets/images/backgrounds/main-theme.png");
+  /* background-image: url("/src/assets/images/backgrounds/main-theme.png"); */
   width: 100vw;
   height: 100vh;
 }
