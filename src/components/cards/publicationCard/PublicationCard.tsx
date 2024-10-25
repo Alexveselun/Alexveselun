@@ -26,9 +26,9 @@ const PublicationCard: React.FC<PublicationProps> = ({ theme, publication }) => 
   };
 
   return (
+    <div className="publication-card-div">
     <MotionWrapper>
       <div
-        className="publication-card-div"
         role="button"
         tabIndex={0}
         onClick={() => openPublicationInNewTab(publication.url)}
@@ -53,6 +53,7 @@ const PublicationCard: React.FC<PublicationProps> = ({ theme, publication }) => 
         </div>
       </div>
       </MotionWrapper>
+    </div>
   );
 };
 

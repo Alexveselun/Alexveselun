@@ -6,7 +6,6 @@ interface Error404Props {
   theme: {
     text: string;
     secondaryText: string;
-    body: string;
   };
 }
 

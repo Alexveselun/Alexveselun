@@ -10,13 +10,14 @@ function App() {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
 
-  const changeTheme = () => {
+  const toggleTheme = () => {
     setIsDark(!isDark);
   };
+
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
-      <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
+      <StyleProvider value={{ isDark, toggleTheme }}>
         <Main theme={Theme} />
       </StyleProvider>
     </ThemeProvider>

@@ -13,7 +13,6 @@ interface ContactProps {
     text: string;
     secondaryText: string;
   };
-  onToggle: () => void;
 }
 
 const Contact: React.FC<ContactProps> = (props) => {

@@ -3,8 +3,12 @@ import StyleContext from "../../../contexts/StyleContext";
 import "./ToggleSwitch.css";
 
 const ToggleSwitch: React.FC = () => {
-  const { isDark, changeTheme } = useContext(StyleContext);
+  const { isDark, toggleTheme } = useContext(StyleContext) || {};
   const [isChecked, setChecked] = useState(isDark);
+
+  if (toggleTheme === undefined) {
+    return null; 
+  }
 
   return (
     <label className="switch">
@@ -12,7 +16,7 @@ const ToggleSwitch: React.FC = () => {
         type="checkbox"
         checked={isChecked}
         onChange={() => {
-          changeTheme();
+          toggleTheme();
           setChecked(!isChecked);
         }}
       />

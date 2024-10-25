@@ -123,6 +123,7 @@ export const orangeTheme = {
 
 // Dark Theme of Dark Mode
 export const darkTheme = {
+  backgroundColor: "#FFFFFF",
   body: "#171c28",
   text: "#ffffff",
   highlight: "#ffba08",

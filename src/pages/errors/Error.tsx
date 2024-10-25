@@ -2,15 +2,24 @@ import React from "react";
 import { Header, TopButton, Footer } from "../../components";
 import { Error404 } from "../../containers";
 
-const Error = (props) => {
-  const theme = props.theme;
+interface Theme {
+  text: string;
+  secondaryText: string;
+}
+
+interface ErrorProps {
+  theme: Theme;
+}
+
+const Error: React.FC<ErrorProps> = ({ theme }) => {
   return (
     <div className="main-page">
-      <Header theme={theme} />
+      <Header/>
       <Error404 theme={theme} />
-      <Footer theme={theme} />
-      <TopButton theme={theme} />
+      <Footer  />
+      <TopButton/>
     </div>
   );
 };
+
 export default Error;

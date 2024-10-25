@@ -148,12 +148,11 @@ html, body {
 
 /* cards */
 .cards-div-main {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 60px;
+  margin: 0.5rem;
+  /* margin-top: 2rem; */
 }
 
 .long-card {
@@ -277,6 +276,7 @@ html, body {
 @media (max-width: 768px) { 
   .cards-div-main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 30px;
@@ -562,8 +562,8 @@ html, body {
 /* Форми */
 /* Основные стили для элементов формы */
 .form-main {
-  background-color: #edf9fe;
-  border: 1px solid #ced4da;
+  background-color: grey;
+  border: 1px solid #b5bdc4;
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;

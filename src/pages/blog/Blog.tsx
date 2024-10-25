@@ -8,7 +8,6 @@ interface BlogProps {
     text: string;
     secondaryText: string;
   };
-  onToggle: () => void;
 }
 
 const Gallery: React.FC<BlogProps> = ({ theme }) => {
