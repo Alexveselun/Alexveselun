@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { twitterUsername } from "../../portfolio";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import "./Twitter.css";
@@ -18,14 +18,12 @@ var widthScreen = window.screen.width;
 const Twitter = () => {
   if (twitterUsername !== "none") {
     return (
-      <Suspense fallback={renderLoader()}>
         <div className="tw-main-div" id="twitter">
           <div className="centerContent">
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName={twitterUsername}
               options={{ height: 400, width: { widthScreen } }}
-              placeholder={renderLoader()}
               autoHeight={false}
               borderColor="#fff"
               key="2"
@@ -35,7 +33,6 @@ const Twitter = () => {
             />
           </div>
         </div>
-      </Suspense>
     );
   } else {
     return null;

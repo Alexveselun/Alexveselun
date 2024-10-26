@@ -3,7 +3,6 @@ import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { openSource } from "../../portfolio";
 import OrganizationList from "../../components/media/organizationList/OrganizationList";
 import OrganizationsData from "../../shared/opensource/organizations.json";
-import "./Organizations.css";
 
 interface OrganizationsProps {
   theme: {

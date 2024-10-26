@@ -33,7 +33,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
           </div>
           )}
           {location && (
-          <div className="location-div">
+          <div className="heading-text-div">
             <div className="icon-wrapper">
               <i className="fas fa-map-marker-alt"></i>
             </div>
