@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { hobbies } from "../../../portfolio";
-import MotionWrapper from "../../layouts/animations/MotionWrapper";
 import "./HobbiesCard.css";
 
 interface HobbiesCardProps {
