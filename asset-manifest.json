@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Alexveselun/static/css/main.97ee5b3a.css",
-    "main.js": "/Alexveselun/static/js/main.71bcf2c8.js",
+    "main.css": "/Alexveselun/static/css/main.b2d87e56.css",
+    "main.js": "/Alexveselun/static/js/main.d93d2731.js",
     "static/media/track1.mp3": "/Alexveselun/static/media/track1.3b2eeadff557b6dddf29.mp3",
     "static/media/loader.gif": "/Alexveselun/static/media/loader.f9c9677d2f5fb6d9c9a0.gif",
     "static/media/main-photo-home.png": "/Alexveselun/static/media/main-photo-home.7d62ebcc118bc541222c.png",
@@ -14,10 +14,12 @@
     "static/media/fa-brands-400.ttf": "/Alexveselun/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/main-container.jpg": "/Alexveselun/static/media/main-container.0f530dacbddaa815ad83.jpg",
     "static/media/design.png": "/Alexveselun/static/media/design.80b884d81f9dc76a3e2d.png",
-    "static/media/contactEmail.png": "/Alexveselun/static/media/contactEmail.c467c3713e12e5090ad2.png",
+    "static/media/contactEmail.png": "/Alexveselun/static/media/contactEmail.eb38e3f4bb5ad3535033.png",
     "static/media/fa-solid-900.woff2": "/Alexveselun/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/text-section.png": "/Alexveselun/static/media/text-section.a0f5ac2eeff3a9e0d99d.png",
     "static/media/Mr.Yanyk.jpeg": "/Alexveselun/static/media/Mr.Yanyk.c81d7ed8348576ae2e37.jpeg",
     "static/media/fa-brands-400.woff2": "/Alexveselun/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/header-background.jpg": "/Alexveselun/static/media/header-background.ed81781268d7f210975e.jpg",
     "static/media/silka-semibold-webfont.ttf": "/Alexveselun/static/media/silka-semibold-webfont.149a5f2da5d81ecd3f15.ttf",
     "static/media/silkamono-regular-webfont.ttf": "/Alexveselun/static/media/silkamono-regular-webfont.93d3a52ebcc3cb633fcb.ttf",
     "static/media/silka-medium-webfont.ttf": "/Alexveselun/static/media/silka-medium-webfont.3b85279d5967d3f1e066.ttf",
@@ -25,17 +27,18 @@
     "static/media/silka-regular-webfont.ttf": "/Alexveselun/static/media/silka-regular-webfont.093bd741a8030ee6cba8.ttf",
     "static/media/addressImage.png": "/Alexveselun/static/media/addressImage.ae0db9782b13b53b51cc.png",
     "static/media/entrepreneaur.png": "/Alexveselun/static/media/entrepreneaur.a9b8dd1c4a4273479bd7.png",
+    "static/media/logo-background.png": "/Alexveselun/static/media/logo-background.4e31abd6dbcc9170a76c.png",
     "static/media/fa-regular-400.ttf": "/Alexveselun/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/fa-regular-400.woff2": "/Alexveselun/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/fa-v4compatibility.ttf": "/Alexveselun/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/Alexveselun/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/Alexveselun/index.html",
     "static/media/location_icon.svg": "/Alexveselun/static/media/location_icon.be8d38b3ddeda8b76e3c.svg",
-    "main.97ee5b3a.css.map": "/Alexveselun/static/css/main.97ee5b3a.css.map",
-    "main.71bcf2c8.js.map": "/Alexveselun/static/js/main.71bcf2c8.js.map"
+    "main.b2d87e56.css.map": "/Alexveselun/static/css/main.b2d87e56.css.map",
+    "main.d93d2731.js.map": "/Alexveselun/static/js/main.d93d2731.js.map"
   },
   "entrypoints": [
-    "static/css/main.97ee5b3a.css",
-    "static/js/main.71bcf2c8.js"
+    "static/css/main.b2d87e56.css",
+    "static/js/main.d93d2731.js"
   ]
 }
