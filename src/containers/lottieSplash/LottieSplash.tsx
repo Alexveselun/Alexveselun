@@ -12,8 +12,8 @@ const LottieSplash: React.FC = () => {
         <div className="splash-animation-container">
           <SplashAnimationLottie animationPicture={animData} />
         </div>
-        <div className="splash-title-container">
-          <span className="logo-text">{greeting.title}</span>
+        <div className="splash-logo">
+          <span className="logo-text">{greeting.logo_name}</span>
         </div>
       </div>
   );

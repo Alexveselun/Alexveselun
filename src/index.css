@@ -81,8 +81,8 @@ html, body {
   background-image: url("/src/assets/images/backgrounds/main-container.jpg");
 
   /* background-image: url("/src/assets/images/backgrounds/main-theme.jpg"); */
-  /* background-position: center center; */
-  /* background-size: contain; */
+  background-position: center center;
+  background-size: contain;
   width: 100vw;
   /* height: 100vw; */
 
@@ -110,10 +110,8 @@ html, body {
   width: 100%;
 }
 
-.section-greetings {
-  width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+.greetings {
+  margin-top: 5rem;
 }
 
 .section-two-components, .section-three-components, .section-right {
@@ -311,6 +309,9 @@ html, body {
 .heading-text-div, .second-heading-text-div {
   text-align: center;
   padding-bottom: 1.5rem;
+  background-image: url("/src/assets/images/backgrounds/text-section.png");
+  background-size: cover;
+  box-shadow: 1 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -388,7 +389,7 @@ html, body {
   }
 
   .profile-image {
-    max-width: 350px;
+    max-width: 300px;
   }
 
   .text-title {
@@ -442,7 +443,7 @@ html, body {
 
 .picture {
   width: 100%;                /* Контейнер занимает всю ширину */
-  max-width: 600px;           /* Ограничение максимальной ширины */
+  max-width: 400px;           /* Ограничение максимальной ширины */
   /* margin: 1.5rem;             Центрирование блока */
   overflow: hidden;           /* Скрытие части изображения за пределами контейнера */
   border-radius: 10px;      
@@ -490,7 +491,7 @@ html, body {
   border: 0.5rem solid ;
   margin-left: auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0 30px 30px -30px;
   transition: all 0.3s ease-out;

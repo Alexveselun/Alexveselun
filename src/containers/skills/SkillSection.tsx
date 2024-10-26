@@ -24,9 +24,7 @@ class SkillSection extends Component<SkillSectionProps> {
       <div className="container" id="skills">
         <MotionWrapper>
           <div className="section skills">
-            <div className="heading-text-div">
               <h1 className="text-title">Who am I?</h1>
-            </div>
             {skills.data.map((skill) => (
               <SkillCard key={skill.title} skill={skill} theme={theme} />
             ))}
