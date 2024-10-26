@@ -4,6 +4,12 @@ button {
   justify-content: center; 
 }
 
+.button-div {
+  padding: 1rem;
+  display: flex;
+  justify-content: center; 
+}
+
 .main-button:hover {
   cursor: pointer;
   background: #252525;

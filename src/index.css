@@ -512,6 +512,7 @@ html, body {
 /* Кнопки */
 .btn {
   height: 50px;
+  border: none;
   color: #000;
   background: #fff;
   display: inline-block;
@@ -527,6 +528,7 @@ html, body {
 
 .btn:hover {
   cursor: pointer;
+  border: none;
   color: #fff;
   background: #000;
   transition: all 0.3s ease-out;
