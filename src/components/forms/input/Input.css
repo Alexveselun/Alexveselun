@@ -7,20 +7,21 @@
   /* border: 2px solid #ccc; */
   border-radius: 4px;
   font-size: 16px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'SilkaMono-Regular', sans-serif;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 /* Стиль при фокусі */
 .input-main:focus {
-  border-color: #007BFF;
+  border-color: black;
   outline: none;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 8px black;
 }
 
 /* Стиль для помилок */
 .input-main.error {
   border-color: #dc3545;
+  border-width: 2px;
   box-shadow: 0 0 8px rgba(220, 53, 69, 0.5);
 }
 

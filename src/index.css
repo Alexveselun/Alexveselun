@@ -576,7 +576,7 @@ html, body {
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
+  text-align: center;
 }
 
 .form {
@@ -602,10 +602,36 @@ html, body {
   border-radius: 0.3rem;
 }
 
+
 textarea {
   width: 100%;
-  resize: vertical; /* Разрешаем изменять высоту текстового поля */
+  resize: vertical; /* Дозволяємо змінювати висоту текстового поля */
+  background: transparent;
+  color: #000;
+  outline: none;
+  border: none;
+  border-bottom: 2px dashed rgba(0, 0, 0, 1); /* Залишаємо тільки нижню лінію */
+  padding: 8px;
+  font-size: 18px; 
+  text-align: center;
+  
+  /* Flex alignment to move text to the bottom */
+  display: flex;
+  align-items: bottom;
 }
+
+textarea::placeholder {
+  color: #000;
+  font-style: Silka-SemiBold;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: opacity 0.1s ease; /* Додає плавність переходу */
+}
+
+textarea:focus::placeholder {
+  opacity: 0; /* Зникає під час фокусу */
+}
+
 
 /* Кнопки */
 .btn-submit {

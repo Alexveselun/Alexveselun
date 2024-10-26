@@ -137,10 +137,10 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
                       required
                     />
                   </div>
-                  {error && <div className="fade alert alert-danger">{error}</div>}
+                  {error && <div className="fade alert">{error}</div>}
 
                   {showSuccess && (
-                    <div className="fade alert alert-success">
+                    <div className="fade alert success">
                       <div className="alert-heading">
                         Message sent successfully!
                       </div>
@@ -149,7 +149,7 @@ const ContactMessage: React.FC<ContactMessageProps> = ({ theme }) => {
 
                   <button ref={buttonRef} type="submit" className="btn">
                     {disabled ? "Sending..." : "Send Message"}
-                  </button>
+                  </button>  
                 </form>
               </div>
               </div>
