@@ -79,9 +79,7 @@ html, body {
 /* Контейнери і загальна структура */
 .main-page {
   background-image: url("/src/assets/images/backgrounds/main-container.jpg");
-
-  /* background-image: url("/src/assets/images/backgrounds/main-theme.jpg"); */
-  background-position: center center;
+  /* background-position: center center; */
   background-size: contain;
   width: 100vw;
   /* height: 100vw; */
@@ -106,11 +104,16 @@ html, body {
   justify-content: center;
 }
 
+.cut-image-to50 {
+  max-width: 50%;
+  transition: all 0.3s ease;
+}
+
 .section {
   width: 100%;
 }
 
-.greetings {
+.top5rem {
   margin-top: 5rem;
 }
 
@@ -306,12 +309,16 @@ html, body {
 }
 
 /* Адаптивний дизайн для текстових блоків */
-.heading-text-div, .second-heading-text-div {
+.heading-text-div {
   text-align: center;
   padding-bottom: 1.5rem;
+  box-shadow: 1 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.second-heading-text-div {
+  padding: 2rem;
   background-image: url("/src/assets/images/backgrounds/text-section.png");
   background-size: cover;
-  box-shadow: 1 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -341,6 +348,7 @@ html, body {
   font-size: 18px;
   margin: 0.5rem;
   font-family: "Silka-SemiBold";
+  text-align: center;
 }
 
 
@@ -383,7 +391,7 @@ html, body {
   }
 }
 
-@media (max-width: 1380px) {
+/* @media (max-width: 1380px) {
   html, body {
     font-size: 16px;
   }
@@ -402,7 +410,7 @@ html, body {
   .cont-image {
     width: 100%;
   }
-}
+} */
 
 @media (min-width: 1400px) {
   .container {
@@ -565,8 +573,6 @@ html, body {
 /* Форми */
 /* Основные стили для элементов формы */
 .form-main {
-  background-color: grey;
-  border: 1px solid #b5bdc4;
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -659,7 +665,7 @@ textarea {
 
 @media (min-width: 340px) {
   .container {
-    max-width: 340px;
+    /* max-width: 340px; */
   }
 }
 

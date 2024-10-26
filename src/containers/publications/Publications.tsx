@@ -2,6 +2,7 @@ import React from "react";
 import { publications } from "../../portfolio";
 import PublicationCard from "../../components/cards/publicationCard/PublicationCard";
 import "./Publications.css";
+import MotionWrapper from "components/layouts/animations/MotionWrapper";
 
 // Define types for the publication data
 interface Publication {
@@ -35,10 +36,12 @@ const Publications: React.FC<PublicationsProps> = ({ theme }) => {
 
   return (
     <div className="container">
+      <div className="section top5rem">
       <div className="heading-text-div">
-        <h1 className="text-second-title">{title}</h1>
-        <p className="text-detail">{description}</p>
+        <h1 className="text-title">{title}</h1>
+        <p className="text-subtitle">{description}</p>
       </div>
+      <MotionWrapper>
       <div className="cards-div-main">
         {pubData.data.length > 0 ? (
           pubData.data.map((pub) => (
@@ -51,6 +54,8 @@ const Publications: React.FC<PublicationsProps> = ({ theme }) => {
         ) : (
           <p className="text-detail">No publications available.</p>
         )}
+      </div>
+      </MotionWrapper>
       </div>
     </div>
   );

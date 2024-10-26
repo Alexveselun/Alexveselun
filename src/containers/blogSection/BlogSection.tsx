@@ -66,7 +66,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
   return (
     <div className="container">
       <div className="section">
-        <div className="section-two-components">
+        <div className="section-two-components top5rem">
           <div className="heading-text-div">
             <h1 className="text-title">
               {blogSection.title}
@@ -77,7 +77,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
           </div>
         </div>
         <MotionWrapper>
-        <div className="section gallery-section ">
+        <div className="gallery-section">
               {dataUnavailable ? (
                 <div className="text-detail">
                   Load something - to see data here

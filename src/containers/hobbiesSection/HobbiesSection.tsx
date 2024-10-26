@@ -16,11 +16,13 @@ const HobbiesSection: React.FC<HobbiesSectionProps> = ({ theme }) => {
   return (
     <div className="container" id="hobbies">
       <MotionWrapper>
-        <div className="heading-text-div">
-          <h1 className="text-title">{hobbies.title}</h1>
-          {/* <h2 className="text-subtitle">{hobbies.subTitle}</h2> */}
-        </div>
+        <div className="section top5rem">
+          <div className="heading-text-div">
+            <h1 className="text-title">{hobbies.title}</h1>
+            {/* <h2 className="text-subtitle">{hobbies.subTitle}</h2> */}
+            </div>
         <HobbiesCards theme={theme} />
+        </div>
       </MotionWrapper>
     </div>
   );

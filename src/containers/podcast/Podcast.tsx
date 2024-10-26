@@ -17,7 +17,7 @@ const MusicPlayer: React.FC<PodcastProps> = ({ theme }) => {
   return (
     <div className="container">
       <div className="section-two-components center">
-      <div className="heading-text-div">
+      <div className="second-heading-text-div">
           <h1 className="text-title">
             {podcastSection.title}
           </h1>

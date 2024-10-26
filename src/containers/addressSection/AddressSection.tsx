@@ -48,11 +48,11 @@ const AddressSection: React.FC<AddressSectionProps> = ({ theme }) => {
             )}
           </div>
           <div className="section">
-            <div className="heading-text-div">
+            <div className="second-heading-text-div">
               <h1 className="text-second-title">{addressSection.title}</h1>
               <p className="text-detail">{addressSection.subtitle}</p>
               <Button
-                text="Visit on Google Maps"
+                text="Open Google Maps"
                 newTab={true}
                 href={addressSection.location_map_link}
                 theme={theme}

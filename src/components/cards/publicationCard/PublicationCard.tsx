@@ -1,5 +1,4 @@
 import React from "react";
-import MotionWrapper from "../../layouts/animations/MotionWrapper";
 import "./PublicationCard.css";
 
 interface PublicationProps {
@@ -26,8 +25,7 @@ const PublicationCard: React.FC<PublicationProps> = ({ theme, publication }) => 
   };
 
   return (
-    <div className="publication-card-div">
-    <MotionWrapper>
+    <div className="publication-card-div second-heading-text-div">
       <div
         role="button"
         tabIndex={0}
@@ -52,7 +50,6 @@ const PublicationCard: React.FC<PublicationProps> = ({ theme, publication }) => 
           </p>
         </div>
       </div>
-      </MotionWrapper>
     </div>
   );
 };

@@ -13,7 +13,7 @@ interface GreetingProps {
 const Greeting: React.FC<GreetingProps> = ({ theme }) => {
   return (
     <div className="container">
-      <div className="section greetings">
+      <div className="section top5rem">
       <MotionWrapper>
         <div className="section-two-components">
           <div className="heading-text-div">
@@ -23,6 +23,7 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
                   {greeting.nickname}
                 </h2>
               )}
+            <div className="second-heading-text-div">
             <h2 className="text-subtitle">
                 {greeting.subTitle}
             </h2>
@@ -33,6 +34,7 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
                   theme={theme}
                   className="btn"
                 />
+            </div>
             </div>
             <div className="picture">
             <div className="cont-image">

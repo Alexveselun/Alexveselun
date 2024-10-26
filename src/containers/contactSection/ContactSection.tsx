@@ -18,17 +18,16 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
   return (
     <div className="container">
       <MotionWrapper>
-        <div className="section-two-components">
+        <div className="section-two-components top5rem">
           <div className="section">
 
-            <div className="heading-text-div">
+            <div className="second-heading-text-div">
               <h1 className="text-second-title">
                 {contactSection.title}
               </h1>
               <p className="text-detail">
                 {contactSection.description}
               </p>
-            </div>
               <SocialMedia theme={theme}/>
               <Button
                 className="btn"
@@ -37,6 +36,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
                 href={contactSection.email}
                 theme={theme}
               /> 
+            </div>
           </div>
             <div className="picture">
             <div className="cont-image">

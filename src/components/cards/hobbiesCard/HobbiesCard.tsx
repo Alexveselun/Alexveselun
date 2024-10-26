@@ -40,7 +40,7 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
       <MotionWrapper>
       {hobbies.hobbies.map(({ title, description, image_path }, index) => (
         <div className="hobbie-section" key={index}>
-          <div className="hobbies-heading">
+          <div className="second-heading-text-div ">
             <div className="text-second-title">{title}</div>
             <div className="text-detail">{description}</div>
           </div>

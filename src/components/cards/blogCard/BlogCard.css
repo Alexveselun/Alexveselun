@@ -1,13 +1,14 @@
 .blog-card {
-  height: 300px;
+  max-height: 300px;
   width: 300px;
   border-radius: 10px;
   margin: 0.25rem;
   position: relative;
   cursor: pointer;
   overflow: auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  text-align: center;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
 }
 
 .blog-card:hover{

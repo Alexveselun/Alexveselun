@@ -23,9 +23,16 @@ const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
   return (
     <div className="container">
       <MotionWrapper>
-        <div className="heading-text-div">
+        <div className="second-heading-text-div">
             <div className="text-title">Reach Out to Me!</div>
             <div className="text-detail">{contactPageData.contactSection.description}</div>
+            <Button
+                  text="⭐ Contact me"
+                  newTab={true}
+                  href={greeting.email}
+                  theme={theme}
+                  className="btn"
+                />
         </div>
         <div className="section aboutMe"> 
           {avatarUrl && (
@@ -39,13 +46,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
               <i className="fas fa-map-marker-alt"></i>
             </div>
             <div className="text-detail">{location}</div>
-            <Button
-                  text="⭐ Contact me"
-                  newTab={true}
-                  href={greeting.email}
-                  theme={theme}
-                  className="btn"
-                />
+            
           </div>
           )}
           <div className="heading-text-div">
