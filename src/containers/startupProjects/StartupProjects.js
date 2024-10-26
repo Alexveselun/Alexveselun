@@ -20,8 +20,7 @@ export default function StartupProjects(props) {
     <div className="startup-main main" id="projects">
       <MotionWrapper>
         <h1
-          className="skills-heading projects-title"
-          style={{ color: theme.text }}
+          className="text-title"
         >
           {bigProjects.title}
         </h1>

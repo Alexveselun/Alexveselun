@@ -23,7 +23,7 @@ const TechStack: React.FC<TechStackProps> = ({ theme }) => {
 
   return (
     <div className="container">
-        <div className="skills-container">
+        <div className="section">
         <MotionWrapper>
           <div className="section bar-skills">
             <div className="heading-text-div">

@@ -1,5 +1,5 @@
 import React from "react";
-import { greeting, contactPageData } from "../../portfolio";
+import { contactPageData } from "../../portfolio";
 import SocialMedia from "../../components/layouts/socialMedia/SocialMedia";
 import Button from "components/layouts/button/Button";
 import MotionWrapper from "components/layouts/animations/MotionWrapper";
@@ -32,9 +32,9 @@ const ContactSection: React.FC<ContactSectionProps> = ({ theme }) => {
               <SocialMedia theme={theme}/>
               <Button
                 className="btn"
-                text="See My Resume"
+                text="⭐ Contact Me"
                 newTab={true}
-                href={greeting.resumeLink}
+                href={contactSection.email}
                 theme={theme}
               /> 
           </div>

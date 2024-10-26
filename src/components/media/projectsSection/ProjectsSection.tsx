@@ -3,7 +3,6 @@ import GithubRepoCard from "../../cards/githubRepoCard/GithubRepoCard";
 import MotionWrapper from "../../layouts/animations/MotionWrapper";
 import { projects } from "../../../portfolio";
 import ProjectsData from "../../../shared/opensource/projects.json";
-import ProjectsImg from "./ProjectsImg";
 import "./ProjectsSection.css";
 
 
@@ -17,8 +16,7 @@ const ProjectsSection: React.FC = () => {
       <div className="basic-projects">
         <MotionWrapper>
           <div className="section-two-components">
-            <div className="projects-heading-img-div">
-              <ProjectsImg />
+            <div className="picture">
             </div>
             <div className="heading-text-div">
               <h1 className="text-title">{projects.title}</h1>

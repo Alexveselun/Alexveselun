@@ -2,7 +2,6 @@ import React from "react";
 import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { hobbies, pageEnabled } from "../../portfolio";
 import { HobbiesCards } from "components"; // Make sure the import path is correct
-import "./HobbiesSection.css";
 
 interface HobbiesSectionProps {
   theme: {

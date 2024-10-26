@@ -58,10 +58,10 @@ const greeting = {
   nickname: "",
   subTitle:
     "I’m passionate about creating unique experiences that blend innovation and culture. I’m dedicated to building spaces that not only entertain but also educate and inspire.",
-  resumeLink:
-    "https://docs.google.com/document/d/12HcgXpBxVzCtz--IZribLTX5yu7HoatZcDZanvKvsYA/view",
-  portfolio_repository: "mailto:alexveselun@gmail.com", //star-me-on-github button
-  githubProfile: "https://github.com/alexveselun", //more projects button
+  resumeLink: 
+    "https://alexveselun.github.io/Alexveselun",
+  email: "mailto:alexveselun@gmail.com", 
+  githubProfile: "https://github.com/alexveselun", 
 };
 
 const socialMediaLinks = [
@@ -105,6 +105,7 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
+  
   
 ];
 
@@ -510,6 +511,7 @@ const contactPageData = {
     profile_image: "contactEmail.png",
     description:
       "I’m reachable via email and messenger. Feel free to message me. Looking forward to collaborating on creative projects!",
+    email: "mailto:alexveselun@gmail.com",
   },
   addressSection: {
     title: "Address",

@@ -2,7 +2,6 @@ import React from "react";
 import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { greeting } from "../../portfolio";
 import Button from "../../components/layouts/button/Button";
-import "./Greeting.css";
 
 interface GreetingProps {
   theme: {
@@ -30,7 +29,7 @@ const Greeting: React.FC<GreetingProps> = ({ theme }) => {
             <Button
                   text="⭐ Contact me"
                   newTab={true}
-                  href={greeting.portfolio_repository}
+                  href={greeting.email}
                   theme={theme}
                   className="btn"
                 />

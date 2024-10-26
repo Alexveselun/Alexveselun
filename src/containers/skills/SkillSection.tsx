@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { skills, pageEnabled } from "../../portfolio"; // Ensure pageEnabled is defined
 import SkillCard from "components/cards/skillCard/SkillCard";
-import "./Skills.css";
 
 interface Theme {
   text: string;

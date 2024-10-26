@@ -11,7 +11,6 @@ export { default as ExperienceSection } from "./experienceSection/ExperienceSect
 export { default as Greeting } from "./greeting/Greeting";
 export { default as HobbiesSection } from "./hobbiesSection/HobbiesSection";
 export { default as IssuesPullRequestsList } from "./lists/issue-pr-lists";
-export { default as Loading } from "./loading/Loading";
 export { default as LottieSplash } from "./lottieSplash/LottieSplash";
 export { default as OpensourceCharts } from "./opensourceCharts/OpensourceCharts";
 export { default as Organizations } from "./organizations/Organizations";

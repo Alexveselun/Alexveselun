@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Alert } from "react-bootstrap";
+import React from "react";
 import "./BlogCard.css";
 
 interface Blog {
@@ -17,13 +16,10 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
   const imageSource = `${process.env.PUBLIC_URL}/assets/blogData/${blog.image}`;
-  const [show, setShow] = useState(false);
 
   const openUrlInNewTab = (url?: string) => {
     if (!url) {
-      setShow(true);
       setTimeout(() => {
-        setShow(false);
       }, 4000);
     } else {
       const win = window.open(url, "_blank");
@@ -34,13 +30,12 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
   if (!blog) return null;
 
   return (
-    <div className="blog-container">
-          <div className="blog-card  blog-card-shadow" onClick={() => openUrlInNewTab(blog.url)}>
+          <div className="blog-card" onClick={() => openUrlInNewTab(blog.url)}>
             <div className="heading-text-div">
-              <h1 className="text-second-title">
+              <div className="text-second-title">
                 {blog.title}
-              </h1>
-              <p className="text-detail">{blog.description}</p>
+              </div>
+              <div className="text-detail">{blog.description}</div>
             </div>
 
             <div className="cont-image">
@@ -55,12 +50,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
             <div className="go-corner">
               <div className="go-arrow">→</div>
             </div>
-          {/* </a> */}
+
         </div>
-      <Alert show={show} variant="danger">
-        <Alert.Heading>Will be available later</Alert.Heading>
-      </Alert>
-    </div>
+
   );
 };
 

@@ -82,7 +82,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ theme }) => {
                 <div className="text-detail">
                   Load something - to see data here
                 </div>
-
               ) : (
                 renderBlogCards()
               )}

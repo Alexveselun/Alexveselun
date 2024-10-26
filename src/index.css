@@ -78,9 +78,14 @@ html, body {
 
 /* Контейнери і загальна структура */
 .main-page {
-  /* background-image: url("/src/assets/images/backgrounds/main-theme.png"); */
+  background-image: url("/src/assets/images/backgrounds/main-container.jpg");
+
+  /* background-image: url("/src/assets/images/backgrounds/main-theme.jpg"); */
+  /* background-position: center center; */
+  /* background-size: contain; */
   width: 100vw;
-  height: 100vh;
+  /* height: 100vw; */
+
 }
 
 .container {
@@ -88,6 +93,9 @@ html, body {
   margin: auto;
   padding-top: 8rem;
   padding-bottom: 4rem;
+  background-position: center center;
+
+
 }
 
 .cont-image {
@@ -100,8 +108,6 @@ html, body {
 
 .section {
   width: 100%;
-  padding: 20px 10px;
-  margin: 0 auto;
 }
 
 .section-greetings {
@@ -117,14 +123,14 @@ html, body {
   align-items: center;
 }
 
-.skills-container {
+.card-skill {
   display: flex;
   width: 100%;
   padding: 20px 10px;
   margin: auto;
   flex-direction: column;
 }
-.skills-container > * {
+.card-skill > * {
   flex: 1;
 }
 .skills-image > img {
@@ -346,7 +352,7 @@ html, body {
     padding-top: 6rem;
   }
 
-  .skills-container, .section, .section-two-components, .section-three-components, .section-right {
+  .card, .section, .section-two-components, .section-three-components, .section-right {
     flex-direction: column;
   }
 
@@ -481,6 +487,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   order: 1;
+  align-items: center;
 }
 .profile-image {
   border-radius: 50%;

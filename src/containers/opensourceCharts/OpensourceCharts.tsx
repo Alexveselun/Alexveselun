@@ -2,7 +2,6 @@ import React from "react";
 import "chart.js/auto";
 import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import { PullRequestChart, IssueChart } from "../../components/charts/opensource";
-import "./OpensourceCharts.css";
 
 interface OpensourceChartsProps {
   theme: {

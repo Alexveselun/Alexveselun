@@ -36,7 +36,7 @@ const HobbiesCards: React.FC<HobbiesCardProps> = ({ theme }) => {
   }, []);
 
   return (
-    <div className="skills-container">
+    <div className="card-skill">
       <MotionWrapper>
       {hobbies.hobbies.map(({ title, description, image_path }, index) => (
         <div className="hobbie-section" key={index}>

@@ -29,18 +29,6 @@
 .blog-main-div {
   display: flex;
 }
-.blog-image-div > img {
-  max-width: 50%;
-  height: auto;
-}
-
-.blog-text-div {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: space-around;
-}
 
 /* Media Query */
 @media (max-width: 1380px) {

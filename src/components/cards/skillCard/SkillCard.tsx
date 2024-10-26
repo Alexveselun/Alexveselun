@@ -35,7 +35,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, theme }) => {
   }, [loadImage]); // Додаємо loadImage до масиву залежностей
 
   return (
-    <div className="skills-container">
+    <div className="card-skill">
       <div className="heading-text-div">
         <h1 className="text-second-title">{skill.title}</h1>
       </div>

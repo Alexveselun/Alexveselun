@@ -1,6 +1,5 @@
 import React from "react";
 import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
-import ExperienceImg from "./ExperienceImg";
 import { experience } from "../../portfolio";
 import "./ExperienceSection.css";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion";
@@ -50,7 +49,6 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ theme }) => {
       <MotionWrapper>
         <div className="section-two-components">
           <div className="heading-img-div">
-            <ExperienceImg theme={theme} />
           </div>
           <div className="heading-text-div">
             <h1 className="text-second-title">{expData.title}</h1>
