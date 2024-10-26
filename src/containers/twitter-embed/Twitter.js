@@ -1,10 +1,8 @@
 import React, { Suspense } from "react";
 import { twitterUsername } from "../../portfolio";
-import Loading from "../loading/Loading";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import "./Twitter.css";
 
-const renderLoader = () => <Loading />;
 const cantDisplayError =
   "<div className='centerContent'><h2>Can't load? Check privacy protection settings</h2></div>";
 
