@@ -1,8 +1,9 @@
 import React from "react";
-import { contactPageData } from "../../portfolio";
+import { contactPageData, greeting } from "../../portfolio";
 import MotionWrapper from "../../components/layouts/animations/MotionWrapper";
 import UserData from "../../shared/opensource/user.json";
 import "./AboutMe.css";
+import { Button } from "components";
 
 interface AboutMeProps {
   theme: {
@@ -38,6 +39,13 @@ const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
               <i className="fas fa-map-marker-alt"></i>
             </div>
             <div className="text-detail">{location}</div>
+            <Button
+                  text="⭐ Contact me"
+                  newTab={true}
+                  href={greeting.email}
+                  theme={theme}
+                  className="btn"
+                />
           </div>
           )}
           <div className="heading-text-div">
