@@ -4,7 +4,6 @@ import { Header, TopButton, Footer } from "../../components";
 import {
   ContactSection,
   AddressSection,
-  ContactMessage,
 } from "../../containers";
 import "./Contact.css";
 
