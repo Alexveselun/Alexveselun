@@ -317,7 +317,7 @@ html, body {
 
 .second-heading-text-div {
   padding: 2rem;
-  background-image: url("/src/assets/images/backgrounds/text-section.png");
+  /* background-image: url("/src/assets/images/backgrounds/text-section.png"); */
   background-size: cover;
 }
 

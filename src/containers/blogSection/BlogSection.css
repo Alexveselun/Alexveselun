@@ -1,13 +1,36 @@
-.gallery-section {
+/* BlogSection.css - Minimalist Style */
+.blog-section {
   display: flex;
-  margin: 1rem;
-  padding: 1rem;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
+.blog-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
 
-@media (max-width: 768px) {
- .gallery-section {
-    flex-direction: column;
-  }
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.blog-card p {
+  margin: 0;
+  color: #555;
+}
+
+.blog-card a {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 14px;
 }

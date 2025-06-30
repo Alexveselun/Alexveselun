@@ -27,7 +27,7 @@ const Contact: React.FC<ContactProps> = (props) => {
       <Header/>
       <ContactSection theme={theme}/>
       <AddressSection theme={theme} />
-      <ContactMessage theme={theme} />
+      {/* <ContactMessage theme={theme} /> */}
       <Footer/>
       <TopButton />
     </div>

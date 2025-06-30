@@ -18,7 +18,7 @@ Credits: masterPortfolio(https://github.com/ashutosh1919/masterPortfolio)
 const pageEnabled = {
   splash: true, // Change this to false if you don't want Splash screen
   blog: true, // Change this to false if you don't want
-  opensource: true, // Change this to false if you don't want opensource contribution (from github data) page
+  opensource: false, // Change this to false if you don't want opensource contribution (from github data) page
   hobbies: true, // Change this to false if you don't want hobbies page
   contact: true, // Change this to false if you don't want contact page
   projects: true, // Change this to false if you don't want projects (from github data) and publications page
@@ -73,7 +73,7 @@ const socialMediaLinks = [
   // facebook: "https://www.facebook.com/",
   // twitter: "https://twitter.com",
   // instagram: "https://www.instagram.com/alexyankevych/"
-  // telegram: "https://t.me/kolobok_2023"
+  // telegram: "https://t.me/no_one_on_nothing"
 
   {
     name: "Instagram",
@@ -83,7 +83,7 @@ const socialMediaLinks = [
   },
   {
     name: "Telegram",
-    link: "https://t.me/kolobok_2023",
+    link: "https://t.me/no_one_on_nothing",
     fontAwesomeIcon: "fa-telegram-plane", // Reference https://fontawesome.com/icons/telegram-plane?style=brands
     backgroundColor: "#0088CC", // Reference https://simpleicons.org/?q=telegram
   },
@@ -237,7 +237,7 @@ const bigProjects = {
 
 const blogSection = {
   title: "The Gallery",
-  subtitle: "Check the data loaded from telegram",
+  subtitle: "Check the data loaded from telegram bot",
   display: "myBlog", 
   blogs: [
     {

@@ -1,6 +1,31 @@
 {
   "data": [
     {
+      "id": "PR_kwDONjFNLM6Vsnoz",
+      "title": "Re worked structure",
+      "url": "https://github.com/Alexveselun/test-rynok-bot/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82472610?u=ebb325f8a1935ae30c79f4e9a03070823a464298&v=4",
+        "url": "https://github.com/Alexveselun",
+        "login": "Alexveselun"
+      },
+      "createdAt": "2025-05-10T15:04:02Z",
+      "number": 1,
+      "changedFiles": 34,
+      "additions": 2095,
+      "deletions": 1365,
+      "baseRepository": {
+        "name": "test-rynok-bot",
+        "url": "https://github.com/Alexveselun/test-rynok-bot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/82472610?u=ebb325f8a1935ae30c79f4e9a03070823a464298&v=4",
+          "login": "Alexveselun",
+          "url": "https://github.com/Alexveselun"
+        }
+      }
+    },
+    {
       "id": "PR_kwDOMdBscs5-D9o4",
       "title": "fix(support-maintenance): fixed the folder name",
       "url": "https://github.com/valor-labs/vs-website-3/pull/156",
@@ -2000,6 +2025,6 @@
   ],
   "open": 0,
   "closed": 7,
-  "merged": 74,
-  "totalCount": 81
+  "merged": 75,
+  "totalCount": 82
 }
